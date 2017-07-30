@@ -1,0 +1,511 @@
+body,
+html {
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+button,
+i,
+input,
+span,
+div,
+form,
+a,
+h2,
+img,
+textarea,
+ul,
+li,
+p {
+    outline: none !important;
+    transition: 0.3s;
+}
+
+.fa {
+    padding: 0;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.fa::before {
+    font-family: 'FontAwesome';
+}
+
+.btn-default:hover {
+    outline: none;
+    border: none;
+    background: #f5f5f5;
+}
+
+.row {
+    margin: 0;
+}
+/**naviagtion**/
+
+.navtop-1 {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.navtop-1 h1 {
+    text-align: center;
+    font-size: 80px;
+    margin: 0;
+    font-family: 'Mr De Haviland', cursive;
+}
+
+.navtop-1 ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    line-height: 160px;
+}
+
+.navtop-1 button {
+    padding: 0 5px;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+.navtop-1 button:hover {
+   color: #787878;
+}
+
+.navtop-1 p {
+    font-size: 14px;
+    color: #ccc;
+    position: relative;
+    top: -20px;
+}
+
+.navtop-1 form {
+    margin-top: 65px;
+}
+
+.navtop-1 input {
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+.navtop-1 form i {
+    position: relative;
+    left: -20px;
+}
+
+.navtop-2 {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    height: 50px;
+    z-index: 1;
+    border-bottom: 1px solid #eee;
+    line-height: 50px;
+}
+.navtop-2 ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+.navtop-2 button {
+    padding: 0 10px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+}
+/**end of navigation**/
+
+/**carousel**/
+.float-top {
+    display: flex;
+    justify-content: center;
+    background: #f7f7f7;
+    padding: 20px 50px 0 50px;
+}
+
+.float-top img {
+    height: 450px !important;
+    width: 100%
+}
+.carousel {
+    height: 450px;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.item h1 {
+    background: rgba(225,225,225, 0.5);
+    position: relative;
+    top: -220px;
+    height: 200px;
+    color: #333;
+    padding: 20px;
+}
+
+.item p {
+    font-size: 14px;
+    width: 70%;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.item button {
+    font-size: 14px;
+}
+
+.carousel-control.left {
+    background-image: none !important;
+    filter: none !important;
+    height: 30px;
+    top: 170px;
+    left: 0px;
+    width: 30px;
+}
+
+.carousel-control.right {
+    background-image: none !important;
+    filter: none !important;
+    height: 30px;
+    top: 170px;
+    right: 0px;
+    width: 30px;
+}
+
+.glyphicon {
+    color: #fff;
+}
+
+.float-list {
+    height: 100%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    box-shadow: inset 0px -41px 96px -13px rgba(247,247,247,1);
+    padding: 0 10px;
+}
+
+.float-list:hover {
+    box-shadow: none;
+}
+
+.float-list h3 {
+    color: #fff;
+    background: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+.float-list h4 {
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+.float-list p {
+    color: #aaa;
+    padding: 0 10px;
+}
+
+.float-list hr {
+    margin: auto;
+    width: 80%;
+}
+
+.main-episode {
+    height: 150px;
+    background: #1b1f23;
+}
+
+.main-episode col-sm-4 {
+    background: #333333;
+}
+/**float-below**/
+
+.float-below {
+    text-align: center;
+}
+
+.float-below h5,
+.float-below p,
+.float-below h4 {
+    text-align: left;
+}
+
+.below-box {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+.float-below .small-below {
+    height: 150px;
+    width: 175px;
+    margin: 0px 10px;
+    color: #333;
+    padding: 0;
+}
+
+.float-below .small-below:hover {
+    box-shadow:0px 5px 20px 0px rgba(19, 21, 24, 0.4);
+}
+
+.small-below div {
+    height: 100%;
+    background: #333;
+}
+
+.small-below h5 {
+    font-weight: 900;
+}
+
+.small-below p {
+    color: #ccc;
+}
+/**end of float-nelow**/
+
+/**end of carousel**/
+
+
+/**article-listing**/
+.article-listing {
+    padding: 0 80px;
+}
+
+.article-listing .col-sm-9 {
+    padding: 20px 0;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+}
+
+.left-listing img {
+    width: 100%;
+    height:350px;
+}
+
+.left-listing h5 {
+    font-weight:900;
+}
+
+.left-listing h2 {
+    margin-top: 0;
+}
+
+.right-listing {
+    text-align: center;
+}
+
+.right-listing hr {
+    margin-top: 0;
+}
+
+.right-listing img {
+    height: 300px;
+    width: 100%;
+}
+.right-listing p {
+    margin-top: 10px;
+}
+
+.readMore {
+    height: 30px;
+    color: #fff;
+    background: #333;
+    border: none;
+}
+
+.readMore:hover {
+    background: #ccc;
+}
+
+.right-listing h1 {
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 80px;
+}
+
+.ads {
+    font-size: 10px;
+    text-align: left;
+}
+
+.eventcide-advert {
+    background: #24292e;
+    height: 400px;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+}
+
+.eventcide-advert h5 {
+    color: rgba(5, 133, 126, 1);
+ }
+
+.cide-signup  {
+    border-radius: 3px;
+    border: none;
+    background: #05857e !important;
+    text-align: center;
+}
+
+.eventcide-advert button {
+    background: none;
+    border: none;
+}
+
+.eventcide-find i {
+    color: #1b1f23;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+}
+
+.eventcide-advert span {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 0 0 0 10px;
+    font-size: 15px;
+}
+
+.eventcide-advert ul.dropdown-menu {
+    background: #24292e;
+    color: rgba(255, 255, 255, 0.75);
+    left: 110px;
+    top: 0px;
+    text-align: right;
+}
+
+#float-search input {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 85%;
+    padding: 0 5px;
+    background: #1b1f23;
+    box-shadow: 0px 1px #353a43;
+}
+
+#float-search button {
+    background: none;
+    color: rgba(255, 255, 255, 0.2) !important;
+    position: relative;
+    left: -30px;
+}
+/**end of article-listing**/
+
+/**dropdown menu**/
+.dropdown-menu {
+    border-radius: 0;
+}
+/**end of dropdown**/
+
+/**about**/
+.about {
+    text-align: center;
+}
+
+.about h1 {
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 80px;
+}
+.about-img {
+    background: #f7f7f7;
+}
+
+.about img {
+    width: 60%;
+    height: 40%;
+}
+
+.about p {
+    padding: 0 20%;
+}
+
+.about-p {
+    padding: 0 20%;
+    font-size: 10px;
+    color: #ccc;
+    top: -20px;
+    position: relative;
+}
+/**end of about page**/
+
+/**contact**/
+.contact {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+/**end of contact**/
+
+/**footer**/
+.footer-1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px
+}
+
+.footer-1 p {
+    margin: 0px;
+}
+
+.footer-title h1{
+    margin: 0;
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 80px;
+}
+
+.footer-title p {
+    font-size: 10px;
+    color: #ccc;
+    top: -20px;
+    position: relative;
+}
+
+.footer-info p {
+    display: list-item;
+    list-style: none;
+    margin: 0 0 5px;
+}
+
+.footer-media i{
+    display: list-item;
+    list-style: none;
+    margin: 0 0 5px;
+}
+
+.footer-newsletter {
+    display: flex;
+}
+
+.footer-newsletter p {
+    margin: 0 15px 0 0 ;
+}
+
+.footer-newsletter input {
+    height: 40px;
+    padding: 0 5px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+}
+.footer-newsletter button {
+    background: #333;
+    color: #fff;
+    border: none;
+    height: 40px;
+}
+
+.footer-2 {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: #f7f7f7;
+    border-top: 1px solid #ccc;
+}
+
+.footer-2 p {
+    margin: 0;
+}
+/**end of footer**/

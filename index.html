@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="angularApps">
 
 <head>
     <meta charset="UTF-8" >
@@ -8,87 +8,86 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../Mochunks-site/stylesheets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway|Mr+De+Haviland" rel="stylesheet">
 </head>
 
-<body>
+<body ng-controller="mainCtrl as vm">
 
-<nav class="navtop-1">
+<navigation></navigation>
+<!--<nav class="navtop-1">-->
 
-    <ul>
-        <li><a href="https://www.facebook.com/mo.chunkaay" target="_blank" class="fa fa-facebook-square"></a></li>
-        <li><a href="https://www.youtube.com/user/TwigaayAndChunkaay" target="_blank" class="fa fa-youtube-square"></a></li>
-        <li><a href="mailto:ojomowa@yahoo.co.uk" target="_blank" class="fa fa-envelope"></a></li>
-        <li><a href="https://www.instagram.com/mochunks/" target="_blank" class="fa fa-instagram"></a></li>
-        <li><a href="https://twitter.com/mochunks?lang=en" target="_blank" class="fa fa-twitter-square"></a></li>
-    </ul>
+    <!--<ul>-->
+        <!--<li><a href="https://www.facebook.com/mo.chunkaay" target="_blank" class="fa fa-facebook-square"></a></li>-->
+        <!--<li><a href="https://www.youtube.com/user/TwigaayAndChunkaay" target="_blank" class="fa fa-youtube-square"></a></li>-->
+        <!--<li><a href="mailto:ojomowa@yahoo.co.uk" target="_blank" class="fa fa-envelope"></a></li>-->
+        <!--<li><a href="https://www.instagram.com/mochunks/" target="_blank" class="fa fa-instagram"></a></li>-->
+        <!--<li><a href="https://twitter.com/mochunks?lang=en" target="_blank" class="fa fa-twitter-square"></a></li>-->
+    <!--</ul>-->
 
-    <div>
-        <a href="/index.html"><h1>MoChunks</h1><p>Chunks of lifestyle, Fashion, Entertainment and Relationships</p></a>
-    </div>
+    <!--<div>-->
+        <!--<a href="/index.html"><h1>MoChunks</h1><p>Chunks of lifestyle, Fashion, Entertainment and Relationships</p></a>-->
+    <!--</div>-->
 
-    <form method="get">
-        <input type="text" placeholder="Search">
-        <i class="fa fa-search btn" type="submit"></i>
-    </form>
+    <!--<form method="get">-->
+        <!--<input type="text" placeholder="Search">-->
+        <!--<i class="fa fa-search btn" type="submit"></i>-->
+    <!--</form>-->
 
-</nav>
+<!--</nav>-->
 
-<nav class="navtop-2">
-    <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            lifestyle
-            <span class="fa fa-angle-down"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="/#">CCWC</a></li>
-            <li><a href="#">ask chunks</a></li>
-            <li><a href="#">being chunks</a></li>
-        </ul>
-    </div>
+<!--<nav class="navtop-2">-->
+    <!--<div class="dropdown">-->
+        <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+            <!--lifestyle-->
+            <!--<span class="fa fa-angle-down"></span>-->
+        <!--</button>-->
+        <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+            <!--<li><a href="/#">CCWC</a></li>-->
+            <!--<li><a href="#">ask chunks</a></li>-->
+            <!--<li><a href="#">being chunks</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
 
-    <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            fashion
-            <span class="fa fa-angle-down"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <li><a href="#">In style</a></li>
-            <li><a href="#">look books</a></li>
-        </ul>
-    </div>
+    <!--<div class="dropdown">-->
+        <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+            <!--fashion-->
+            <!--<span class="fa fa-angle-down"></span>-->
+        <!--</button>-->
+        <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">-->
+            <!--<li><a href="#">In style</a></li>-->
+            <!--<li><a href="#">look books</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
 
-    <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            entertainment
-            <span class="fa fa-angle-down"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-            <li><a href="#">whats trending</a></li>
-            <li><a href="#">This week in music</a></li>
-        </ul>
-    </div>
+    <!--<div class="dropdown">-->
+        <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+            <!--entertainment-->
+            <!--<span class="fa fa-angle-down"></span>-->
+        <!--</button>-->
+        <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu3">-->
+            <!--<li><a href="#">whats trending</a></li>-->
+            <!--<li><a href="#">This week in music</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
 
-    <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            relationship
-            <span class="fa fa-angle-down"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
-            <li><a href="#">why do we love love?</a></li>
-            <li><a href="#">ask chunks</a></li>
-        </ul>
-    </div>
+    <!--<div class="dropdown">-->
+        <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+            <!--relationship-->
+            <!--<span class="fa fa-angle-down"></span>-->
+        <!--</button>-->
+        <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu4">-->
+            <!--<li><a href="#">why do we love love?</a></li>-->
+            <!--<li><a href="#">ask chunks</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
 
-    <!--Button directs user to the mochunks youtube channel-->
-    <button class="btn btn-default"><a href="https://www.youtube.com/user/TwigaayAndChunkaay" target="_blank">mochunks tv</a></button>
+    <!--&lt;!&ndash;Button directs user to the mochunks youtube channel&ndash;&gt;-->
+    <!--<button class="btn btn-default"><a href="https://www.youtube.com/user/TwigaayAndChunkaay" target="_blank">mochunks tv</a></button>-->
 
-    <!--button directs user to mochunks contacts page-->
-    <button class="btn btn-default"><a href='pages/contactPage/contactPage.view.html'>Contacts</a></button>
+    <!--&lt;!&ndash;button directs user to mochunks contacts page&ndash;&gt;-->
+    <!--<button class="btn btn-default"><a href='pages/contactPage/contactPage.view.html'>Contacts</a></button>-->
 
-</nav>
+<!--</nav>-->
 
 <div class="float-top row">
     <div class="col-sm-8">
@@ -394,5 +393,10 @@
     <p>Copyright © 2017 MoChunks. All right reserved.</p>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../Mochunks-site/app.js" charset="UTF-8"></script>
+<script src="../Mochunks-site/components/navigation/navigation.component.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="UTF-8"></script>
 </body>
 </html>

@@ -1,13 +1,12 @@
-(function () {
+var app = angular.module('mochunksApp');
 
-    angular.module('navigationModule', [])
-        .component('navigation', {
-            templateUrl: '../navigation/navigation.html',
-            controller: function() {
-                this.name = 'hello world'
-            },
+function navigationController() {
+    var vm = this;
+}
 
-        });
+app.component('navigation', {
+    templateUrl: 'components/navigation/navigation.component.html',
+    controller: navigationController,
+    controllerAs: 'vm'
+});
 
-
-})();

@@ -1,6 +1,8 @@
-(function(){
+var app = angular.module("mochunksApp", []);
 
-    angular.module('myApp', [
-        'navigationModule'
-    ])
-})
+// app.config()
+
+
+app.controller("mainCtrl", function() {
+    var vm = this;
+});

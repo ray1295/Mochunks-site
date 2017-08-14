@@ -1,67 +1,61 @@
-var app = angular.module("mochunksApp", []);
-
-app.config($routeProvider, $locationProvider) {
-
-    $routeProvider
-        .when('/', {
-            templateUrl: 'pages/landingPage/landingpage.view.html', //
-            controller: 'landingPageCtrl',
-            controllerAs: 'vm',
-        })
-        .when('/dashboard', {
-            templateUrl: 'pages/articlePage/articlePage.view.html',
-            controller: 'dashboardCtrl',
-            controllerAs: 'vm'
-        })
-        .when('/resultpage', {
-            templateUrl: 'pages/resultPage/resultpage.view.html',
-            controller: 'resultPageSingleURL',
-            controllerAs: 'vm'
-        })
-        .when('/eventpage', {
-            template: '<event-page></event-page>',
-        })
-        .when('/about', {
-            templateUrl: 'pages/aboutPage/about.view.html',
-            controller: 'aboutCtrl',
-            controllerAs: 'vm'
-        })
-        .when('/accountSettings', {
-            templateUrl: 'pages/accountSettings/accountsetting.view.html',
-            controller: 'accountSettingCtrl',
-            controllerAs: 'vm'
-        })
-        .when('/privacyUrl', {
-            templateUrl: 'pages/privacyUrlPage/privacyUrl.view.html'
-        })
-        .when('/alpha', {
-            templateUrl: 'pages/alphaTestPage.view.html'
-        })
-        .when('/admin', {
-            templateUrl: 'pages/adminPage/admin.view.html',
-            controller: 'adminCtrl',
-            controllerAs: 'Admin'
-        })
-        .when('/adminEditEvent', {
-            templateUrl: 'pages/adminViewEventPage/adminViewEventPage.view.html',
-            controller: 'adminViewEventPageCtrl',
-            controllerAs: 'Admin'
-        })
-        .when('/forgotPassword', {
-            template: '<forgot-password></forgot-password>'
-        })
-        .when('/reset-password/:verification_link', {
-            template: '<reset-password></reset-password>'
-        })
-        .otherwise({
-            redirectTo: '/'
-        });
-    $locationProvider.html5Mode({
-        requireBase: false,
-        enabled: true
-    });
-}
-
+var app = angular.module("mochunksApp", ["ngRoute"])
+    .config(function ($routeProvider) {
+        $routeProvider
+            .when('/', {
+                template: '<mochunks-home></mochunks-home>'
+            })
+            .when('/landingPage', {
+                templateUrl: 'pages/landingPage/landingPage.view.html'
+            })
+            .when('/aboutPage', {
+                templateUrl: 'pages/aboutPage/aboutPage.view.html'
+            })
+            .when('/articlePage', {
+                templateUrl: 'pages/articlePage/articlePage.view.html'
+            })
+            .when('/chitChatPage', {
+                templateUrl: 'pages/chitChatPage/chitChatPage.view.html'
+            })
+            .when('/askChunksPage', {
+                templateUrl: 'pages/askChunksPage/askChunksPage.view.html'
+            })
+            .when('/beingChunksPage', {
+                templateUrl: 'pages/beingChunksPage/beingChunksPage.view.html'
+            })
+            .when('/contactPage', {
+                templateUrl: 'pages/contactPage/contactPage.view.html'
+            })
+            .when('/entertainmentPage', {
+                templateUrl: 'pages/entertainmentPage/entertainmentPage.view.html'
+            })
+            .when('/fashionPage', {
+                templateUrl: 'pages/fashionPage/fashionPage.view.html'
+            })
+            .when('/inStylePage', {
+                templateUrl: 'pages/inStylePage/inStylePage.view.html'
+            })
+            .when('/lifestylePage', {
+                templateUrl: 'pages/lifestylePage/lifestylePage.view.html'
+            })
+            .when('/lookBookPage', {
+                templateUrl: 'pages/lookBookPage/lookBookPage.view.html'
+            })
+            .when('/loveLovePage', {
+                templateUrl: 'pages/loveLovePage/loveLovePage.view.html'
+            })
+            .when('/musicPage', {
+                templateUrl: 'pages/musicPage/musicPage.view.html'
+            })
+            .when('/relationshipPage', {
+                templateUrl: 'pages/relationshipPage/relationshipPage.view.html'
+            })
+            .when('/trendingPage', {
+                templateUrl: 'pages/trendingPage/trendingPage.view.html'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
+});
 
 app.controller("mainCtrl", function() {
     var vm = this;

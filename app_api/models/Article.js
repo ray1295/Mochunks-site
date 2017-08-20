@@ -10,11 +10,14 @@ const Article = new keystone.List('Article', {
 
 Article.add({
 	title: {type: String, required: true},
-	description: {type: Types.Html, wysiwyg: true, height: 300},
+	section: {type: String},
+	content: {type: Types.Html, wysiwyg:true, height:500},
+	description: {type: Types.Html, wysiwyg: true, height: 200},
 	image: {type: Types.CloudinaryImage},
-	publishedDate: {type: Date, default: Date.now}
+	youtubeVideoUrl: {type:String}, 
+	publishedDate: {type: Date, default: Date.now},
 });
 
-Article.defaultColumns = 'title, description, publishedDate';
+Article.defaultColumns = 'title, section, description, publishedDate';
 Article.register();
 

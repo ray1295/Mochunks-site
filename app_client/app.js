@@ -1,4 +1,4 @@
-var app = angular.module("mochunksApp", ["ngRoute"])
+var app = angular.module("mochunksApp", ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap'])
 	.config(function ($routeProvider) {
 		$routeProvider
 			.when('/', {

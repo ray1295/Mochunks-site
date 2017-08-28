@@ -1,73 +1,86 @@
 <div class="float-top row">
-    <div class="col-md-8 col-xs-12">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+	<div class="col-md-8 col-xs-12">
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images\philippe-toupet-320689.jpg" alt="Los Angeles">
-                    <div>
-                        <h1>Article title testing 1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut debitis eaque fugiat illo incidunt
-                            laboriosam nam necessitatibus nemo odio optio perferendis quas quibusdam quis, reprehenderit sapiente unde
-                            voluptatem voluptatibus?
-                        </p>
-                        <br>
-                        <button class="readMore">Read More</button>
-                    </div>
-                </div>
+		<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
+			<div uib-slide ng-repeat="article in vm.recommendedArticles" index="$index">
+				<img ng-src="{{article.firstArticleImage.secure.utrk}}" style="margin-top: 5%;">
+				<div>
+					<h1>{{article.title}}</h1>
+					<p>{{article.description}}</p>
+					<br>
+					<a class="readMore" href="/#!/article/view/{{article._id}}">View post</a>
+				</div>
+			</div>
+		</div>
 
-                <div class="item">
-                    <img src="images\alex-harvey-34864.jpg" alt="Chicago">
-                    <div>
-                        <h1>Article title testing 2</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut debitis eaque fugiat illo incidunt
-                            laboriosam nam necessitatibus nemo odio optio perferendis quas quibusdam quis, reprehenderit sapiente unde
-                            voluptatem voluptatibus?
-                        </p>
-                        <br>
-                        <button class="readMore">Read More</button>
-                    </div>
-                </div>
+		<!--<div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+		<!--&lt;!&ndash; Indicators &ndash;&gt;-->
+		<!--<ol class="carousel-indicators">-->
+		<!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+		<!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+		<!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+		<!--</ol>-->
 
-                <div class="item">
-                    <img src="images\blair-fraser-194535.jpg" alt="New york">
-                    <div>
-                        <h1>Article title testing 3</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut debitis eaque fugiat illo incidunt
-                            laboriosam nam necessitatibus nemo odio optio perferendis quas quibusdam quis, reprehenderit sapiente unde
-                            voluptatem voluptatibus?
-                        </p>
-                        <br>
-                        <button class="readMore">Read More</button>
-                    </div>
-                </div>
-            </div>
+		<!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+		<!--<div class="carousel-inner">-->
+		<!--<div class="item active">-->
+		<!--<img src="images\philippe-toupet-320689.jpg" alt="Los Angeles">-->
+		<!--<div>-->
+		<!--<h1>Article title testing 1</h1>-->
+		<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut debitis eaque fugiat illo incidunt-->
+		<!--laboriosam nam necessitatibus nemo odio optio perferendis quas quibusdam quis, reprehenderit sapiente unde-->
+		<!--voluptatem voluptatibus?-->
+		<!--</p>-->
+		<!--<br>-->
+		<!--<button class="readMore">Read More</button>-->
+		<!--</div>-->
+		<!--</div>-->
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
+		<!--<div class="item">-->
+		<!--<img src="images\alex-harvey-34864.jpg" alt="Chicago">-->
+		<!--<div>-->
+		<!--<h1>Article title testing 2</h1>-->
+		<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut debitis eaque fugiat illo incidunt-->
+		<!--laboriosam nam necessitatibus nemo odio optio perferendis quas quibusdam quis, reprehenderit sapiente unde-->
+		<!--voluptatem voluptatibus?-->
+		<!--</p>-->
+		<!--<br>-->
+		<!--<button class="readMore">Read More</button>-->
+		<!--</div>-->
+		<!--</div>-->
 
-        </div>
-    </div>
+		<!--<div class="item">-->
+		<!--<img src="images\blair-fraser-194535.jpg" alt="New york">-->
+		<!--<div>-->
+		<!--<h1>Article title testing 3</h1>-->
+		<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut debitis eaque fugiat illo incidunt-->
+		<!--laboriosam nam necessitatibus nemo odio optio perferendis quas quibusdam quis, reprehenderit sapiente unde-->
+		<!--voluptatem voluptatibus?-->
+		<!--</p>-->
+		<!--<br>-->
+		<!--<button class="readMore">Read More</button>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--</div>-->
 
-    <div class="col-md-4 hidden-xs">
-        <mochunks-webpisodes></mochunks-webpisodes>
-    </div>
+		<!--&lt;!&ndash; Left and right controls &ndash;&gt;-->
+		<!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">-->
+		<!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+		<!--<span class="sr-only">Previous</span>-->
+		<!--</a>-->
+		<!--<a class="right carousel-control" href="#myCarousel" data-slide="next">-->
+		<!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+		<!--<span class="sr-only">Next</span>-->
+		<!--</a>-->
 
-    <br><br>
+		<!--</div>-->
+	</div>
+
+	<div class="col-md-4 hidden-xs">
+		<mochunks-webpisodes></mochunks-webpisodes>
+	</div>
+
+	<br><br>
 
 </div>
 
@@ -78,71 +91,81 @@
 
 <div class="float-below row hidden-xs">
 
-    <br><br><br><br>
+	<br><br><br><br>
 
-    <mochunks-float-below></mochunks-float-below>
+	<mochunks-float-below></mochunks-float-below>
 
-    <br><br><br><br>
+	<br><br><br><br>
 
 </div>
 
 <br><br> <br><br>
 
 <div class="row article-listing">
-    <div class="col-sm-9 col-xs-12">
-        <div class="row">
-            <div class="col-sm-6 left-listing">
-                <img src="images\eli-defaria-14556.jpg" alt="Los Angeles">
-                <h6>Travel</h6>
-                <h2>Article name</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum illo optio perspiciatis quisquam? Deserunt libero, pariatur placeat quo recusandae vel. Culpa ducimus incidunt itaque neque officia officiis omnis, quaerat.</p>
-                <button class="readMore">Read More</button>
-            </div>
+	<div class="col-sm-9 col-xs-12">
+		<div class="row">
+			<div class="col-sm-6 left-listing">
+				<img src="images\eli-defaria-14556.jpg" alt="Los Angeles">
+				<h6>Travel</h6>
+				<h2>Article name</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum illo optio perspiciatis
+					quisquam? Deserunt libero, pariatur placeat quo recusandae vel. Culpa ducimus incidunt itaque neque
+					officia officiis omnis, quaerat.</p>
+				<button class="readMore">Read More</button>
+			</div>
 
-            <div class="col-sm-6 left-listing">
-                <img src="images\eli-defaria-14556.jpg" alt="Los Angeles">
-                <h6>Travel</h6>
-                <h2>Article name</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum illo optio perspiciatis quisquam? Deserunt libero, pariatur placeat quo recusandae vel. Culpa ducimus incidunt itaque neque officia officiis omnis, quaerat.</p>
-                <button class="readMore">Read More</button>
-            </div>
-        </div>
+			<div class="col-sm-6 left-listing">
+				<img src="images\eli-defaria-14556.jpg" alt="Los Angeles">
+				<h6>Travel</h6>
+				<h2>Article name</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum illo optio perspiciatis
+					quisquam? Deserunt libero, pariatur placeat quo recusandae vel. Culpa ducimus incidunt itaque neque
+					officia officiis omnis, quaerat.</p>
+				<button class="readMore">Read More</button>
+			</div>
+		</div>
 
-        <br><br>
+		<br><br>
 
-        <div class="row">
-            <div class="col-sm-6 left-listing">
-                <img src="images\eli-defaria-14556.jpg" alt="Los Angeles">
-                <h6>Travel</h6>
-                <h2>Article name</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum illo optio perspiciatis quisquam? Deserunt libero, pariatur placeat quo recusandae vel. Culpa ducimus incidunt itaque neque officia officiis omnis, quaerat.</p>
-                <button class="readMore">Read More</button>
-            </div>
+		<div class="row">
+			<div class="col-sm-6 left-listing">
+				<img src="images\eli-defaria-14556.jpg" alt="Los Angeles">
+				<h6>Travel</h6>
+				<h2>Article name</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum illo optio perspiciatis
+					quisquam? Deserunt libero, pariatur placeat quo recusandae vel. Culpa ducimus incidunt itaque neque
+					officia officiis omnis, quaerat.</p>
+				<button class="readMore">Read More</button>
+			</div>
 
-            <div class="col-sm-6 left-listing">
-                <img src="images\eli-defaria-14556.jpg" alt="Los Angeles">
-                <h6>Travel</h6>
-                <h2>Article name</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum illo optio perspiciatis quisquam? Deserunt libero, pariatur placeat quo recusandae vel. Culpa ducimus incidunt itaque neque officia officiis omnis, quaerat.</p>
-                <button class="readMore">Read More</button>
-            </div>
-        </div>
+			<div class="col-sm-6 left-listing">
+				<img src="images\eli-defaria-14556.jpg" alt="Los Angeles">
+				<h6>Travel</h6>
+				<h2>Article name</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum illo optio perspiciatis
+					quisquam? Deserunt libero, pariatur placeat quo recusandae vel. Culpa ducimus incidunt itaque neque
+					officia officiis omnis, quaerat.</p>
+				<button class="readMore">Read More</button>
+			</div>
+		</div>
 
-        <br><hr><br>
+		<br>
+		<hr>
+		<br>
 
-        <button class="check-more">Check out more</button>
+		<button class="check-more">Check out more</button>
 
-        <br>
+		<br>
 
-    </div>
+	</div>
 
-    <div class="col-sm-3 hidden-xs right-listing">
+	<div class="col-sm-3 hidden-xs right-listing">
 
-        <p class="ads">Advertisement</p>
+		<p class="ads">Advertisement</p>
 
-        <mochunks-eventcide></mochunks-eventcide>
+		<mochunks-eventcide></mochunks-eventcide>
 
-    </div>
+	</div>
 
 </div>
 

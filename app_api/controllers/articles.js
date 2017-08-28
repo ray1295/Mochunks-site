@@ -15,3 +15,15 @@ module.exports.getAllArticlesSection = (req, res) => {
 		return res.sendStatus(400)
 	});
 };
+
+// Get single articles by ID
+module.exports.getSingleArticleByID = (req, res) => {
+	let articleID = req.params.articleID;
+	keystone.list('Article').model.findById(articleID).then((article) => {
+		return res.json(article).status(200);
+	}, (err) => {
+		// TODO: Log errors
+		return res.sendStatus(500)
+	});
+};
+

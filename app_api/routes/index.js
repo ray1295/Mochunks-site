@@ -5,5 +5,6 @@ const ArticlesCtrl = require('../controllers/articles');
 
 router.get('/articles', ArticlesCtrl.getAllArticles);
 router.get('/articles/:section', ArticlesCtrl.getAllArticlesSection);
+router.get('/articles/:articleID', ArticlesCtrl.getSingleArticleByID);
 
 module.exports = router;

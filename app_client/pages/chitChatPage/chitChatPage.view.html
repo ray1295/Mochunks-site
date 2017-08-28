@@ -1,16 +1,15 @@
 <br><br>
 
-<div>
-
-	<div class="col-sm-9 col-md-9 col-lg-9">
+	<div class="artiview col-sm-9 ">
 		<!-- Repeat articles-->
-		<div ng-repeat="article in vm.articles" ng-click="vm.showCompleteArticle()">
+		<div ng-repeat="article in vm.articles">
 			<!-- Image-->
 			<img src={{article.image.secure_url}}>
 			<!-- Title-->
 			<h2>{{article.title}}</h2>
 			<!-- Quick description-->
 			<p>{{article.description}}</p>
+			<a href="/#!/article/view/{{article._id}}">View post</a>
 		</div>
 	</div>
 
@@ -21,7 +20,3 @@
 		<mochunks-eventcide></mochunks-eventcide>
 
 	</div>
-
-</div>
-
-<hr>

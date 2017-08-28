@@ -12,11 +12,11 @@ module.exports.getAllArticlesSection = (req, res) => {
 	let section = req.params.section;
 	keystone.list('Article').model.find({section: section}).then(articles => {
 		if (articles.length > 0) res.json(articles).status(200);
-		return res.sendStatus(400)
+		return res.sendStatus(400);
 	});
 };
 
-// Get single articles by ID
+// Get single article by ID
 module.exports.getSingleArticleByID = (req, res) => {
 	let articleID = req.params.articleID;
 	keystone.list('Article').model.findById(articleID).then((article) => {

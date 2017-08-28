@@ -141,8 +141,15 @@ button:hover {
 }
 .which-btn {
     border-top: 1px solid #333 !important;
+	border-bottom:  1px solid #333 !important;
     background: #f5f5f5 !important;
     border-radius: 0;
+	color: #333 !important;
+}
+.navtop-2-sm {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 /**end of navigation**/
 
@@ -151,7 +158,6 @@ button:hover {
     display: flex;
     justify-content: center;
     background: #f7f7f7;
-    padding: 40px 70px 0 70px;
 }
 
 .float-top img {
@@ -177,7 +183,7 @@ button:hover {
     bottom: 175px;
     left: 18%;
     z-index: 15;
-    width: 100%;
+    width: 50px;
     padding-left: 0;
     margin-left: 0;
     text-align: -webkit-center;
@@ -197,11 +203,9 @@ button:hover {
     background: rgba(225,225,225, 0.4);
     position: relative;
     top: -240px;
-    left: 20px;
     height: 220px;
     color: #333;
     padding: 20px;
-    width: 70%;
 }
 
 .item h1 {
@@ -381,9 +385,6 @@ visibility: hidden;
 
 
 /**article-listing**/
-.article-listing {
-    padding: 0 80px;
-}
 
 .article-listing .col-sm-9 {
     padding: 20px 0;
@@ -528,6 +529,29 @@ visibility: hidden;
 }
 /**end of content page**/
 
+/**artiview**/
+.artiview img {
+	width: 50vw;
+	height: 300px;	
+}
+
+.artiview h2 {
+	width: 50vw;
+}
+
+.artiview p {
+	width: 50vw;
+}
+
+/**end of artiview**/
+
+
+/**apvh-page**/
+.apvh-page l-page {
+	background: #f4f4f4;
+}
+/**end of apvh-page**/
+
 /**contact**/
 .contact {
     margin: auto 5px;
@@ -665,7 +689,7 @@ form textarea{
 
 .footer-2 {
     text-align: center;
-    height: 30px;
+    height: inherit;
     line-height: 30px;
     background: #f7f7f7;
     border-top: 1px solid #ccc;
@@ -675,3 +699,41 @@ form textarea{
     margin: 0;
 }
 /**end of footer**/
+
+@media screen and (min-width: 320px) {
+	.col-xs-12 {
+		padding: 0;
+	}
+	/**article-listing**/
+	.article-listing {
+		padding: 0px;
+	}
+	.navtop-1 p {
+		text-align: center;
+	}
+	.navtop-1 h1 {
+		font-size: 70px;
+	}
+	.float-top {
+		padding: 0;
+	}
+	.item div {
+		left: 0;
+		width: 100%
+	}
+	
+}
+
+@media screen and (min-width: 1024px) {
+	/**article-listing**/
+	.article-listing {
+		padding: 0px 80px;
+	}
+	.float-top {
+		padding: 40px 70px 0 70px;
+	}
+	.item div {
+		left: 20px;
+		width:70%;
+	}
+}

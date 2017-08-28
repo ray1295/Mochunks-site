@@ -1,15 +1,27 @@
-<br><br>
-
 <div class="artiview col-sm-9 ">
 	<!-- Repeat articles-->
 	<div ng-repeat="article in vm.articles">
-		<!-- Image-->
-		<img src={{article.image.secure_url}}>
 		<!-- Title-->
 		<h2>{{article.title}}</h2>
+		<!--date of post-->
+		<p>{{article.publishedDate}}</p>
+		<!-- Image-->
+		<div class="might-l col-sm-9">
+			<a href="/#!/article/view/{{article._id}}">
+			<img src={{article.firstArticleImage.secure_url}}>
+			</a>
+		</div>
+		<div class="might-l col-sm-3">
+			<a href="/#!/article/view/{{article._id}}">
+			<img class="avid-xs" src={{article.secondArticleImage.secure_url}}>
+			<img class="avid-xs" src={{article.thirdArticleImage.secure_url}}>
+			</a>
+		</div>
 		<!-- Quick description-->
 		<p>{{article.description}}</p>
-		<a href="/#!/article/view/{{article._id}}">View post</a>
+		<!--Button to view full article-->
+		<button><a href="/#!/article/view/{{article._id}}">View post</a></button>
+		<hr>
 	</div>
 </div>
 

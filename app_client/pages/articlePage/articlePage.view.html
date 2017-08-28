@@ -1,25 +1,43 @@
 <div class="apvh-page">
 	
-	<div class="r-page col-sm-8">
+	<h1>{{vm.article.title}}</h1>
 
-		<img class="apvh-blur-back" src={{vm.article.image.secure_url}}>
+	<div class="r-page col-sm-8">
 		
-		<h1>{{vm.article.title}}</h1>
+		<img src={{vm.article.firstArticleImage.secure_url}}>
+		<!--<img src={{vm.article.secondArticleImage.secure_url}}>-->
+		<!--<img src={{vm.article.thirdArticleImage.secure_url}}>-->
 		
-		<img src={{vm.article.image.secure_url}}>
-		
-		<b>{{vm.article.description}}</b>
+		<h5>{{vm.article.description}}</h5>
 		
 		<p>{{vm.article.content}}</p>
 		
 	</div>
 	
 	<div class="l-page col-sm-4">
-		
+		<br><br>
+		<mochunks-webpisodes></mochunks-webpisodes>
+
+		<div class="hidden-xs right-listing">
+			
+			<p class="ads">Advertisement</p>
+
+			<mochunks-eventcide></mochunks-eventcide>
+			
+			<br><br><br>
+
+		</div>
+	</div>
+
+
+	<div class="float-below row hidden-xs">
+
+		<br><br><br><br>
+
+		<mochunks-float-below></mochunks-float-below>
+
+		<br><br><br><br>
+
 	</div>
 	
 </div>
-
-<mochunks-footer></mochunks-footer>
-
-

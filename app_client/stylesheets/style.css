@@ -6,6 +6,11 @@ html {
     font-weight: 400;
 }
 
+main {
+	display: flex;
+	padding: 30px 60px;
+}
+
 button,
 i,
 input,
@@ -143,7 +148,7 @@ button:hover {
 .which-btn {
     border-top: 1px solid #333 !important;
 	border-bottom:  1px solid #333 !important;
-    background: #f5f5f5 !important;
+    background: #fff !important;
     border-radius: 0;
 	color: #333 !important;
 }
@@ -436,10 +441,11 @@ visibility: hidden;
 .eventcide-advert {
     background: #24292e;
     height: 400px;
-    width: 100%;
+    width: 20vw;
     text-align: left;
     color: #fff;
     padding: 20px;
+	margin: auto;
 }
 
 .eventcide-advert h5 {
@@ -538,10 +544,23 @@ visibility: hidden;
 
 .artiview h2 {
 	width: 50vw;
+	margin-top: 0;
+
 }
 
 .artiview p {
 	width: 50vw;
+	margin: 10px 0;
+}
+
+.might-l {
+	padding: 0;
+}
+
+.avid-xs {
+	width: 220px !important;
+	height: 155px !important;
+	padding: 0 0px 10px 20px;
 }
 
 /**end of artiview**/
@@ -551,6 +570,38 @@ visibility: hidden;
 .apvh-page l-page {
 	background: #f4f4f4;
 } 
+
+.apvh-page .float-below {
+	background: none;
+}
+
+.apvh-page .below-box {
+	justify-content: space-evenly;
+}
+
+.apvh-page h1 {
+	padding: 0 20px;
+}
+.r-page {
+	padding: 0 20px 100px;
+}
+
+.r-page h1 {
+	margin-top: 0;
+}
+
+.r-page p {
+	margin: 10px 0;
+}
+
+.r-page img {
+	width: 100%;
+	height: 450px;
+}
+
+.l-page {
+	background: #333
+}
 /**end of apvh-page**/
 
 /**contact**/

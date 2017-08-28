@@ -1,16 +1,15 @@
 var app = angular.module('mochunksApp');
 
-app.controller('ChitChatController', function(ArticlesService){
+app.controller('ChitChatController', function (ArticlesService) {
 	var vm = this;
-	
-	ArticlesService.getArticlesBySection('chitchat').then(function(response){
+
+	ArticlesService.getArticlesBySection('chitchat').then(function (response) {
 		vm.articles = response.data;
-	}).catch(function(err){
+	}).catch(function (err) {
 		alert("Could not load articles");
-		console.log("Could not load articles");
 	});
-	vm.fullArticle = function() {
-		
+	vm.fullArticle = function () {
+
 	};
 });
 

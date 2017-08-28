@@ -1,18 +1,16 @@
-<navigation></navigation>
-
 <div class="apvh-page">
 	
 	<div class="r-page col-sm-8">
 
-		<img class="apvh-blur-back" src={{article.image.secure_url}}>
+		<img class="apvh-blur-back" src={{vm.article.image.secure_url}}>
 		
-		<h1>{{article.title}}</h1>
+		<h1>{{vm.article.title}}</h1>
 		
-		<img src={{article.image.secure_url}}>
+		<img src={{vm.article.image.secure_url}}>
 		
-		<b>{{article.description}}</b>
+		<b>{{vm.article.description}}</b>
 		
-		<p>Content</p>
+		<p>{{vm.article.content}}</p>
 		
 	</div>
 	

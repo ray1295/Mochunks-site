@@ -1,23 +1,22 @@
 <br><br>
 
-	<div class="artiview col-sm-9 ">
-		<!-- Repeat articles-->
-		<div ng-repeat="article in vm.articles">
-			<!-- Image-->
-			<img src={{article.image.secure_url}}>
-			<!-- Title-->
-			<h2>{{article.title}}</h2>
-			<!-- Quick description-->
-			<p>{{article.description}}</p>
-		</div>
-		<button><a href="pages/articlePage/articlePage.view.html">View article</a></button>
-		<!--<button ng-click="fullArticle">View post</button>-->
+<div class="artiview col-sm-9 ">
+	<!-- Repeat articles-->
+	<div ng-repeat="article in vm.articles">
+		<!-- Image-->
+		<img src={{article.image.secure_url}}>
+		<!-- Title-->
+		<h2>{{article.title}}</h2>
+		<!-- Quick description-->
+		<p>{{article.description}}</p>
+		<a href="/#!/article/view/{{article._id}}">View post</a>
 	</div>
+</div>
 
-	<div class="col-sm-3 right-listing">
+<div class="col-sm-3 right-listing">
 
-		<p class="ads">Advertisement</p>
+	<p class="ads">Advertisement</p>
 
-		<mochunks-eventcide></mochunks-eventcide>
+	<mochunks-eventcide></mochunks-eventcide>
 
-	</div>
+</div>

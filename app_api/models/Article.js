@@ -14,6 +14,7 @@ Article.add({
 	content: {type: Types.Html, wysiwyg:true, height:500},
 	description: {type: Types.Html, wysiwyg: true, height: 200},
 	image: {type: Types.CloudinaryImage},
+	recommended: {type: Boolean, default: false},
 	youtubeVideoUrl: {type:String}, 
 	publishedDate: {type: Date, default: Date.now},
 });

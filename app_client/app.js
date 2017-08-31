@@ -1,4 +1,4 @@
-var app = angular.module("mochunksApp", ["ngRoute"], )
+var app = angular.module("mochunksApp", ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap'])
 	.config(function ($routeProvider) {
 		$routeProvider
 			.when('/', {
@@ -8,7 +8,7 @@ var app = angular.module("mochunksApp", ["ngRoute"], )
 				templateUrl: 'pages/landingPage/landingPage.view.html'
 			})
 			.when('/aboutPage', {
-				templateUrl: 'pages/aboutPage/aboutPage.view.html'
+				templateUrl: 'pages/aboutPage/about.view.html'
 			})
 			.when('/articlePage', {
 				templateUrl: 'pages/articlePage/articlePage.view.html'
@@ -53,6 +53,12 @@ var app = angular.module("mochunksApp", ["ngRoute"], )
 			})
 			.when('/trendingPage', {
 				templateUrl: 'pages/trendingPage/trendingPage.view.html'
+			})
+			.when('/lookImage', {
+				templateUrl: 'pages/lookImage/lookImage.view.html'
+			})
+			.when('/lookVideo', {
+				templateUrl: 'pages/lookVideo/lookVideo.view.html'
 			})
 			.when('/article/view/:articleID', {
 				templateUrl: 'pages/articlePage/articlePage.view.html',

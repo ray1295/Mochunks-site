@@ -1,10 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="tc-page">
 
-</body>
-</html>
+<p><span class="title-direct">Entertainment</span> <i class="fa fa-long-arrow-right"></i> What's Trending?</p>
+<br><br>
+
+	<!-- Repeat articles-->
+	<div ng-repeat="article in vm.articles">
+		<!-- Title-->
+		<h2>{{article.title}}</h2>
+		<!--date of post-->
+		<p>{{article.publishedDate}}</p>
+		<!-- Image-->
+		<div class="might-l col-sm-9">
+			<a href="/#!/article/view/{{article._id}}">
+				<img src={{article.firstArticleImage.secure_url}}>
+			</a>
+		</div>
+		<div class="might-l col-sm-3">
+			<a href="/#!/article/view/{{article._id}}">
+				<img class="avid-xs" src={{article.secondArticleImage.secure_url}}>
+				<img class="avid-xs" src={{article.thirdArticleImage.secure_url}}>
+			</a>
+		</div>
+		<!-- Quick description-->
+		<p>{{article.description}}</p>
+		<!--Button to view full article-->
+		<button><a href="/#!/article/view/{{article._id}}">View post</a></button>
+
+		<hr>
+		<br>
+	</div>
+
+<div class=" row left-listing">
+
+	<mochunks-articles></mochunks-articles>
+	
+</div>
+
+<br>
+
+<button class="check-more">Check out more</button>
+
+<div class="float-below row hidden-xs">
+
+	<br><br>
+
+	<mochunks-float-below></mochunks-float-below>
+
+	<br><br>
+
+</div>
+	
+</div>	

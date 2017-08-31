@@ -11,6 +11,7 @@ const Gallery = new keystone.List('Gallery', {
 Gallery.add({
 	title: {type: String, required: true},
 	section: {type: Types.Select, options: 'instyle,', emptyOption: false},
+	recommended: {type: Boolean, default: false, note : "Recommended gallery are shown in the top of a gallery page"},
 	caption: {type: Types.Textarea, wysiwyg: true, height: 200},
 	content: {type: Types.Markdown, wysiwyg: false, height: 500},
 	firstGalleryImage: {type: Types.CloudinaryImage, note: "This is shown as the cover for this gallery"},

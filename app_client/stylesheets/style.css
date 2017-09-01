@@ -515,6 +515,23 @@ button {
 }
 /**ab-content**/
 
+/**go top**/
+
+/**go top**/
+#go-top {
+	color: #fff;
+	background: #333;
+	padding: 15px;
+	position: fixed;
+	bottom: 40px;
+	left: 10px;
+	border-radius: 3px;
+	transition: all 0.3s;
+}
+
+#go-top:hover {
+	transform: scale(1.1);
+}
 /**float-below**/
 
 .float-below {
@@ -838,7 +855,7 @@ form textarea{
 .footer-1 {
     display: flex;
     justify-content: space-around;
-    padding: 20px 40px
+    padding: 20px 0
 }
 
 .footer-1 p {

@@ -34,7 +34,8 @@ var app = angular.module("mochunksApp", ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				templateUrl: 'pages/fashionPage/fashionPage.view.html'
 			})
 			.when('/inStylePage', {
-				templateUrl: 'pages/inStylePage/inStylePage.view.html'
+				templateUrl: 'pages/inStylePage/inStylePage.view.html',
+				controller: 'InStyleController',
 			})
 			.when('/lifestylePage', {
 				templateUrl: 'pages/lifestylePage/lifestylePage.view.html'

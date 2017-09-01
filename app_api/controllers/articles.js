@@ -1,14 +1,22 @@
 const keystone = require('keystone');
 
-// Get all articles stored in the records
+// Get all articles stored in the records (pagination implemented)
 module.exports.getAllArticles = (req, res) => {
-	keystone.list('Article').model.find().then((articles => {
-		return res.json(articles).status(200);
-	}));
+	keystone.list('Article').paginate({
+		page: req.params.page || 1,
+		perPage: 6,
+		// maxPages: 6
+	}).sort('-publishedDate').exec((err, results) => {
+		if (err) {
+			// TODO: Log errors
+			return res.sendStatus(500);
+		}
+		return res.json(results).status(200);
+	});
 };
 
 // Get all articles by section
-module.exports.getAllArticlesSection = (req, res) => {
+module.exports.getAllArticlesForSection = (req, res) => {
 	let section = req.params.section;
 	keystone.list('Article').model.find({section: section}).sort('-publishedDate').then(articles => {
 		if (articles.length > 0) res.json(articles).status(200);
@@ -30,6 +38,16 @@ module.exports.getSingleArticleByID = (req, res) => {
 // Get recommended articles
 module.exports.getRecommendedArticles = (req, res) => {
 	keystone.list('Article').model.find().where('recommended', true).sort('-publishedDate').then((articles) => {
+		return res.json(articles).status(200);
+	}, (err) => {
+		// TODO: Log errors
+		return res.sendStatus(500)
+	});
+};
+
+// Get the latest article within a section
+module.exports.getLatestArticleForSection = (req, res) => {
+	keystone.list('Article').model.findOne().where({section: req.params.section}).sort('-publishedDate').then((articles) => {
 		return res.json(articles).status(200);
 	}, (err) => {
 		// TODO: Log errors

@@ -1,23 +1,29 @@
-<div class="col-sm-3">
-	
-	<h5>By Author of Article</h5>
-	
-	<h6>Date of post</h6>
-	
+<div ng-repeat="article in vm.listedArticles">
+
+	<div class="col-sm-3">
+
+		<!-- TODO: We do not store the author of the article-->
+		<!--<h5>By Author of Article</h5>-->
+
+		<h6>{{article.publishedDate}}</h6>
+
+	</div>
+
+	<div class="col-sm-6">
+
+		<h2>{{article.title}}</h2>
+
+		<p>{{article.description}}</p>
+
+	</div>
+
+	<div class="col-sm-3">
+
+		<img src="{{article.image.secure_url}}" alt="{{article.title}}">
+
+	</div>
 </div>
 
-<div class="col-sm-6">
-	
-	<h2>Article name</h2>
-	
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum illo optio perspiciatis
-		quisquam? Deserunt libero, pariatur placeat quo recusandae vel. Culpa ducimus incidunt itaque neque
-		officia officiis omnis, quaerat.</p>
-	
-</div>
+<!-- Only show more articles if next page object evaluates to true-->
+<button ng-if="vm.page" class="check-more">Check out more</button>
 
-<div class="col-sm-3">
-	
-	<img src="images\andrew-neel-103247.jpg" alt="Los Angeles">
-	
-</div>

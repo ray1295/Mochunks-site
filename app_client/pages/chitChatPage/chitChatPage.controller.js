@@ -8,9 +8,7 @@ app.controller('ChitChatController', function (ArticlesService) {
 	}).catch(function (err) {
 		alert("Could not load articles");
 	});
-	vm.fullArticle = function () {
-
-	};
+	
 });
 
 

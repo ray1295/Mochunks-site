@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42af4629-683e-43c5-9723-14b0ae9f5e59" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/app.js" afterPath="$PROJECT_DIR$/app_client/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/index.html" afterPath="$PROJECT_DIR$/app_client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/stylesheets/style.css" afterPath="$PROJECT_DIR$/app_client/stylesheets/style.css" />
-    </list>
+    <list default="true" id="42af4629-683e-43c5-9723-14b0ae9f5e59" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,7 +22,7 @@
             <entry file="file://$PROJECT_DIR$/app_client/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="333">
-                  <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+                  <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -46,9 +41,11 @@
           <file leaf-file-name="chitChatPage.controller.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="255">
+                  <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                  <folding>
+                    <marker date="1504299214854" expanded="true" signature="106:304" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -183,8 +180,8 @@
         <option value="$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.controller.js" />
         <option value="$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.view.html" />
         <option value="$PROJECT_DIR$/app_client/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/app_client/index.html" />
         <option value="$PROJECT_DIR$/app_client/app.js" />
+        <option value="$PROJECT_DIR$/app_client/index.html" />
       </list>
     </option>
   </component>
@@ -355,12 +352,12 @@
       <workItem from="1503249625083" duration="3389000" />
       <workItem from="1503532801072" duration="1538000" />
       <workItem from="1503928957092" duration="6075000" />
-      <workItem from="1504171744867" duration="26807000" />
+      <workItem from="1504171744867" duration="26956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127546000" />
+    <option name="totallyTimeSpent" value="127695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -644,8 +641,7 @@
           <folding>
             <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#3;n#!!top" expanded="false" />
-            <marker date="1504191728623" expanded="true" signature="1236:1241" ph="..." />
+            <marker date="1504299214822" expanded="true" signature="1281:1286" ph="..." />
           </folding>
         </state>
       </provider>
@@ -684,9 +680,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1504299214854" expanded="true" signature="106:304" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -754,8 +752,10 @@
     <entry file="file://$PROJECT_DIR$/app_client/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding />
+          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding>
+            <marker date="1504299215043" expanded="true" signature="2283:2525" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

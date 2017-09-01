@@ -1,8 +1,8 @@
 var app = angular.module('mochunksApp');
 
 app.service('ArticlesService', function ($http) {
-	var getAllArticles = function () {
-		return $http.get('/articles');
+	var getAllArticles = function (page) {
+		return $http.get('/articles/' + page);
 	};
 
 	var getArticlesBySection = function (section) {
@@ -16,12 +16,17 @@ app.service('ArticlesService', function ($http) {
 	var getRecommendedArticles = function() {
 		return $http.get('articles/view/recommended');
 	};
+	
+	var getLatestArticleForSection = function(section) {
+		return $http.get('/article/view/latest/' + section);
+	};
 
 	return {
 		getAllArticles: getAllArticles,
 		getArticlesBySection: getArticlesBySection,
 		getSingleArticleByID: getSingleArticleByID,
-		getRecommendedArticles: getRecommendedArticles
+		getRecommendedArticles: getRecommendedArticles,
+		getLatestArticleForSection: getLatestArticleForSection
 	}
 });
 

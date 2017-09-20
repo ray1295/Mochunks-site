@@ -3,11 +3,10 @@ html {
     margin: auto;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    font-weight: bold;
 }
 
 main {
-	padding: 60px;
+	padding: 2vw;
 	display: block;
 }
 
@@ -27,6 +26,10 @@ p {
     outline: none !important;
 }
 
+.btn-pad {
+	
+}
+
 .fa {
 	font-weight: 900;
     padding: 0;
@@ -40,6 +43,7 @@ p {
 
 .btn-default {
 	transition: all 0.3s;
+	text-transform: capitalize;
 }
 
 .btn-default:hover,
@@ -90,25 +94,17 @@ button {
 /**naviagtion**/
 
 .navtop-1 {
-    display: flex;
-    justify-content: space-around;
-    height: 130px;
-    margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	height: 10vw;
+	align-items: center;
 }
 
 .navtop-1 h1 {
     text-align: center;
-    font-size: 80px;
     margin: 0;
 	font-family: 'Lobster', cursive;
-    top: 10px;
     position: relative;
-}
-
-.navtop-1 p {
-    font-size: 14px;
-    position: relative;
-	font-weight: bold;
 }
 
 .navtop-1 form {
@@ -130,9 +126,9 @@ button {
 	justify-content: center;
 	position: sticky;
 	background-color: #333;
-	top: 0;
+	top: -1px;
 	height: 50px;
-	z-index: 2;
+	z-index: 100;
 	border: 1px solid #333;
 }
 
@@ -214,7 +210,7 @@ button {
 	display: inline-flex;
 	list-style: none;
 	position: relative;
-	right: 60px;
+	right: 4vw;
 	float: right;
 	margin: auto;
 	height: inherit;
@@ -272,11 +268,44 @@ button {
 	height: 100%;
 	font-weight: bold;
 }
-.navtop-2-sm {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+
+mochunks-menu-x-s {
+	display: none;
+	background: rgba(51,51,51,0.5);
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
 }
+
+.toggle-menu i {
+	color: #fff;
+	text-align: right;
+}
+
+.toggle-menu {
+	background: rgb(51,51,51);
+	position: absolute;
+	height: 100vh;
+	padding: 15vw 5vw;
+}
+
+.toggle-menu .btn-default:hover, .btn-default:active, .btn-default:focus {
+	height: 30px;
+}
+
+.toggle-menu .btn-default {
+	background: none;
+	border: none;
+	color: #fff;
+}
+
+.toggle-menu .dropdown-menu {
+	top: 0;
+	left: 70px;
+}
+
 /**end of navigation**/
 
 /**wrapper**/
@@ -327,6 +356,16 @@ button {
 /*}*/
 /**end of look-book**/
 
+
+/**line black**/
+
+.line-black{
+	border: 1px solid #ddd;
+	display: inline-flex;
+	margin: 35px 15px;
+	width: -webkit-fill-available;
+}
+
 /**carousel**/
 .float-top {
     display: flex;
@@ -336,7 +375,6 @@ button {
 }
 
 .float-top img {
-    height: 450px !important;
     width: 100%;
 	left: 0;
 	position: absolute;
@@ -347,16 +385,30 @@ button {
     font-weight: 900;
 }
 
+/*.float-top img:hover + .arti-carousel-title {*/
+	/*display: none;*/
+/*}*/
+
 .arti-carousel-title {
 	text-align: left;
-	float: left;
-	top: 320px;
+	float: right;
 	position: relative;
-	width: 65%;
+	height: 450px;
+	width: 45%;
+	transition: all 0.3s;
+	background-color: rgba(51,51,51,0.8);
 }
 
 .arti-carousel-title h3 {
 	margin: 10px 0 10px 10px;
+}
+
+.arti-carousel-title p {
+	font-weight: 400;
+	background: rgba(51,51,51,0.9);
+	border: 2px solid;
+	padding: 10px;
+	margin: 10px;
 }
 
 .carousel {
@@ -368,17 +420,17 @@ button {
     height: 100%;
 }
 
-.carousel-control.left {
+.carousel-control.left, .carousel-control.right {
 	display: none;
 }
 
-.carousel-control {
-	background-image: none !important;
-	color: #fff !important;
+.carousel-indicators li {
+	background-color: #fff;
 }
 
-.carousel-indicators {
-	z-index: 0;
+.carousel-indicators .active {
+	background-color: transparent;
+	border: 2px solid #fff;
 }
 
 .float-top-right {
@@ -453,7 +505,7 @@ button {
 }
 
 .check-more {
-    width: 95%;
+    width: 100%;
     margin: auto;
     color: #fff;
     height: 50px;
@@ -467,7 +519,7 @@ button {
 	background: #333;
 	color: #fff;
 	padding: 10px 30px 30px;
-	margin: 0 15px;
+	margin: 0 25px;
 }
 
 .ask-us button{
@@ -488,29 +540,26 @@ button {
 /**ab-content**/
 
 .ab-content {
-	background: rgb(51,51,51);
 	color: #fff;
-	padding: 60px;
-	min-height: 270px;
-	margin-top: 140px;
+	display: inline-flex;
+	justify-content: center;
 }
 
 .ab-content img {
-	position: absolute;
+	height: 50vw;
 	width: 45vw;
-	top: 300px;
 	transition: all 0.3s;
 }
 
 .ab-content img:hover {
 	transform: scale(1.05);
-	
 }
 
 .ab-content p {
-	font-size: 20px;
-	width: 40%;
-	float: right;
+	background: rgb(51,51,51);
+	padding: 5vw;
+	height: fit-content;
+	font-size: 14px;  
 	margin: 0;
 }
 /**ab-content**/
@@ -535,16 +584,17 @@ button {
 /**float-below**/
 
 .float-below {
-    text-align: center;
-    background: #fff;
+    background: #fff;  
+	text-align: left;
 }
 
-.float-below h5,
-.float-below p,
 .float-below h4 {
-    text-align: left;
-	margin: 5px 0;
+	cursor: pointer;
 	font-weight: bold;
+}
+
+.float-below h4:hover {
+	text-decoration: underline;
 }
 
 .below-box {
@@ -579,17 +629,16 @@ button {
     padding: 0;
 }
 
-.float-below .small-below:hover {
-    box-shadow:0 5px 20px 0 rgba(19, 21, 24, 0.4);
-}
-
-.small-below div {
-    height: 100%;
+.small-below img {
+    height: 9vw;
+	width: 15vw;
     background: #333;
 }
 
 .small-below h5 {
 	float: right;
+	line-height: inherit;
+	color: #ccc;
 }
 
 .small-below p {
@@ -602,34 +651,31 @@ button {
 
 /**article-listing**/
 
-.article-listing .col-sm-9 {
-    padding: 0 0 20px 0;
-    border: 1px solid #eee;
-	background: #fff;
+.article-listing h3{
+	color: #fff;
+	background: #333;
+	margin: 0;
+	padding: 10px;
 }
 
 .left-listing {
     margin: 10px 0;
-	background: #fff;
-	border: 1px solid #eee;
 	padding: 20px;
 }
 
-.left-listing img {
-    width: 100% !important;
-    height:150px !important;
+
+
+.left-listing p {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .left-listing h2 {
-	margin: 0;
-	background: #333;
-	color: #fff;
-	padding: 10px;
-	width: inherit !important;
-}
-
-.left-listing p {
-	width: fit-content !important;
+	color: #333;
+	font-weight: bold;
 }
 
 .right-listing {
@@ -726,7 +772,12 @@ button {
 /**dropdown menu**/
 .dropdown-menu {
     border-radius: 0;
-	text-align: center;
+	text-align: left;
+	min-width: inherit;
+}
+
+.dropdown-menu>li>a {
+	padding: 3px 10px 0 10px;
 }
 
 .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
@@ -762,7 +813,7 @@ button {
 
 .artiview h2 {
 	width: 50vw;
-	margin-top: 0;
+	margin: -10px 0;
 	font-weight: bold;
 }
 
@@ -787,7 +838,8 @@ button {
 .avid-xs {
 	width: 220px !important;
 	height: 155px !important;
-	padding: 0 0px 10px 20px;
+	padding: 0 0 10px 0;
+	margin: 0 0 0 -25px;
 }
 
 /**end of artiview**/
@@ -807,7 +859,8 @@ button {
 }
 
 .apvh-page h1 {
-	padding: 0 0px 20px 20px;
+	font-weight: bold;
+	margin-top: 0;
 }
 .r-page {
 	padding: 0 20px 100px;
@@ -825,29 +878,35 @@ button {
 	width: 100%;
 	height: 450px;
 }
-
-.l-page {
-	background: #333
-}
 /**end of apvh-page**/
 
 /**contact**/
 .contact {
     margin: auto 5px;
-    width: 90%;
-}
-
-form p {
-    margin: 0;
+    width: 100%;
 }
 
 form input,
 form textarea{
-    margin-bottom: 10px;
-    width: 100%;
+	margin-bottom: 10px;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid;
+	padding: 5px;
 }
 
+.contact>form>div {
+	display: flex;
+	justify-content: space-around;
+}
 
+.contact>form>div>input {
+	margin: 0 5px 10px 0;
+}
+
+.contact>form>textarea {
+	min-height: 100px;
+}
 /**end of contact**/
 
 
@@ -926,14 +985,79 @@ form textarea{
 	.col-xs-12 {
 		padding: 0;
 	}
-	/**article-listing**/
+	/**Navigation**/
+	.navtop-1 {
+		height: 30vw;
+	}
 	.navtop-1 p {
 		text-align: center;
+		margin: 0;
 	}
 	.navtop-1 h1 {
-		font-size: 70px;
+		font-size: 10vw;
 	}
-	
+	/**floating-top**/
+	.float-top {
+		height: 60vw;
+	}
+	.float-top img {
+		height: 60vw;
+	}
+	.carousel {
+		height: 60vw;
+	}
+	.arti-carousel-title {
+		height: 60vw;
+	}
+	/**float list**/
+	.float-list {
+		padding: 0 1.5vw;
+	}
+	/**Article Listing**/
+	.left-listing img {
+		width: 100%;
+		height: inherit;
+	}
+}
+
+
+@media screen and (min-width: 425px) {
+	.navtop-1 {
+		height: 25vw;
+	}
+	.navtop-1 h1 {
+		font-size: 8vw;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.navtop-1 {
+		height: 10vw;
+	}
+	.navtop-1 h1 {
+		font-size: 5vw;
+	}
+	/**floating-top**/
+	.float-top {
+		height: 490px;
+	}
+	.float-top img {
+		height: 450px;
+	}
+	.carousel {
+		height: 450px;
+	}
+	.arti-carousel-title {
+		height: 450px;
+	}
+	/**float list**/
+	.float-list {
+		padding: 0 1.5vw;
+	}
+	/**Article Listing**/
+	.left-listing img {
+		height: 250px;
+	}
 }
 
 .bc-page .us-below {

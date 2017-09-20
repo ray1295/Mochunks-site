@@ -9,7 +9,7 @@ function articleListingController(ArticlesService) {
 		response.data.results.forEach(function(article) {
 			vm.listedArticles.push(article);
 		});
-
+		
 		// Update the page number to increment the pagination
 		vm.page = response.data.next;
 	}).catch(function (err) {

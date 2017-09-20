@@ -4,8 +4,8 @@
 		<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
 			<div uib-slide ng-repeat="article in vm.recommendedArticles" index="$index">
 				<img ng-src="{{article.firstArticleImage.secure_url}}">
-					<!--<p>{{article.description}}</p>-->
-					<button class="arti-carousel-title"><a href="/#!/article/view/{{article._id}}"><h3 >{{article.title}}</h3></a></button>
+				<button class="arti-carousel-title hidden-xs"><a href="/#!/article/view/{{article._id}}"><h3>{{article.title}}</h3><p>{{article.description}}</p></a></button>
+				<button class="arti-carousel-title visible-xs"><a href="/#!/article/view/{{article._id}}"><h3>{{article.title}}</h3></a></button>
 			</div>
 		</div>
 		
@@ -25,22 +25,18 @@
 </div>
 
 <div class="float-below row hidden-xs">
-
-	<br><br>
+	
 	<!-- TODO: Rename this component to latest article or something related to its functionality -->
 	<mochunks-float-below></mochunks-float-below>
-
-	<br><br>
-
+	
 </div>
-
-<br><br> <br><br>
 
 <div class="row article-listing">
 	
-	<div class="col-sm-9 col-xs-12">
+	<div class="col-sm-8 col-xs-12">
+		<h3 class="visible-xs">Article Listing</h3>
 		
-			<div class=" row left-listing">
+			<div class="left-listing">
 				
 				<mochunks-articles></mochunks-articles>
 				
@@ -52,7 +48,7 @@
 
 	</div>
 
-	<div class="col-sm-3 hidden-xs right-listing">
+	<div class="col-sm-4 hidden-xs right-listing">
 
 		<p class="ads">Advertisement</p>
 

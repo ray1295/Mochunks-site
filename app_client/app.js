@@ -1,4 +1,4 @@
-var app = angular.module("mochunksApp", ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap'])
+var app = angular.module('mochunksApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap'])
 	.config(function ($routeProvider) {
 		$routeProvider
 			.when('/', {
@@ -19,7 +19,9 @@ var app = angular.module("mochunksApp", ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				controllerAs: 'vm'
 			})
 			.when('/askChunksPage', {
-				templateUrl: 'pages/askChunksPage/askChunksPage.view.html'
+				templateUrl: 'pages/askChunksPage/askChunksPage.view.html',
+				controller: 'AskChunksController',
+				controllerAs: 'vm'
 			})
 			.when('/beingChunksPage', {
 				templateUrl: 'pages/beingChunksPage/beingChunksPage.view.html'
@@ -70,28 +72,9 @@ var app = angular.module("mochunksApp", ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				redirectTo: '/'
 			});
 	});
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
-	scrollFunction();
-};
 
-function scrollFunction() {
-	if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
-		document.getElementById("go-top").style.display = "block";
-	}
-	else {
-		document.getElementById("go-top").style.display = "none";
-	}
-}
 
-// When the user clicks on the button, scroll to the top of the document
-vm.topFunction = function() {
-	document.body.scrollTop = 0; // For Chrome, Safari and Opera 
-	document.documentElement.scrollTop = 0; // For IE and Firefox
-
-};
-
-app.controller("mainCtrl", function () {
+app.controller('mainCtrl', function () {
 	var vm = this;
 });
 

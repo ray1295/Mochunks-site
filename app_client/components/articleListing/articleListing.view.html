@@ -1,29 +1,26 @@
-<div ng-repeat="article in vm.listedArticles">
+	<div class="row" ng-repeat="article in vm.listedArticles">
+		
+		
+		<img class="col-sm-6" src="{{article.firstArticleImage.secure_url}}" alt="{{article.title}}">
 
-	<div class="col-sm-3">
 
-		<!-- TODO: We do not store the author of the article-->
-		<!--<h5>By Author of Article</h5>-->
+		<div class="col-sm-6">
+	
+			<h2>{{article.title}}</h2>
+			
+			<!-- TODO: We do not store the author of the article-->
+			<!--<h5>By Author of Article</h5>-->
 
-		<h6>{{article.publishedDate}}</h6>
-
+			<h6>{{article.publishedDate}}</h6>
+	
+			<p>{{article.description}}</p>
+			
+		</div>
+		
+		<div class="line-black"></div>
+		
 	</div>
-
-	<div class="col-sm-6">
-
-		<h2>{{article.title}}</h2>
-
-		<p>{{article.description}}</p>
-
-	</div>
-
-	<div class="col-sm-3">
-
-		<img src="{{article.image.secure_url}}" alt="{{article.title}}">
-
-	</div>
-</div>
 
 <!-- Only show more articles if next page object evaluates to true-->
 <button ng-if="vm.page" class="check-more">Check out more</button>
-
+	

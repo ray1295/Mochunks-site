@@ -10,6 +10,8 @@ app.controller('ArticlePageCtrl', function(ArticlesService, $window, $routeParam
 	}).catch(function(err){
 		alert('This article could not be loaded, please try again');
 	})
+	
+
 });
 
 

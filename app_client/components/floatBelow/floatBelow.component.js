@@ -8,9 +8,11 @@ function floatBelowController(ArticlesService, $q) {
 
 	$q.all(getLatestArticleArray).then(function (response) {
 		vm.latestArticles = [];
+		console.log(response);
 		response.forEach(function (article) {
 			if (article.data && article.data !== "undefined") vm.latestArticles.push(article.data);
 		});
+		console.log(vm.latestArticles);
 	}).catch(function () {
 
 	});

@@ -11,7 +11,7 @@
 			<!-- TODO: We do not store the author of the article-->
 			<!--<h5>By Author of Article</h5>-->
 
-			<h6>{{article.publishedDate}}</h6>
+			<h6>{{article.publishedDate | date: 'MM/dd/yyyy'}}</h6>
 	
 			<p>{{article.description}}</p>
 			

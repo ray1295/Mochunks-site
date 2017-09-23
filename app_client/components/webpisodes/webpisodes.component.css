@@ -1,0 +1,39 @@
+.float-list {
+	height: 450px;
+	padding: 0 10px;
+	overflow: auto;
+}
+
+.float-list:hover {
+	box-shadow: none;
+}
+
+.float-list h3 {
+	color: #fff;
+	background: #333;
+	margin: 0;
+	padding: 10px;
+}
+
+.float-list p {
+	color: #aaa;
+}
+
+.float-list h4 {
+	font-weight: 900;
+}
+
+.float-list hr {
+	margin: auto;
+	width: 100%;
+	height: 10px;
+}
+
+.main-episode {
+	height: 170px;
+	background: #ccc;
+}
+
+.main-episode col-sm-4 {
+	background: #333;
+}

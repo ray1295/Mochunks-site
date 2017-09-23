@@ -1,46 +1,26 @@
 <div class="float-list">
-    <h3>Latest Webisodes</h3>
-    <div class="main-episode">
+	<h3>Latest Webisodes</h3>
+	<div> <!--class="main-episode" -->
+		<a ng-href="{{vm.latestChannelVideo.videoUrl}}" target="_blank">
+			<img ng-src="{{vm.latestChannelVideo.image.url}}">
+		</a>
+	</div>
+	<h4>{{vm.latestChannelVideo.title}}</h4>
+	<p>{{vm.latestChannelVideo.description}}</p>
+	<hr>
+	<div class="row sub-episode" ng-repeat="video in vm.otherChannelVideos">
+		<div class="col-sm-4">
+			<a ng-href={{video.videoUrl}} target="_blank">
+				<img ng-src="{{video.image.url}}">
+			</a>
+		</div>
+		<div class="col-sm-8">
+			<a class="fa fa-caret-right fa-2x" target="_blank" ng-href="{{video.videoUrl}}"></a>
+			<h5>{{video.title}}</h5>
+			<p>{{video.description}}</p>
+		</div>
 
-    </div>
-    <h4>Title of the video</h4>
-    <p>Short description about the video, movie or whatever this is gonnna be </p>
-    <hr>
-    <div class="row sub-episode">
-        <div class="col-sm-4">
+		<button class="check-more">Check out more</button>
 
-        </div>
-        <div class="col-sm-8">
-            <button class="fa fa-caret-right fa-2x" ></button>
-            <h5>Title of the video</h5>
-            <p>Subject video covers</p>
-        </div>
-
-        <hr>
-
-        <div class="col-sm-4">
-
-        </div>
-        <div class="col-sm-8">
-            <button class="fa fa-caret-right fa-2x" ></button>
-            <h5>Title of the video</h5>
-            <p>Subject video covers</p>
-        </div>
-
-        <hr>
-
-        <div class="col-sm-4">
-
-        </div>
-        <div class="col-sm-8">
-            <button class="fa fa-caret-right fa-2x" ></button>
-            <h5>Title of the video</h5>
-            <p>Subject video covers</p>
-        </div>
-
-        <hr>
-
-        <button class="check-more">Check out more</button>
-
-    </div>
+	</div>
 </div>

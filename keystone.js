@@ -34,6 +34,9 @@ keystone.init({
 	'user model': 'User',
 });
 
+// Connect to database
+if (process.env.NODE_ENV === "production") keystone.set('mongo', process.env.MONGO_URI);
+
 // Load your project's Models
 keystone.import('./app_api/models');
 
@@ -59,7 +62,6 @@ keystone.set('routes', require('./app_api/routes'));
 // });
 
 // Start Keystone to connect to your database and initialise the web server
-
 
 
 keystone.start();

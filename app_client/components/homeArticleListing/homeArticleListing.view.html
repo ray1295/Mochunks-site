@@ -9,18 +9,14 @@
 
 			<h2>{{article.title}}</h2>
 			<h6>{{article.publishedDate | date: 'MM/dd/yyyy'}}</h6>
-
 			<p>{{article.description}}</p>
 
 		</div>
-
-
-		<div class="line-black"></div>
-
+		
 	</div>
 
 </a>
 
 <!-- Only show more articles if next page object evaluates to true-->
-<button ng-if="vm.page" class="check-more">Check out more</button>
+<button ng-if="vm.page">Check out more</button>
 	

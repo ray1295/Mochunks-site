@@ -55,12 +55,6 @@ var app = angular.module('mochunksApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 			.when('/trendingPage', {
 				templateUrl: 'pages/trendingPage/trendingPage.view.html'
 			})
-			.when('/lookImage', {
-				templateUrl: 'pages/lookImage/lookImage.view.html'
-			})
-			.when('/lookVideo', {
-				templateUrl: 'pages/lookVideo/lookVideo.view.html'
-			})
 			.when('/article/view/:articleID', {
 				templateUrl: 'pages/articlePage/articlePage.view.html',
 				controllerAs: 'vm',

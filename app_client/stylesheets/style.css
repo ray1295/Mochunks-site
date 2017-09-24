@@ -420,12 +420,13 @@ mochunks-menu-x-s {
 }
 
 .carousel-indicators li {
-	background-color: #fff;
+	background-color: #333;
+	border-color: #333;
 }
 
 .carousel-indicators .active {
 	background-color: transparent;
-	border: 2px solid #fff;
+	border: 2px solid #333;
 }
 
 .header-section-right {
@@ -567,7 +568,6 @@ mochunks-menu-x-s {
     justify-content: space-around;
     width: 100%;
     height: 300px;
-	padding: 0 1.5vw;
 }
 
 .us-below {
@@ -636,8 +636,17 @@ mochunks-menu-x-s {
 }
 
 .left-listing .article-home-block {
-	margin: 15px 0;
+	border-bottom: 1px solid #ccc;
+	padding: 1vw 0;}
+
+.article-home-block:hover img{
+	opacity: 0.9;
 }
+
+.article-home-block:hover h2 {
+	text-decoration: underline;
+}
+
 .left-listing p {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
@@ -814,7 +823,6 @@ mochunks-menu-x-s {
 }
 
 /**end of artiview**/
-
 
 /**apvh-page**/
 .apvh-page l-page {
@@ -1027,6 +1035,14 @@ form textarea{
 	}
 	.arti-carousel-title {
 		height: 450px;
+	}
+	.arti-carousel-title p {
+		display: -webkit-box;
+		-webkit-line-clamp: 5;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding: 5px 10px;
 	}
 	/**Webpisodes list**/
 	.webpisodes-sub .col-sm-8 {

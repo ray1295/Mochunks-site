@@ -12,7 +12,7 @@
 				<!-- Title-->
 				<h2>{{article.title}}</h2>
 				<!--date of post-->
-				<p>{{article.publishedDate}}</p>
+				<p>{{article.publishedDate | date: 'MM/dd/yyyy'}}</p>
 				<!-- Image-->
 				<div class="might-l col-sm-9">
 					<a href="/#!/article/view/{{article._id}}">

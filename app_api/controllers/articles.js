@@ -31,7 +31,7 @@ module.exports.getSingleArticleByID = (req, res) => {
 		return res.json(article).status(200);
 	}, (err) => {
 		// TODO: Log errors
-		return res.sendStatus(500)
+		return res.sendStatus(500);
 	});
 };
 
@@ -41,7 +41,7 @@ module.exports.getRecommendedArticles = (req, res) => {
 		return res.json(articles).status(200);
 	}, (err) => {
 		// TODO: Log errors
-		return res.sendStatus(500)
+		return res.sendStatus(500);
 	});
 };
 
@@ -51,7 +51,7 @@ module.exports.getLatestArticleForSection = (req, res) => {
 		return res.json(articles).status(200);
 	}, (err) => {
 		// TODO: Log errors
-		return res.sendStatus(500)
+		return res.sendStatus(500);
 	});
 };
 

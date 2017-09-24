@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42af4629-683e-43c5-9723-14b0ae9f5e59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_client/components/menuXS/menuXS.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_client/components/menuXS/menuXS.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_client/components/scrollTop/scrollTop.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_client/components/scrollTop/scrollTop.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_client/pages/askChunksPage/askChunksPage.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/app.js" afterPath="$PROJECT_DIR$/app_client/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/articleListing/articleListing.component.js" afterPath="$PROJECT_DIR$/app_client/components/articleListing/articleListing.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_api/controllers/articles.js" afterPath="$PROJECT_DIR$/app_api/controllers/articles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_api/models/Article.js" afterPath="$PROJECT_DIR$/app_api/models/Article.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/articleListing/articleListing.view.html" afterPath="$PROJECT_DIR$/app_client/components/articleListing/articleListing.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/floatBelow/floatBelow.component.html" afterPath="$PROJECT_DIR$/app_client/components/floatBelow/floatBelow.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/home/home.component.html" afterPath="$PROJECT_DIR$/app_client/components/home/home.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/navigation/navigation.component.html" afterPath="$PROJECT_DIR$/app_client/components/navigation/navigation.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/index.html" afterPath="$PROJECT_DIR$/app_client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/aboutPage/about.view.html" afterPath="$PROJECT_DIR$/app_client/pages/aboutPage/about.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/articlePage/articlePage.controller.js" afterPath="$PROJECT_DIR$/app_client/pages/articlePage/articlePage.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.js" afterPath="$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/articlePage/articlePage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/articlePage/articlePage.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/askChunksPage/askChunksPage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/askChunksPage/askChunksPage.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/beingChunksPage/beingChunksPage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/beingChunksPage/beingChunksPage.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.controller.js" afterPath="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/contactPage/contactPage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/contactPage/contactPage.view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/stylesheets/style.css" afterPath="$PROJECT_DIR$/app_client/stylesheets/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -39,72 +24,39 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Mochunks-site" />
-  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.61280715">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_client/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="421">
-                  <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="about.view.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_client/pages/aboutPage/about.view.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home.component.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_client/components/home/home.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="articleListing.view.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app_client/components/articleListing/articleListing.view.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app_client/stylesheets/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="1060" column="1" lean-forward="true" selection-start-line="1060" selection-start-column="1" selection-end-line="1060" selection-end-column="1" />
-                  <folding>
-                    <marker date="1505915335474" expanded="true" signature="4989:5254" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="articleListing.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_client/components/articleListing/articleListing.view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articles.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_api/controllers/articles.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articleListing.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_client/components/articleListing/articleListing.component.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -117,11 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dropdown</find>
-      <find>btn</find>
-      <find>lobs</find>
-      <find>btn-de</find>
-      <find>.below-box</find>
       <find>#f7f7f7</find>
       <find>ads</find>
       <find>float</find>
@@ -139,7 +86,6 @@
       <find>toggle</find>
       <find>button</find>
       <find>form</find>
-      <find>form</find>
       <find>ab-content</find>
       <find>float-below</find>
       <find>float-below {</find>
@@ -147,7 +93,16 @@
       <find>article-listing</find>
       <find>left-listing img</find>
       <find>768</find>
+      <find>artiview</find>
+      <find>mochunksArticles</find>
+      <find>publi</find>
+      <find>pub</find>
+      <find>published</find>
+      <find>getlatest</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Richmond\projects\Mochunks-site\app_client</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -155,18 +110,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app_api/models/articles.js" />
         <option value="$PROJECT_DIR$/app_api/models/Articles.js" />
         <option value="$PROJECT_DIR$/app_api/controllers/products.js" />
         <option value="$PROJECT_DIR$/app_api/controllers/product.js" />
         <option value="$PROJECT_DIR$/app_api/controllers/article.js" />
-        <option value="$PROJECT_DIR$/keystone.js" />
         <option value="$PROJECT_DIR$/app_client/services/articles.service.js" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app_api/models/Article.js" />
         <option value="$PROJECT_DIR$/app_api/routes/index.js" />
         <option value="$PROJECT_DIR$/app_client/services/articles/articles.service.js" />
-        <option value="$PROJECT_DIR$/app_api/controllers/articles.js" />
         <option value="$USER_HOME$/AppData/Local/Temp/Temp1_JavaScript30-master.zip/JavaScript30-master/01 - JavaScript Drum Kit/style.css" />
         <option value="$USER_HOME$/AppData/Local/Temp/Temp1_JavaScript30-master.zip/JavaScript30-master/01 - JavaScript Drum Kit/index-START.html" />
         <option value="$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.controller.js" />
@@ -187,16 +138,12 @@
         <option value="$PROJECT_DIR$/app_client/components/scrollTop/scrollTop.component.js" />
         <option value="$PROJECT_DIR$/app_client/components/floatBelow/floatBelow.component.html" />
         <option value="$PROJECT_DIR$/app_client/pages/beingChunksPage/beingChunksPage.view.html" />
-        <option value="$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.view.html" />
         <option value="$PROJECT_DIR$/app_client/pages/askChunksPage/askChunksPage.view.html" />
         <option value="$PROJECT_DIR$/app_client/components/articleListing/articleListing.component.js" />
         <option value="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.controller.js" />
-        <option value="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html" />
-        <option value="$PROJECT_DIR$/app_client/pages/articlePage/articlePage.view.html" />
         <option value="$PROJECT_DIR$/app_client/pages/articlePage/articlePage.controller.js" />
         <option value="$PROJECT_DIR$/app_client/app.js" />
         <option value="$PROJECT_DIR$/app_client/pages/askChunksPage/askChunksPage.controller.js" />
-        <option value="$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.view.html" />
         <option value="$PROJECT_DIR$/app_client/components/menuXS/menuXS.component.js" />
         <option value="$PROJECT_DIR$/app_client/index.html" />
         <option value="$PROJECT_DIR$/app_client/components/menuXS/menuXS.component.html" />
@@ -204,10 +151,23 @@
         <option value="$PROJECT_DIR$/app_client/pages/aboutPage/about.view.html" />
         <option value="$PROJECT_DIR$/app_client/components/navigation/navigation.component.html" />
         <option value="$PROJECT_DIR$/app_client/components/home/home.component.html" />
-        <option value="$PROJECT_DIR$/app_client/components/articleListing/articleListing.view.html" />
         <option value="$PROJECT_DIR$/app_client/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/keystone.js" />
+        <option value="$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.js" />
+        <option value="$PROJECT_DIR$/app_client/pages/articlePage/articlePage.view.html" />
+        <option value="$PROJECT_DIR$/app_client/components/articleListing/articleListing.view.html" />
+        <option value="$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.view.html" />
+        <option value="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html" />
+        <option value="$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.view.html" />
+        <option value="$PROJECT_DIR$/app_api/models/Article.js" />
+        <option value="$PROJECT_DIR$/app_api/controllers/articles.js" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path>$USER_HOME$/AppData/Roaming/npm/bower.cmd</exe-path>
+    <config-path />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -231,9 +191,7 @@
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -249,8 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,38 +217,20 @@
             <path>
               <item name="Mochunks-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mochunks-site" type="462c0819:PsiDirectoryNode" />
-              <item name="app_client" type="462c0819:PsiDirectoryNode" />
+              <item name="app_api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mochunks-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mochunks-site" type="462c0819:PsiDirectoryNode" />
-              <item name="app_client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mochunks-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mochunks-site" type="462c0819:PsiDirectoryNode" />
-              <item name="app_client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="articleListing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mochunks-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mochunks-site" type="462c0819:PsiDirectoryNode" />
-              <item name="app_client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mochunks-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mochunks-site" type="462c0819:PsiDirectoryNode" />
-              <item name="app_client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="aboutPage" type="462c0819:PsiDirectoryNode" />
+              <item name="app_api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,30 +305,41 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177235000" />
+    <option name="totallyTimeSpent" value="185421000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.21816827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23761855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3409836" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298585" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32808024" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34408602" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39971346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3409836" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.21816827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298585" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39971346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,28 +355,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_api/controllers/article.js" />
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_api/models/Article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keystone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8272">
@@ -436,20 +363,8 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp2_JavaScript30-master.zip/JavaScript30-master/01 - JavaScript Drum Kit/style.css" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_JavaScript30-master.zip/JavaScript30-master/01 - JavaScript Drum Kit/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_JavaScript30-master.zip/JavaScript30-master/01 - JavaScript Drum Kit/index-START.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_JavaScript30-master.zip/JavaScript30-master/01 - JavaScript Drum Kit/style.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_JavaScript30-master.zip/JavaScript30-master/01 - JavaScript Drum Kit/index-START.html" />
     <entry file="file://$PROJECT_DIR$/public/styles/site.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -468,8 +383,9 @@
     <entry file="file://$PROJECT_DIR$/app_client/pages/lookBookLook/lookBookLook.view.html" />
     <entry file="file://$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="54">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -478,13 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/inStylePage/inStylePage.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -537,13 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/beingChunksPage/beingChunksPage.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_client/pages/musicPage/musicPage.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -565,45 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_api/controllers/articles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/articlePage/articlePage.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_client/components/floatBelow/floatBelow.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/components/articleListing/articleListing.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -614,20 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/askChunksPage/askChunksPage.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -635,25 +488,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-891">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_client/pages/articlePage/articlePage.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -692,16 +530,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/aboutPage/about.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -732,18 +562,146 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_client/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="1060" column="1" lean-forward="true" selection-start-line="1060" selection-start-column="1" selection-end-line="1060" selection-end-column="1" />
+        <state relative-caret-position="296">
+          <caret line="977" column="20" lean-forward="true" selection-start-line="977" selection-start-column="20" selection-end-line="977" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keystone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
-            <marker date="1505915335474" expanded="true" signature="4989:5254" ph="..." />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="106" lean-forward="false" selection-start-line="0" selection-start-column="106" selection-end-line="0" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/aboutPage/about.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/articlePage/articlePage.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/askChunksPage/askChunksPage.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/beingChunksPage/beingChunksPage.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/inStylePage/inStylePage.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_api/models/Article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" column="109" lean-forward="false" selection-start-line="24" selection-start-column="109" selection-end-line="24" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/components/articleListing/articleListing.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_client/components/articleListing/articleListing.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="378">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_api/controllers/articles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
           <folding />
         </state>
       </provider>

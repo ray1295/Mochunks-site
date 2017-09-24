@@ -2,10 +2,6 @@
 	
 	<div class="artiview col-sm-9">
 		
-		<p><span class="title-direct">Lifestyle</span> <i class="fa fa-long-arrow-right"></i> Chit Chat With Chunks</p>
-		
-		<br><br>
-		
 		<!-- Repeat articles-->
 		<div ng-repeat="article in vm.articles">
 			<a href="/#!/article/view/{{article._id}}">
@@ -41,11 +37,11 @@
 	
 		</div>
 		<!---->
-		<!--<div class="float-below row hidden-xs">-->
+		<!--<div class="sub-article-list row hidden-xs">-->
 	<!---->
 			<!--<br><br>-->
+		<sub-article-list></sub-article-list>
 	<!---->
-			<!--<mochunks-float-below></mochunks-float-below>-->
 			<!---->
 		<!--</div>-->
 		

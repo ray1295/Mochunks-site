@@ -1,6 +1,6 @@
 var app = angular.module('mochunksApp');
 
-function floatBelowController(ArticlesService, $q) {
+function subArticleListController(ArticlesService, $q) {
 	var vm = this;
 
 	// Get latest articles for section
@@ -8,19 +8,17 @@ function floatBelowController(ArticlesService, $q) {
 
 	$q.all(getLatestArticleArray).then(function (response) {
 		vm.latestArticles = [];
-		console.log(response);
 		response.forEach(function (article) {
 			if (article.data && article.data !== "undefined") vm.latestArticles.push(article.data);
 		});
-		console.log(vm.latestArticles);
 	}).catch(function () {
 
 	});
 }
 
-app.component('mochunksFloatBelow', {
-	templateUrl: 'components/floatBelow/floatBelow.component.html',
-	controller: floatBelowController,
+app.component('subArticleList', {
+	templateUrl: 'components/sub-article-list/sub-article-list.component.html',
+	controller: subArticleListController,
 	controllerAs: 'vm'
 });
 

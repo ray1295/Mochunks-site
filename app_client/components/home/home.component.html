@@ -1,17 +1,17 @@
-<div class="float-top row">
-	<div class="col-md-8 col-xs-12">
+<div class="header-section row">
+	<div class="col-md-6 col-lg-8 col-xs-12">
 
 		<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
-			<div uib-slide ng-repeat="article in vm.recommendedArticles" index="$index">
-				<img ng-src="{{article.firstArticleImage.secure_url}}">
-				<button class="arti-carousel-title hidden-xs"><a href="/#!/article/view/{{article._id}}"><h3>{{article.title}}</h3><p>{{article.description}}</p></a></button>
+			<div  uib-slide ng-repeat="article in vm.recommendedArticles" index="$index">
+				<img class="header-section-img" ng-src="{{article.firstArticleImage.secure_url}}">
+				<button class="arti-carousel-title hidden-xs"><a href="/#!/article/view/{{article._id}}"><h3>{{article.title}}</h3><p>{{article.description}}</p><h4>View Post</h4></a></button>
 				<button class="arti-carousel-title visible-xs"><a href="/#!/article/view/{{article._id}}"><h3>{{article.title}}</h3></a></button>
 			</div>
 		</div>
 		
 	</div>
 
-	<div class="col-md-4 hidden-xs float-top-right">
+	<div class="col-md-6 col-lg-4 hidden-xs header-section-right">
 		<mochunks-webpisodes></mochunks-webpisodes>
 	</div>
 
@@ -24,33 +24,30 @@
 	<mochunks-webpisodes></mochunks-webpisodes>
 </div>
 
-<div class="float-below row hidden-xs">
+<div class="sub-article-list row hidden-xs">
 	
 	<!-- TODO: Rename this component to latest article or something related to its functionality -->
-	<mochunks-float-below></mochunks-float-below>
-	
+<sub-article-list></sub-article-list>	
 </div>
 
 <div class="row article-listing">
 	
 	<div class="col-sm-8 col-xs-12">
-		<h3 class="visible-xs">Article Listing</h3>
+		<h3>Article Listing</h3>
 		
 			<div class="left-listing">
 				
 				<mochunks-articles></mochunks-articles>
 				
 			</div>
-		
-		<br>
-		
-		<br>
 
 	</div>
 
 	<div class="col-sm-4 hidden-xs right-listing">
+		<h3>About Us</h3>
+		<p></p>
 
-		<p class="ads">Advertisement</p>
+		<h3 class="ads">Advertisement</h3>
 
 		<mochunks-eventcide></mochunks-eventcide>
 

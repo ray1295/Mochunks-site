@@ -10,9 +10,9 @@ var app = angular.module('mochunksApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 			.when('/aboutPage', {
 				templateUrl: 'pages/aboutPage/about.view.html'
 			})
-			.when('/articlePage', {
-				templateUrl: 'pages/articlePage/articlePage.view.html'
-			})
+			// .when('/articlePage', {
+			// 	templateUrl: 'pages/articlePage/articlePage.view.html'
+			// })
 			.when('/chitChatPage', {
 				templateUrl: 'pages/chitChatPage/chitChatPage.view.html',
 				controller: 'ChitChatController',

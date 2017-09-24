@@ -18,7 +18,7 @@ function articleListingController(ArticlesService) {
 }
 
 app.component('mochunksArticles', {
-	templateUrl: 'components/articleListing/articleListing.view.html',
+	templateUrl: 'components/homeArticleListing/homeArticleListing.view.html',
 	controller: articleListingController,
 	controllerAs: 'vm'
 });

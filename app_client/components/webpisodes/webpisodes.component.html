@@ -1,26 +1,30 @@
-<div class="float-list">
+<div class="webpisodes-list">
 	<h3>Latest Webisodes</h3>
 	<div> <!--class="main-episode" -->
 		<a ng-href="{{vm.latestChannelVideo.videoUrl}}" target="_blank">
-			<img ng-src="{{vm.latestChannelVideo.image.url}}">
+			<img class="webpisodes-img" ng-src="{{vm.latestChannelVideo.image.url}}">
 		</a>
 	</div>
 	<h4>{{vm.latestChannelVideo.title}}</h4>
-	<p>{{vm.latestChannelVideo.description}}</p>
+	<!--<p>{{vm.latestChannelVideo.description}}</p>-->
 	<hr>
-	<div class="row sub-episode" ng-repeat="video in vm.otherChannelVideos">
-		<div class="col-sm-4">
-			<a ng-href={{video.videoUrl}} target="_blank">
-				<img ng-src="{{video.image.url}}">
+	<div class="row webpisodes-sub" ng-repeat="video in vm.otherChannelVideos">
+		
+		<a class="col-sm-4" ng-href={{video.videoUrl}} target="_blank">
+			<img ng-src="{{video.image.url}}">
+		</a>
+		
+		<div class="col-sm-8">
+			<!--<p>{{video.description}}</p>-->
+			<a  target="_blank" ng-href="{{video.videoUrl}}">
+				<h5>{{video.title}}</h5>
 			</a>
 		</div>
-		<div class="col-sm-8">
-			<a class="fa fa-caret-right fa-2x" target="_blank" ng-href="{{video.videoUrl}}"></a>
-			<h5>{{video.title}}</h5>
-			<p>{{video.description}}</p>
-		</div>
-
-		<button class="check-more">Check out more</button>
-
+		
 	</div>
+	
+	<button>Check out more</button>
+	
+	<br>
+
 </div>

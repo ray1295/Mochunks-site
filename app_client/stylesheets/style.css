@@ -26,12 +26,8 @@ p {
     outline: none !important;
 }
 
-.btn-pad {
-	
-}
-
 .fa {
-	font-weight: 900;
+	font-weight: 400;
     padding: 0;
     font-family: 'Raleway', sans-serif !important;
 }
@@ -54,7 +50,6 @@ p {
     outline: none !important;
 	border: none;
     border-radius: 0;
-    height: 100%;
 	transform: scale(1.1);
 }
 
@@ -129,7 +124,7 @@ button {
 	top: -1px;
 	height: 50px;
 	z-index: 100;
-	border: 1px solid #333;
+	border-bottom: 3px solid #ccc
 }
 
 .memo {
@@ -229,7 +224,7 @@ button {
 
 .memo p {
 	padding: 0 10px;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 .memo li {
@@ -266,7 +261,7 @@ button {
     border: none;
     color: #fff;
 	height: 100%;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 mochunks-menu-x-s {
@@ -292,7 +287,7 @@ mochunks-menu-x-s {
 }
 
 .toggle-menu .btn-default:hover, .btn-default:active, .btn-default:focus {
-	height: 30px;
+	height: 45px;
 }
 
 .toggle-menu .btn-default {
@@ -356,36 +351,26 @@ mochunks-menu-x-s {
 /*}*/
 /**end of look-book**/
 
-
-/**line black**/
-
-.line-black{
-	border: 1px solid #ddd;
-	display: inline-flex;
-	margin: 35px 15px;
-	width: -webkit-fill-available;
-}
-
 /**carousel**/
-.float-top {
+.header-section {
     display: flex;
     justify-content: center;
     background: #fff;
 	padding: 1.5vw;
 }
 
-.float-top img {
+.header-section-img {
     width: 100%;
 	left: 0;
 	position: absolute;
 	z-index: -1;
 }
 
-.float-top h2 {
-    font-weight: 900;
+.header-section h2 {
+    font-weight: 400;
 }
 
-/*.float-top img:hover + .arti-carousel-title {*/
+/*.header-section-img:hover + .arti-carousel-title {*/
 	/*display: none;*/
 /*}*/
 
@@ -396,17 +381,27 @@ mochunks-menu-x-s {
 	height: 450px;
 	width: 45%;
 	transition: all 0.3s;
-	background-color: rgba(51,51,51,0.8);
+	background-color: rgba(51,51,51,0.7);
+	
 }
 
-.arti-carousel-title h3 {
+.arti-carousel-title h3{
 	margin: 10px 0 10px 10px;
+	font-weight: bold;
+	color: rgb(255,255,255);
+}
+
+.arti-carousel-title h4 {
+	border: 1px solid #fff;
+	padding: 5px 10px;
+	width: fit-content;
+	margin: 5px 10px;
+	float: right;
 }
 
 .arti-carousel-title p {
 	font-weight: 400;
-	background: rgba(51,51,51,0.9);
-	border: 2px solid;
+	background: rgba(51,51,51,0.7);
 	padding: 10px;
 	margin: 10px;
 }
@@ -433,46 +428,51 @@ mochunks-menu-x-s {
 	border: 2px solid #fff;
 }
 
-.float-top-right {
+.header-section-right {
 	padding-right: 0 !important;
+	width: 100%;
 }
 
-.sub-episode button {
-    float: right;
-    color: #ccc;
-    line-height: 60px;
-    background: none;
-    border: none;
+.webpisodes-sub {
+	margin: 0 0 20px;
 }
 
-.sub-episode button:hover {
-    color: #333;
+.webpisodes-list button {
+	width: -webkit-fill-available;
+	color: #fff;
+	background: rgba(51,51,51,1);
+	border: none;
+	height: 40px;
 }
 
-.sub-episode .col-sm-4 {
+.webpisodes-list button:hover {
+    background: rgba(51,51,51,0.8);
+}
+
+.webpisodes-sub .col-sm-4 {
     background: #ccc;
     height: 60px;
+	padding: 0;
 }
 
-.sub-episode .col-sm-8 {
-    height: 60px;
+.webpisodes-sub img {
+	width: 100%;
 }
 
-.sub-episode .col-sm-8 h5 {
-    font-weight:bold;
-    margin-bottom: 0;
+/*.webpisodes-sub .col-sm-8 {*/
+    /*height: 60px;*/
+/*}*/
 
+.webpisodes-sub .col-sm-8 h5 {
+	font-weight: 400;
+	margin: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.check-more {
-    width: 100%;
-    margin: auto;
-    color: #fff;
-    height: 50px;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-}
 
 /**ask-us**/
 .ask-us {
@@ -541,27 +541,32 @@ mochunks-menu-x-s {
 #go-top:hover {
 	transform: scale(1.1);
 }
-/**float-below**/
+/**sub-article-list**/
 
-.float-below {
+.sub-article-list {
     background: #fff;  
 	text-align: left;
 }
 
-.float-below h4 {
+.sub-article-list h4 {
 	cursor: pointer;
-	font-weight: bold;
+	font-weight: 400;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.float-below h4:hover {
+.sub-article-list h4:hover {
 	text-decoration: underline;
 }
 
 .below-box {
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
-    height: 250px;
+    height: 300px;
 	padding: 0 1.5vw;
 }
 
@@ -581,7 +586,7 @@ mochunks-menu-x-s {
     text-align: left;
 }
 
-.float-below .small-below {
+.sub-article-list .small-below {
     height: 150px;
     width: 15vw;
     margin: 0 20px 0 0;
@@ -598,14 +603,14 @@ mochunks-menu-x-s {
 .small-below h5 {
 	float: right;
 	line-height: inherit;
-	color: #ccc;
 	text-transform: capitalize;
+	margin: 0;
 }
 
 .small-below p {
-    color: #ccc;
+	margin: 0;
 }
-/**end of float-below**/
+/**end of sub-article-list**/
 
 /**end of carousel**/
 
@@ -619,13 +624,20 @@ mochunks-menu-x-s {
 	padding: 10px;
 }
 
-.left-listing {
-    margin: 10px 0;
-	padding: 20px;
+.ads {
+	color: #fff;
+	background: #333;
+	margin: 0;
+	padding: 10px;
 }
 
+.left-listing {
+    margin: 10px 0;
+}
 
-
+.left-listing .article-home-block {
+	margin: 15px 0;
+}
 .left-listing p {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
@@ -636,11 +648,15 @@ mochunks-menu-x-s {
 
 .left-listing h2 {
 	color: #333;
-	font-weight: bold;
+	font-weight: 400;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .right-listing {
-    text-align: center;
     position: sticky;
     top: 50px;
 }
@@ -660,12 +676,6 @@ mochunks-menu-x-s {
     font-size: 80px;
 }
 
-.ads {
-    font-size: 10px;
-    text-align: left;
-	padding: 10px;
-}
-
 .eventcide-advert {
     background: #24292e;
     height: 400px;
@@ -673,7 +683,7 @@ mochunks-menu-x-s {
     text-align: left;
     color: #fff;
     padding: 20px;
-	margin: auto;
+	margin: 10px auto;
 }
 
 .eventcide-advert h5 {
@@ -775,20 +785,20 @@ mochunks-menu-x-s {
 .artiview h2 {
 	width: 50vw;
 	margin: -10px 0;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 .artiview p {
 	width: 50vw;
 	margin: 10px 0;
-	font-weight: bold;
+	font-weight: 400;
 }
 
-.artiview .float-below {
+.artiview .sub-article-list {
 	display: inline-block;
 }
 
-.artiview .float-below p {
+.artiview .sub-article-list p {
 	width: inherit;
 }
 
@@ -811,7 +821,7 @@ mochunks-menu-x-s {
 	background: #f4f4f4;
 } 
 
-.apvh-page .float-below {
+.apvh-page .sub-article-list {
 	background: none;
 }
 
@@ -820,7 +830,7 @@ mochunks-menu-x-s {
 }
 
 .apvh-page h1 {
-	font-weight: bold;
+	font-weight: 400;
 	margin-top: 0;
 }
 .r-page {
@@ -875,7 +885,9 @@ form textarea{
 .footer-1 {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0
+    padding: 40px 2vw;
+	background: #eee;
+	border-top: 3px solid #ccc;
 }
 
 .footer-1 p {
@@ -885,12 +897,13 @@ form textarea{
 .footer-title h1{
     margin: 0;
 	font-family: 'Lobster', cursive;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .footer-title p {
     font-size: 10px;
     position: relative;
+	margin:-10px 5px;
 }
 
 .footer-info a {
@@ -931,12 +944,13 @@ form textarea{
     text-align: center;
     height: inherit;
     line-height: 30px;
-    background: #fff;
-    border-top: 1px solid #ccc;
+    background: #333;
+    border-top: 3px solid #ccc;
 }
 
 .footer-2 p {
     margin: 0;
+	color: #fff;
 }
 /**end of footer**/
 
@@ -952,16 +966,16 @@ form textarea{
 	}
 	.navtop-1 p {
 		text-align: center;
-		margin: 0;
+		margin: -10px 0;
 	}
 	.navtop-1 h1 {
 		font-size: 10vw;
 	}
 	/**floating-top**/
-	.float-top {
+	.header-section {
 		height: 60vw;
 	}
-	.float-top img {
+	.header-section-img {
 		height: 60vw;
 	}
 	.carousel {
@@ -970,9 +984,12 @@ form textarea{
 	.arti-carousel-title {
 		height: 60vw;
 	}
-	/**float list**/
-	.float-list {
-		padding: 0 1.5vw;
+	/**Webpisodes list**/
+	.webpisodes-list h3 {
+		margin: 0px -15px 10px;
+	}
+	.webpisodes-sub .col-sm-8 {
+		padding: 1.5vw 0;
 	}
 	/**Article Listing**/
 	.left-listing img {
@@ -999,10 +1016,10 @@ form textarea{
 		font-size: 5vw;
 	}
 	/**floating-top**/
-	.float-top {
+	.header-section {
 		height: 490px;
 	}
-	.float-top img {
+	.header-section-img {
 		height: 450px;
 	}
 	.carousel {
@@ -1011,13 +1028,32 @@ form textarea{
 	.arti-carousel-title {
 		height: 450px;
 	}
-	/**float list**/
-	.float-list {
-		padding: 0 1.5vw;
+	/**Webpisodes list**/
+	.webpisodes-sub .col-sm-8 {
+		padding: 0 15px;
+	}
+	.webpisodes-list h3 {
+		margin: 0;
 	}
 	/**Article Listing**/
 	.left-listing img {
 		height: 250px;
+		width: 50%;
+	}
+	.article-listing h3 {
+		margin: 0 15px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.header-section-right {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header-section-right {
+		width:33.3333%;
 	}
 }
 

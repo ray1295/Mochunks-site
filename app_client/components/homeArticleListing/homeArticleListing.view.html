@@ -1,4 +1,6 @@
-	<div class="row" ng-repeat="article in vm.listedArticles">
+<a href="/#!/article/view/{{article._id}}"  ng-repeat="article in vm.listedArticles">
+
+<div class="row article-home-block">
 		
 		
 		<img class="col-sm-6" src="{{article.firstArticleImage.secure_url}}" alt="{{article.title}}">
@@ -17,9 +19,9 @@
 			
 		</div>
 		
-		<div class="line-black"></div>
-		
 	</div>
+	
+</a>
 
 <!-- Only show more articles if next page object evaluates to true-->
 <button ng-if="vm.page" class="check-more">Check out more</button>

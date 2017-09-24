@@ -1,7 +1,7 @@
 <div class="row">
-	
+
 	<div class="artiview col-sm-9">
-		
+
 		<!-- Repeat articles-->
 		<div ng-repeat="article in vm.articles">
 			<a href="/#!/article/view/{{article._id}}">
@@ -12,47 +12,54 @@
 				<!-- Image-->
 				<div class="might-l col-sm-9">
 					<a href="/#!/article/view/{{article._id}}">
-					<img src={{article.firstArticleImage.secure_url}}>
+						<img src={{article.firstArticleImage.secure_url}}>
 					</a>
 				</div>
 				<div class="might-l col-sm-3">
 					<a href="/#!/article/view/{{article._id}}">
-					<img class="avid-xs" src={{article.secondArticleImage.secure_url}}>
-					<img class="avid-xs" src={{article.thirdArticleImage.secure_url}}>
+						<img class="avid-xs" src={{article.secondArticleImage.secure_url}}>
+						<img class="avid-xs" src={{article.thirdArticleImage.secure_url}}>
 					</a>
 				</div>
 				<!-- Quick description-->
 				<p>{{article.description}}</p>
 				<!--Button to view full article-->
-			
-				
+
+
 				<hr>
 				<br>
 			</a>
 		</div>
-	
-		<div class=" row left-listing">
-	
-			<mochunks-articles></mochunks-articles>
-	
+
+		<div class="col-sm-8 col-xs-12">
+			<h3>Article Listing</h3>
+
+			<div class="left-listing">
+
+				<mochunks-articles></mochunks-articles>
+
+			</div>
+
 		</div>
-		<!---->
-		<!--<div class="sub-article-list row hidden-xs">-->
-	<!---->
-			<!--<br><br>-->
-		<sub-article-list></sub-article-list>
-	<!---->
-			<!---->
-		<!--</div>-->
-		
+
+		<br><br>
+
+		<div class="sub-article-list row hidden-xs">
+
+			<sub-article-list></sub-article-list>
+
+		</div>
+
+
 	</div>
-	
+
+
 	<div class="col-sm-3 right-listing">
-	
+
 		<p class="ads">Advertisement</p>
-	
+
 		<mochunks-eventcide></mochunks-eventcide>
-	
+
 	</div>
-	
+
 </div>

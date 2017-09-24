@@ -1,26 +1,24 @@
-<a href="/#!/article/view/{{article._id}}"  ng-repeat="article in vm.listedArticles">
+<a href="/#!/article/view/{{article._id}}" ng-repeat="article in vm.listedArticles">
 
-<div class="row article-home-block">
-		
-		
+	<div class="row article-home-block">
+
+
 		<img class="col-sm-6" src="{{article.firstArticleImage.secure_url}}" alt="{{article.title}}">
 
-
 		<div class="col-sm-6">
-	
-			<h2>{{article.title}}</h2>
-			
-			<!-- TODO: We do not store the author of the article-->
-			<!--<h5>By Author of Article</h5>-->
 
+			<h2>{{article.title}}</h2>
 			<h6>{{article.publishedDate | date: 'MM/dd/yyyy'}}</h6>
-	
+
 			<p>{{article.description}}</p>
-			
+
 		</div>
-		
+
+
+		<div class="line-black"></div>
+
 	</div>
-	
+
 </a>
 
 <!-- Only show more articles if next page object evaluates to true-->

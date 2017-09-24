@@ -11,12 +11,8 @@
 
 <!-- Galleries that have been recommended-->
 <ul class="wrapper grid">
-	<li ng-repeat="gallery in vm.recommendedGalleries"><a href={{/gallery/gallery._id}}><img
-			src="{{gallery.firstImage.secure_url}}" alt=""></a></li>
-	<!--<li><a href="#!lookImage"><img src="images\andrew-neel-103247.jpg" alt=""></a></li>-->
-	<!--<li><a href="#!lookVideo"><img src="images\sydney-jackson-310581.jpg" alt=""></a></li>-->
-	<!--<li><a href="#!lookImage"><img src="images\mowaredjumper.jpg" alt=""></a></li>-->
-	<!--<li><a href="#!lookImage"><img src="images\patrick-zacharias-340872.jpg" alt=""></a></li>-->
+	<li ng-repeat="gallery in vm.recommendedGalleries"><a href="/gallery/{{gallery._id}}"><img
+			ng-src="{{gallery.firstImage.secure_url}}" alt=""></a></li>
 </ul>
 
 <br>
@@ -33,19 +29,8 @@
 <br>
 
 <ul class="wrapper grid">
-	<li ng-repeat="gallery in vm.galleries"><a href={{/gallery/gallery._id}}<img src="{{gallery.firstImage.secure_url}}"
-											   alt="{{gallery.title}}"> </a></li>
-	<!--<li><a href="#!lookImage"><img  src="images\mowaredjumper.jpg" alt=""></a></li>-->
-	<!--<li><img src="images\patrick-zacharias-340872.jpg" alt=""></li>-->
-	<!--<li class="landscape"><img  src="images\eye-for-ebony-341041.jpg" alt=""></li>-->
-	<!--<li><img src="images\paige-muller-343288.jpg" alt=""></li>-->
-	<!--<li class="landscape"><img src="images\darko-mitev-263352.jpg" alt=""></li>-->
-	<!--<li><img src="images\pete-bellis-262617.jpg" alt=""></li>-->
-	<!--<li><img src="images\sydney-jackson-310581.jpg" alt=""></li>-->
-	<!--<li><img src="images\stas-svechnikov-32399.jpg" alt=""></li>-->
-	<!--<li><img src="images\lex-phil-318301.jpg" alt=""></li>-->
-	<!--<li class="landscape"><img src="images\timothy-paul-smith-343287.jpg" alt=""></li>-->
-	<!--<li><img src="images\andrew-neel-103247.jpg" alt=""></li>-->
-	<!--<li><img src="images\sydney-jackson-310581.jpg" alt=""></li>-->
+	<li ng-repeat="gallery in vm.galleries"><a href="/gallery/{{gallery._id}}"><img
+			src="{{gallery.firstImage.secure_url}}">
+	</a>
 </ul>
 

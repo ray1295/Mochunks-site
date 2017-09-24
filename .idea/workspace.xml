@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42af4629-683e-43c5-9723-14b0ae9f5e59" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_client/components/floatBelow/floatBelow.component.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_client/components/articleListing/articleListing.component.js" afterPath="$PROJECT_DIR$/app_client/components/homeArticleListing/homeArticleListing.component.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_client/components/articleListing/articleListing.view.html" afterPath="$PROJECT_DIR$/app_client/components/homeArticleListing/homeArticleListing.view.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_client/components/floatBelow/floatBelow.component.js" afterPath="$PROJECT_DIR$/app_client/components/sub-article-list/sub-article-list.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/app.js" afterPath="$PROJECT_DIR$/app_client/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/footer/footer.component.html" afterPath="$PROJECT_DIR$/app_client/components/footer/footer.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/home/home.component.html" afterPath="$PROJECT_DIR$/app_client/components/home/home.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.css" afterPath="$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.html" afterPath="$PROJECT_DIR$/app_client/components/webpisodes/webpisodes.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/index.html" afterPath="$PROJECT_DIR$/app_client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/articlePage/articlePage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/articlePage/articlePage.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/beingChunksPage/beingChunksPage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/beingChunksPage/beingChunksPage.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/loveLovePage/loveLovePage.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/inStylePage/inStyle.controller.js" afterPath="$PROJECT_DIR$/app_client/pages/inStylePage/inStyle.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/pages/inStylePage/inStylePage.view.html" afterPath="$PROJECT_DIR$/app_client/pages/inStylePage/inStylePage.view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/stylesheets/style.css" afterPath="$PROJECT_DIR$/app_client/stylesheets/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -49,11 +37,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_client/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+                <state relative-caret-position="374">
+                  <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="inStylePage.view.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app_client/pages/inStylePage/inStylePage.view.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="299">
+                  <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="inStyle.controller.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_client/pages/inStylePage/inStyle.controller.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -62,8 +70,8 @@
           <file leaf-file-name="chitChatPage.view.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+                <state relative-caret-position="153">
+                  <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -106,10 +114,10 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app_client/stylesheets/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="258">
-                  <caret line="638" column="13" lean-forward="false" selection-start-line="638" selection-start-column="13" selection-end-line="638" selection-end-column="13" />
+                <state relative-caret-position="224">
+                  <caret line="308" column="26" lean-forward="false" selection-start-line="308" selection-start-column="26" selection-end-line="308" selection-end-column="26" />
                   <folding>
-                    <marker date="1506243043152" expanded="true" signature="4959:5224" ph="..." />
+                    <marker date="1506246415875" expanded="true" signature="4958:5223" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -130,7 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>left-listing img</find>
       <find>latestArticles</find>
       <find>floatBelow</find>
       <find>float</find>
@@ -159,6 +166,7 @@
       <find>footer-2</find>
       <find>arti-ca</find>
       <find>arti-carousel-title h4</find>
+      <find>recommendedGalleries</find>
       <find>left-listing</find>
     </findStrings>
   </component>
@@ -168,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app_client/services/articles.service.js" />
         <option value="$PROJECT_DIR$/app_api/models/Article.js" />
         <option value="$PROJECT_DIR$/app_api/routes/index.js" />
         <option value="$PROJECT_DIR$/app_client/services/articles/articles.service.js" />
@@ -185,7 +192,6 @@
         <option value="$PROJECT_DIR$/app_client/pages/lookImage/lookInner.view.html" />
         <option value="$PROJECT_DIR$/app_client/pages/lookVideo/lookVideo.view.html" />
         <option value="$PROJECT_DIR$/app_client/pages/lookImage/lookImage.view.html" />
-        <option value="$PROJECT_DIR$/app_client/pages/inStylePage/inStylePage.view.html" />
         <option value="$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.controller.js" />
         <option value="$PROJECT_DIR$/app_client/components/scrollTop/scrollTop.component.html" />
         <option value="$PROJECT_DIR$/app_client/components/scrollTop/scrollTop.component.js" />
@@ -215,10 +221,12 @@
         <option value="$PROJECT_DIR$/app_client/pages/trendingPage/trendingPage.view.html" />
         <option value="$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html" />
         <option value="$PROJECT_DIR$/app_client/components/footer/footer.component.html" />
-        <option value="$PROJECT_DIR$/app_client/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app_client/components/home/home.component.html" />
         <option value="$PROJECT_DIR$/app_client/components/HomeArticleListing/HomeArticleListing.view.html" />
         <option value="$PROJECT_DIR$/app_client/app.js" />
+        <option value="$PROJECT_DIR$/app_client/pages/inStylePage/inStylePage.view.html" />
+        <option value="$PROJECT_DIR$/app_client/pages/inStylePage/inStyle.controller.js" />
+        <option value="$PROJECT_DIR$/app_client/stylesheets/style.css" />
       </list>
     </option>
   </component>
@@ -278,14 +286,7 @@
               <item name="Mochunks-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mochunks-site" type="462c0819:PsiDirectoryNode" />
               <item name="app_client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mochunks-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mochunks-site" type="462c0819:PsiDirectoryNode" />
-              <item name="app_client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="articlePage" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,16 +364,15 @@
       <workItem from="1505298336928" duration="518000" />
       <workItem from="1505325732935" duration="2219000" />
       <workItem from="1505820550784" duration="23217000" />
-      <workItem from="1506032257076" duration="27532000" />
+      <workItem from="1506032257076" duration="29814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206226000" />
+    <option name="totallyTimeSpent" value="208508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.21816827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -382,7 +382,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3409836" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3409836" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298585" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39971346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -408,13 +408,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_api/models/Article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/keystone.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -465,13 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/inStylePage/inStylePage.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -700,24 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="638" column="13" lean-forward="false" selection-start-line="638" selection-start-column="13" selection-end-line="638" selection-end-column="13" />
-          <folding>
-            <marker date="1506243043152" expanded="true" signature="4959:5224" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_client/components/sub-article-list/sub-article-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -760,9 +728,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_client/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="374">
+          <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/chitChatPage/chitChatPage.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/inStylePage/inStyle.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/pages/inStylePage/inStylePage.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="308" column="26" lean-forward="false" selection-start-line="308" selection-start-column="26" selection-end-line="308" selection-end-column="26" />
+          <folding>
+            <marker date="1506246415875" expanded="true" signature="4958:5223" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

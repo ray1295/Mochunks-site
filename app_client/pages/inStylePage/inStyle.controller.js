@@ -5,7 +5,8 @@ app.controller('InStyleController', function (GalleriesService) {
 	
 	// Get all Galleries within a section
 	GalleriesService.getGalleriesBySection('instyle').then(function (response) {
-		vm.galleries = response.data;
+		vm.galleries = response.data.results;
+		// console.log(vm.galleries)
 	}).catch(function (err) {
 		alert("Could not load articles");
 	});

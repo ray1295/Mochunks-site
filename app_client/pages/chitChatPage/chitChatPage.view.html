@@ -25,12 +25,14 @@
 				<p>{{article.description}}</p>
 				<!--Button to view full article-->
 
-
 				<hr>
 				<br>
 			</a>
 		</div>
 
+		<!-- Only show more articles if next page object evaluates to true-->
+		<button ng-if="vm.page" ng-click="vm.loadMoreArticles()">Check out more</button>
+		
 		<div class="col-sm-8 col-xs-12">
 			<h3>Article Listing</h3>
 

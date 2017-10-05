@@ -6,7 +6,7 @@ const Gallery = require('../controllers/galleries');
 const YOUTUBE = require('../controllers/external/youtube');
 
 router.get('/articles/:page', ArticlesCtrl.getAllArticles);
-router.get('/articles/:section', ArticlesCtrl.getAllArticlesForSection);
+router.get('/articles/:section/:page', ArticlesCtrl.getAllArticlesForSection);
 router.get('/article/:articleID', ArticlesCtrl.getSingleArticleByID);
 router.get('/articles/view/recommended', ArticlesCtrl.getRecommendedArticles);
 router.get('/article/view/latest/:section', ArticlesCtrl.getLatestArticleForSection);

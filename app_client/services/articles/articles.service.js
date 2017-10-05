@@ -5,8 +5,8 @@ app.service('ArticlesService', function ($http) {
 		return $http.get('/articles/' + page);
 	};
 
-	var getArticlesBySection = function (section) {
-		return $http.get('articles/' + section);
+	var getArticlesBySection = function (section, page) {
+		return $http.get('articles/' + section + '/' + page);
 	};
 
 	var getSingleArticleByID = function (articleID) {

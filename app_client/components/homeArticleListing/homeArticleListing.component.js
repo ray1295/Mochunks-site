@@ -8,6 +8,7 @@ function articleListingController(ArticlesService, $window) {
 	 * @desc
 	 * @params
 	 * @return
+	 * 
 	 * **/
 	vm.loadArticles = function (page) {
 		// Increment the current page number to get the next page for the records

@@ -12,12 +12,12 @@ app.service('ArticlesService', function ($http) {
 	var getSingleArticleByID = function (articleID) {
 		return $http.get('article/' + articleID);
 	};
-	
-	var getRecommendedArticles = function() {
+
+	var getRecommendedArticles = function () {
 		return $http.get('articles/view/recommended');
 	};
-	
-	var getLatestArticleForSection = function(section) {
+
+	var getLatestArticleForSection = function (section) {
 		return $http.get('/article/view/latest/' + section);
 	};
 

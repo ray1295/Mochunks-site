@@ -34,9 +34,13 @@ keystone.init({
 	'user model': 'User',
 });
 
-// Connect to database
 if (process.env.NODE_ENV === "production") {
+	// Set mongodb url
 	keystone.set('mongo', process.env.production_database);
+	// Cloudinary configuration
+	keystone.set('cloudinary config', process.env.production_cloudinary_url);
+} else {
+	keystone.set('cloudinary config', process.env.development_cloudinary_url);
 }
 
 // Load your project's Models
@@ -52,23 +56,8 @@ keystone.set('locals', {
 	editable: keystone.content.editable,
 });
 
+// inform keystone of the routes that the app will be utilising
 keystone.set('routes', require('./app_api/routes'));
 
-// Cloudinary configuration
-keystone.set('cloudinary config', {cloud_name: 'my-cloud', api_key: 'abc', api_secret: '123'});
-// or
-keystone.set('cloudinary config', 'cloudinary://api_key:api_secret@cloud_name');
-
-// optional, will prefix all built-in tags with 'keystone_'
-keystone.set('cloudinary prefix', 'keystone');
-
-// optional, will prefix each image public_id with [{prefix}]/{list.path}/{field.path}/
-// keystone.set('cloudinary folders', true);
-
-// // optional, will force cloudinary to serve images over https
-// keystone.set('cloudinary secure', true);
-
 // Start Keystone to connect to your database and initialise the web server
-
-
 keystone.start();

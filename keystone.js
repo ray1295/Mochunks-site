@@ -35,6 +35,8 @@ keystone.init({
 });
 
 // Connect to database
+console.log(process.env.NODE_ENV);
+console.log(process.env.MONGO_URI);
 if (process.env.NODE_ENV === "production") keystone.set('mongo', process.env.MONGO_URI);
 
 // Load your project's Models

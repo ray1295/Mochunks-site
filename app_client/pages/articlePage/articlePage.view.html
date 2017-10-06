@@ -1,0 +1,53 @@
+<div class="apvh-page row">
+
+	<div class="r-page col-sm-8">
+
+		<p><span class="title-direct">Life Style</span> <i class="fa fa-long-arrow-right"></i> <a href=""
+																								  class="title-direct">Chit
+			Chat With Chunk</a> <i class="fa fa-long-arrow-right"></i> Article Page</p>
+		<br><br>
+
+		<h1>{{vm.article.title}}</h1>
+
+		<img src={{vm.article.firstArticleImage.secure_url}}>
+		<!--<img src={{vm.article.secondArticleImage.secure_url}}>-->
+		<!--<img src={{vm.article.thirdArticleImage.secure_url}}>-->
+
+		<h5>{{vm.article.description}}</h5>
+
+		<div ng-bind-html="vm.article.content"></div>
+
+	</div>
+
+	<div class="col-sm-4">
+
+		<br><br><br>
+
+		<mochunks-webpisodes></mochunks-webpisodes>
+
+		<div class="hidden-xs right-listing">
+
+			<p class="ads">Advertisement</p>
+
+			<mochunks-eventcide></mochunks-eventcide>
+
+			<br><br><br>
+
+		</div>
+
+		<br><br>
+
+	</div>
+
+
+	<div class="sub-article-list row hidden-xs">
+
+		<br><br><br><br>
+
+		<sub-article-list></sub-article-list>
+
+		<br><br><br><br>
+
+	</div>
+
+</div>

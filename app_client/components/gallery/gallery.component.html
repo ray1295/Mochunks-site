@@ -1,0 +1,17 @@
+<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
+	<div  uib-slide ng-repeat="gallery in vm.recommendedGalleries" index="$index">
+		<a href="/gallery/{{gallery._id}}"><img
+				ng-src="{{gallery.firstImage.secure_url}}" alt=""></a>
+	</div>
+</div>
+
+<video width="320" height="240" autoplay>
+	<source src="movie.mp4" type="video/mp4">
+</video>
+
+<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
+	<div uib-slide ng-repeat="" index="$index">
+		<img ng-src="{{article.firstArticleImage.secure_url}}">
+		<button class="arti-carousel-title"><a href="/#!"><h3 ></h3></a></button>
+	</div>
+</div>

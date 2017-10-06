@@ -1,0 +1,22 @@
+<a href="/#!/article/view/{{article._id}}" ng-repeat="article in vm.listedArticles">
+
+	<div class="row article-home-block">
+
+
+		<img class="col-sm-6" src="{{article.firstArticleImage.secure_url}}" alt="{{article.title}}">
+
+		<div class="col-sm-6">
+
+			<h2>{{article.title}}</h2>
+			<h6>{{article.publishedDate | date: 'MM/dd/yyyy'}}</h6>
+			<p>{{article.description}}</p>
+
+		</div>
+		
+	</div>
+
+</a>
+
+<!-- Only show more articles if next page object evaluates to true-->
+<button ng-if="vm.page" ng-click="vm.loadMoreArticles()">Check out more</button>
+	

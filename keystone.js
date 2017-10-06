@@ -34,6 +34,9 @@ keystone.init({
 	'user model': 'User',
 });
 
+// Connect to database
+if (process.env.NODE_ENV === "production") keystone.set('mongo', process.env.MONGO_URI);
+
 // Load your project's Models
 keystone.import('./app_api/models');
 
@@ -49,17 +52,21 @@ keystone.set('locals', {
 
 keystone.set('routes', require('./app_api/routes'));
 
+// Cloudinary configuration
+keystone.set('cloudinary config', { cloud_name: 'my-cloud', api_key: 'abc', api_secret: '123' });
+// or
+keystone.set('cloudinary config', 'cloudinary://api_key:api_secret@cloud_name' );
 
-// Configure the navigation bar in Keystone's Admin UI
-// keystone.set('nav', {
-// 	posts: ['posts', 'post-categories'],
-// 	galleries: 'galleries',
-// 	enquiries: 'enquiries',
-// 	users: 'users',
-// });
+// optional, will prefix all built-in tags with 'keystone_'
+keystone.set('cloudinary prefix', 'keystone');
+
+// optional, will prefix each image public_id with [{prefix}]/{list.path}/{field.path}/
+keystone.set('cloudinary folders', true);
+
+// optional, will force cloudinary to serve images over https
+keystone.set('cloudinary secure', true);
 
 // Start Keystone to connect to your database and initialise the web server
-
 
 
 keystone.start();

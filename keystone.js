@@ -35,9 +35,9 @@ keystone.init({
 });
 
 // Connect to database
-console.log(process.env.NODE_ENV);
-console.log(process.env.MONGO_URI);
-if (process.env.NODE_ENV === "production") keystone.set('mongo', process.env.MONGO_URI);
+if (process.env.NODE_ENV === "production") {
+	keystone.set('mongo', process.env.production_database);
+}
 
 // Load your project's Models
 keystone.import('./app_api/models');
@@ -55,9 +55,9 @@ keystone.set('locals', {
 keystone.set('routes', require('./app_api/routes'));
 
 // Cloudinary configuration
-keystone.set('cloudinary config', { cloud_name: 'my-cloud', api_key: 'abc', api_secret: '123' });
+keystone.set('cloudinary config', {cloud_name: 'my-cloud', api_key: 'abc', api_secret: '123'});
 // or
-keystone.set('cloudinary config', 'cloudinary://api_key:api_secret@cloud_name' );
+keystone.set('cloudinary config', 'cloudinary://api_key:api_secret@cloud_name');
 
 // optional, will prefix all built-in tags with 'keystone_'
 keystone.set('cloudinary prefix', 'keystone');

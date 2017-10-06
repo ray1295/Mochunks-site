@@ -1,0 +1,53 @@
+@media screen and (min-width: 320px){
+	.webpisodes-list {
+		height: inherit;
+		overflow: auto;
+		padding: 0 15px 20px;
+		border: 1px solid #333;
+	}
+}
+
+@media screen and (min-width: 768px) {
+.webpisodes-list {
+	border: none;
+	padding: 0 1.5vw;
+	height: 450px;
+} 
+}
+
+
+.webpisodes-list h3 {
+	color: #fff;
+	background: #333;
+	padding: 10px;
+}
+
+.webpisodes-list p {
+	color: #aaa;
+}
+
+.webpisodes-list h4 {
+	font-weight: 900;
+}
+
+.webpisodes-list hr {
+	margin: auto;
+	width: 100%;
+	height: 10px;
+}
+
+.main-episode {
+	height: 170px;
+	background: #ccc;
+}
+
+.main-episode col-sm-4 {
+	background: #333;
+}
+
+.webpisodes-img {
+position: relative;
+z-index: 1;
+height: 200px;
+width: 100%;
+}

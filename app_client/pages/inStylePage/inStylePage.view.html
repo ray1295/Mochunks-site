@@ -1,0 +1,36 @@
+<p><span class="title-direct">Fashion</span> <i class="fa fa-long-arrow-right"></i> In Style</p>
+
+<h1 class="lobster txt-center">Featured Content</h1>
+
+<p class="txt-center">Get the latest fashion tips and outfit ideas. Click through runway and front row photos from
+	fashion week shows in New York, London, Paris, and Milan. Plus, browse key accessories like bags, shoes, and
+	sunglasses, must-have denim looks, and more top fashion trends.
+</p>
+
+<br>
+
+<!-- Galleries that have been recommended-->
+<ul class="wrapper grid">
+	<li ng-repeat="gallery in vm.recommendedGalleries"><a href="/gallery/{{gallery._id}}"><img
+			ng-src="{{gallery.firstImage.secure_url}}" alt=""></a></li>
+</ul>
+
+<br>
+
+<hr><br>
+
+<h1 class="lobster text-center">Most Recent</h1>
+
+<p class="txt-center">Get the latest fashion tips and outfit ideas. Click through runway and front row photos from
+	fashion week shows in New York, London, Paris, and Milan. Plus, browse key accessories like bags, shoes, and
+	sunglasses, must-have denim looks, and more top fashion trends.
+</p>
+
+<br>
+
+<ul class="wrapper grid">
+	<li ng-repeat="gallery in vm.galleries"><a href="/gallery/{{gallery._id}}"><img
+			src="{{gallery.firstImage.secure_url}}">
+	</a>
+</ul>
+

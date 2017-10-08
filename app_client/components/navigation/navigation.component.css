@@ -182,7 +182,7 @@ mochunks-menu-x-s {
 .dropbtn {
 	background-color: #999;
 	color: #fff;
-	padding: 16px 0 16px 16px;
+	padding: 16px 8px;
 	border: none;
 	cursor: pointer;
 }

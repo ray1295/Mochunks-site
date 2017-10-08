@@ -1,6 +1,6 @@
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) {
 	.webpisodes-list {
-		height: inherit;
+		height: 450px;
 		overflow: auto;
 		padding: 0 15px 20px;
 		border: 1px solid #333;
@@ -8,22 +8,37 @@
 }
 
 @media screen and (min-width: 768px) {
-.webpisodes-list {
-	border: none;
-	padding: 0 1.5vw;
-	height: 450px;
-} 
+	.webpisodes-list {
+		border: none;
+		padding: 0 1.5vw;
+		height: 450px;
+	}
 }
 
-
+@media screen and (min-width: 1024px) {
+	.webpisodes-list {
+		padding: 0;
+	}
+}
 .webpisodes-list h3 {
-	color: #fff;
-	background: #333;
-	padding: 10px;
-}
+	color: #999;
+	padding: 0 0 10px 0;
+}}
 
 .webpisodes-list p {
 	color: #aaa;
+}
+
+.webpisodes-list a i {
+	position: absolute;
+	z-index: 2;
+	font-size: 2em;
+	background: #fff;
+	padding: 10px 15px;
+}
+
+.webpisodes-list a:hover i {
+color: #828286;
 }
 
 .webpisodes-list h4 {
@@ -46,8 +61,11 @@
 }
 
 .webpisodes-img {
-position: relative;
-z-index: 1;
-height: 200px;
-width: 100%;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+
+.webpisodes-sub i {
+	font-size: 1em !important;
 }

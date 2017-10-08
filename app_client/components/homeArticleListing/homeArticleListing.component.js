@@ -20,6 +20,7 @@ function articleListingController(ArticlesService) {
 app.component('mochunksArticles', {
 	templateUrl: 'components/homeArticleListing/homeArticleListing.view.html',
 	controller: articleListingController,
-	controllerAs: 'vm'
+	controllerAs: 'vm',
+	css: 'components/homeArticleListing/homeArticleListing.component.css'
 });
 

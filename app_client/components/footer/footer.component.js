@@ -7,6 +7,7 @@ function footerController() {
 app.component('mochunksFooter', {
     templateUrl: 'components/footer/footer.component.html',
     controller: footerController,
-    controllerAs: 'vm'
+    controllerAs: 'vm',
+	css:'components/footer/footer.component.css'
 });
 

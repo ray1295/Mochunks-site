@@ -13,5 +13,6 @@ function homeController(ArticlesService) {
 app.component('mochunksHome', {
 	templateUrl: 'components/home/home.component.html',
 	controller: homeController,
-	controllerAs: 'vm'
+	controllerAs: 'vm',
+	css: 'components/home/home.component.css'
 });

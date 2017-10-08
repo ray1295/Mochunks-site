@@ -73,12 +73,15 @@ module.exports.getSingleArticleByID = (req, res) => {
  * **/
 // Get recommended articles
 module.exports.getRecommendedArticles = (req, res) => {
-	keystone.list('Article').model.find().where('recommended', true).sort('-publishedDate').then((articles) => {
-		return res.json(articles).status(200);
-	}, (err) => {
-		// TODO: Log errors
-		return res.sendStatus(500);
-	});
+	keystone.list('Article')
+		.model.find()
+		.where('recommended', true)
+		.sort('-publishedDate')
+		.then((articles) => res.json(articles).status(200))
+		.catch(err => {
+			// TODO: Log errors
+			return res.sendStatus(500);
+		});
 };
 
 /**

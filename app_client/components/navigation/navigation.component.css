@@ -189,7 +189,7 @@ menu-x-s {
 
 .navtop-2 .link {
 	text-transform: capitalize;
-	padding: 16px;
+	padding: 17px;
 }
 .dropdown {
 	position: relative;
@@ -200,7 +200,7 @@ menu-x-s {
 	display: none;
 	position: absolute;
 	background-color: #fff;
-	min-width: 50x;
+	min-width: 100px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }

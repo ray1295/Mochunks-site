@@ -1,6 +1,6 @@
 var app = angular.module('wevativeApp');
 
-function navigationController() {
+function navigationController () {
     var vm = this;
 }
 

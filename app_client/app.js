@@ -15,6 +15,36 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				controller: 'ChitChatController',
 				controllerAs: 'vm'
 			})
+			.when('/celebReview', {
+				templateUrl: 'pages/celebReview/celebReview.view.html',
+				controller: 'CelebReviewController',
+				controllerAs: 'vm'
+			})
+			.when('/event', {
+				templateUrl: 'pages/event/event.view.html',
+				controller: 'EventController',
+				controllerAs: 'vm'
+			})
+			.when('/hub', {
+				templateUrl: 'pages/hub/hub.view.html',
+				controller: 'HubController',
+				controllerAs: 'vm'
+			})
+			.when('/gallery', {
+				templateUrl: 'pages/gallery/gallery.view.html',
+				controller: 'GalleryController',
+				controllerAs: 'vm'
+			})
+			.when('/realTalk', {
+				templateUrl: 'pages/realTalk/realTalk.view.html',
+				controller: 'RealTalkController',
+				controllerAs: 'vm'
+			})
+			.when('/scoopInterview', {
+				templateUrl: 'pages/scoopInterview/scoopInterview.view.html',
+				controller: 'ScoopInterviewController',
+				controllerAs: 'vm'
+			})
 			.when('/askChunksPage', {
 				templateUrl: 'pages/askChunksPage/askChunksPage.view.html',
 				controller: 'AskChunksController',

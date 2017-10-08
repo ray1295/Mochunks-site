@@ -1,4 +1,4 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 function subArticleListController(ArticlesService, $q) {
 	var vm = this;

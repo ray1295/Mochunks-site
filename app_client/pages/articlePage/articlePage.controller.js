@@ -1,4 +1,4 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 app.controller('ArticlePageCtrl', function(ArticlesService, $window, $routeParams){
 	var vm = this;

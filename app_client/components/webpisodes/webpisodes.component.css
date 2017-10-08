@@ -23,7 +23,7 @@
 .webpisodes-list h3 {
 	color: #999;
 	padding: 0 0 10px 0;
-}}
+}
 
 .webpisodes-list p {
 	color: #aaa;
@@ -68,4 +68,5 @@ color: #828286;
 
 .webpisodes-sub i {
 	font-size: 1em !important;
+	padding: 5px !important;
 }

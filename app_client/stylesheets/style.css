@@ -7,7 +7,7 @@ html {
 }
 
 main {
-	padding: 0 7vw;
+	padding: 3vw 7vw 0;
 	display: block;
 }
 
@@ -53,7 +53,7 @@ p {
 }
 
 .button-it {
-	background: #fff;
+	background: transparent;
 	color: #828286;
 	border: 2px solid #828286;
 	padding: 7px 10px;
@@ -136,6 +136,7 @@ a:hover {
 	left: 0;
 	position: absolute;
 	z-index: -1;
+	bordeR: 1px solid #f1f1f1;
 }
 
 .header-section h2 {
@@ -296,76 +297,7 @@ a:hover {
 	transform: scale(1.1);
 }
 
-/**sub-article-list**/
 
-.sub-article-list {
-	background: #fff;
-	text-align: left;
-}
-
-.sub-article-list h4 {
-	cursor: pointer;
-	font-weight: 400;
-	display: -webkit-box;
-	-webkit-line-clamp: 4;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-.sub-article-list h4:hover {
-	text-decoration: underline;
-}
-
-.below-box {
-	display: inline-flex;
-	justify-content: space-around;
-	width: 100%;
-	height: inherit;
-}
-
-.us-below {
-	width: 220px;
-	height: inherit;
-}
-
-.us-below h1 {
-	font-family: 'Lobster', cursive;
-	text-align: left;
-	font-size: 35px;
-	margin: 0;
-}
-
-.us-below div {
-	text-align: left;
-}
-
-.sub-article-list .small-below {
-	height: 150px;
-	width: 15vw;
-	margin: 0 20px 0 0;
-	color: #999;
-	padding: 0;
-}
-
-.small-below img {
-	height: 9vw !important;
-	width: 15vw !important;
-	background: #999;
-}
-
-.small-below h5 {
-	float: right;
-	line-height: inherit;
-	text-transform: capitalize;
-	margin: 0;
-}
-
-.small-below p {
-	margin: 0;
-}
-
-/**end of sub-article-list**/
 
 /**end of carousel**/
 
@@ -562,6 +494,7 @@ form button {
 		width: 100%;
 		height: inherit;
 		padding: 0;
+		border: 1px solid #f7f7f7;
 	}
 }
 

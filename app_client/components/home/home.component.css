@@ -11,11 +11,17 @@
 }
 
 .about {
-	padding: 50px 0;
+	padding: 70px 0;
 	text-align: center;
+	background: #f7f7f7;
 }
 
 .about p {
 	padding: 0 15vw;
 	margin: 0;
+}
+
+.about h3 {
+	margin: 0;
+	color: #828286;
 }

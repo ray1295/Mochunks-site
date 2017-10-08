@@ -1,4 +1,4 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 app.controller('LoveLoveController', function (ArticlesService) {
 	var vm = this;

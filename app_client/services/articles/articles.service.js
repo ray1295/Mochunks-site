@@ -1,4 +1,4 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 app.service('ArticlesService', function ($http) {
 	var getAllArticles = function (page) {

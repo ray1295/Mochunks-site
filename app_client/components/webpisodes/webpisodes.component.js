@@ -1,4 +1,4 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 function webpisodesController(Youtube, $sce) {
 	var vm = this;
@@ -22,7 +22,7 @@ function webpisodesController(Youtube, $sce) {
 		});
 }
 
-app.component('mochunksWebpisodes', {
+app.component('webpisodes', {
 	templateUrl: 'components/webpisodes/webpisodes.component.html',
 	controller: webpisodesController,
 	controllerAs: 'vm',

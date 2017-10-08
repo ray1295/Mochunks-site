@@ -1,8 +1,8 @@
-var app = angular.module('mochunksApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'angularCSS'])
+var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'angularCSS'])
 	.config(function ($routeProvider) {
 		$routeProvider
 			.when('/', {
-				template: '<mochunks-home></mochunks-home>'
+				template: '<home></home>'
 			})
 			.when('/landingPage', {
 				templateUrl: 'pages/landingPage/landingPage.view.html'

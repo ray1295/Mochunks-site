@@ -1,10 +1,10 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 function footerController() {
     var vm = this;
 }
 
-app.component('mochunksFooter', {
+app.component('footer', {
     templateUrl: 'components/footer/footer.component.html',
     controller: footerController,
     controllerAs: 'vm',

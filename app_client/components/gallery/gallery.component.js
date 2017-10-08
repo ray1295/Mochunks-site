@@ -1,4 +1,4 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 function galleryController() {
 	var vm = this;
@@ -7,6 +7,7 @@ function galleryController() {
 app.component('gallery', {
 	templateUrl: 'components/gallery/gallery.component.html',
 	controller: galleryController,
-	controllerAs: 'vm'
+	controllerAs: 'vm',
+	css: 'components/gallery/gallery.components.css'
 });
 

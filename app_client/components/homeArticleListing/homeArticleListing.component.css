@@ -1,0 +1,139 @@
+@media screen and (min-width: 320px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+
+/**article-listing**/
+
+.article-listing h3 {
+	margin: 0 0 10px;
+}
+
+.left-listing {
+	margin: 10px 0;
+}
+
+.left-listing .article-home-block {
+	background: #f7f7f7;
+	margin: 2vw 0;
+}
+
+.left-listing .article-home-block h6 {
+	font-size: 11px;
+}
+
+.article-home-block:hover img {
+	opacity: 0.9;
+}
+
+.article-home-block:hover h2 {
+	text-decoration: underline;
+}
+
+.left-listing p {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.left-listing h3 {
+	color: #828286;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 10px 0;
+}
+
+.right-listing {
+	position: sticky;
+	top: 50px;
+}
+
+.right-listing hr {
+	margin-top: 0;
+}
+
+.right-listing img {
+	height: 300px;
+	width: 100%;
+}
+
+.right-listing h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 80px;
+}
+
+.eventcide-advert {
+	background: #24292e;
+	height: 400px;
+	text-align: left;
+	color: #fff;
+	padding: 20px;
+	margin: 10px auto;
+}
+
+.eventcide-advert h5 {
+	color: rgba(5, 133, 126, 1);
+}
+
+.cide-signup {
+	border-radius: 3px;
+	border: none;
+	background: #05857e !important;
+	text-align: center;
+}
+
+.eventcide-advert button {
+	background: none;
+	border: none;
+}
+
+.eventcide-find i {
+	color: #1b1f23;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.1);
+	font-size: 20px;
+}
+
+.eventcide-advert span {
+	color: rgba(255, 255, 255, 0.75);
+	padding: 0 0 0 10px;
+	font-size: 15px;
+}
+
+.eventcide-advert ul.dropdown-menu {
+	background: #24292e;
+	color: rgba(255, 255, 255, 0.75);
+	left: 110px;
+	top: 0px;
+	text-align: right;
+}
+
+#float-search input {
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	width: 85%;
+	padding: 0 5px;
+	background: #1b1f23;
+	box-shadow: 0px 1px #353a43;
+}
+
+#float-search button {
+	background: none;
+	color: rgba(255, 255, 255, 0.2) !important;
+	position: relative;
+	left: -30px;
+}
+
+/**end of article-listing**/

@@ -1,4 +1,4 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 app.service('GalleriesService', function ($http) {
 	var getAllGalleries = function (page) {

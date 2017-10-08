@@ -1,18 +1,19 @@
-<div class="header-section row">
+<div class="header-section container row">
 	<div class="col-md-6 col-lg-8 col-xs-12">
 
 		<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
-			<div  uib-slide ng-repeat="article in vm.recommendedArticles" index="$index">
+			<a href="/#!/article/view/{{article._id}}" uib-slide ng-repeat="article in vm.recommendedArticles" index="$index">
 				<img class="header-section-img" ng-src="{{article.firstArticleImage.secure_url}}">
-				<button class="arti-carousel-title hidden-xs"><a href="/#!/article/view/{{article._id}}"><h3>{{article.title}}</h3><p>{{article.description}}</p><h4>View Post</h4></a></button>
-				<button class="arti-carousel-title visible-xs"><a href="/#!/article/view/{{article._id}}"><h3>{{article.title}}</h3></a></button>
-			</div>
+				<h3 class="arti-carousel-title hidden-xs">{{article.title}}</h3>
+				<!--<p>{{article.description}}</p><h4>View Post</h4>-->
+				<p class="arti-carousel-title visible-xs">{{article.title}}</p>
+			</a>
 		</div>
-		
+
 	</div>
 
 	<div class="col-md-6 col-lg-4 hidden-xs header-section-right">
-		<mochunks-webpisodes></mochunks-webpisodes>
+		<webpisodes></webpisodes>
 	</div>
 
 	<br><br>
@@ -21,35 +22,39 @@
 
 <div class="visible-xs">
 	<br><br>
-	<mochunks-webpisodes></mochunks-webpisodes>
+	<webpisodes></webpisodes>
 </div>
 
 <div class="sub-article-list row hidden-xs">
-	
+
 	<!-- TODO: Rename this component to latest article or something related to its functionality -->
-<sub-article-list></sub-article-list>	
+	<sub-article-list></sub-article-list>
+</div>
+
+<div class="about">
+	<h3>About Us</h3>
+	<p>MoChunks Tv is the home of the MoChunks Show. An innovative talk show featuring chunks of lifestyle,
+		fashion,
+		entertainment and relationships...</p>
+	<br>
+	<a href="#!aboutPage" class="button-it">Read More</a>
 </div>
 
 <div class="row article-listing">
-	
+
 	<div class="col-sm-8 col-xs-12">
-		<h3>Article Listing</h3>
 		
-			<div class="left-listing">
-				
-				<mochunks-articles></mochunks-articles>
-				
-			</div>
+		<div class="left-listing">
+
+			<articles></articles>
+
+		</div>
 
 	</div>
 
 	<div class="col-sm-4 hidden-xs right-listing">
-		<h3>About Us</h3>
-		<p></p>
-
-		<h3 class="ads">Advertisement</h3>
-
-		<mochunks-eventcide></mochunks-eventcide>
+		
+		<advert></advert>
 
 	</div>
 

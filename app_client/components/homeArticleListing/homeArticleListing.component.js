@@ -1,4 +1,4 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 function articleListingController(ArticlesService, $window) {
 	var vm = this;
@@ -41,9 +41,10 @@ function articleListingController(ArticlesService, $window) {
 	vm.loadArticles(1);
 }
 
-app.component('mochunksArticles', {
+app.component('articles', {
 	templateUrl: 'components/homeArticleListing/homeArticleListing.view.html',
 	controller: articleListingController,
-	controllerAs: 'vm'
+	controllerAs: 'vm',
+	css: 'components/homeArticleListing/homeArticleListing.component.css'
 });
 

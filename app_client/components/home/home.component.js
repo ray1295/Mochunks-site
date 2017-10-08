@@ -1,4 +1,4 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 function homeController(ArticlesService) {
 	var vm = this;
@@ -10,8 +10,9 @@ function homeController(ArticlesService) {
 	});
 }
 
-app.component('mochunksHome', {
+app.component('home', {
 	templateUrl: 'components/home/home.component.html',
 	controller: homeController,
-	controllerAs: 'vm'
+	controllerAs: 'vm',
+	css: 'components/home/home.component.css'
 });

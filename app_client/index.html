@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" ng-app="mochunksApp">
+<html lang="en" ng-app="wevativeApp">
 
 <head>
 	<meta charset="UTF-8">
@@ -24,32 +24,35 @@
 	<script src="components/home/home.component.js"></script>
 	<script src="components/navigation/navigation.component.js"></script>
 	<script src="components/menuXS/menuXS.component.js"></script>
-	<script src="components/footer/footer.component.js"></script>
+	<script src="components/footer/footerMain.component.js"></script>
 	<script src="components/webpisodes/webpisodes.component.js"></script>
 	<script src="components/sub-article-list/sub-article-list.component.js"></script>
 	<script src="components/homeArticleListing/homeArticleListing.component.js"></script>
-	<script src="components/eventcide/eventcide.component.js"></script>
+	<script src="components/advert/advert.component.js"></script>
 	<script src="services/articles/articles.service.js"></script>
 	<script src="services/gallery/galleries.service.js"></script>
 	<script src="services/common/youtube.service.js"></script>
 	<script src="pages/chitChatPage/chitChatPage.controller.js"></script>
 	<script src="pages/articlePage/articlePage.controller.js"></script>
 	<script src="pages/inStylePage/inStyle.controller.js"></script>
+	<script src="pages/gallery/gallery.controller.js"></script>
 	<script src="pages/askChunksPage/askChunksPage.controller.js"></script>
-	<script src="components/gallery/gallery.component.js"></script>
-
-
+	<script src="pages/celebReview/celebReview.controller.js"></script>
+	<script src="pages/event/event.controller.js"></script>
+	<script src="pages/hub/hub.controller.js"></script>
+	<script src="pages/realTalk/realTalk.controller.js"></script>
+	<script src="pages/scoopInterview/scoopInterview.controller.js"></script>
 </head>
 
 <body>
 
 <navigation></navigation>
 
-<mochunks-menu-x-s></mochunks-menu-x-s>
+<menu-x-s></menu-x-s>
 
 <main class="row" ng-view></main>
 
-<mochunks-footer></mochunks-footer>
+<footer-main></footer-main>
 
 </body>
 

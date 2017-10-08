@@ -4,9 +4,10 @@
 	<div class="small-below" ng-repeat="article in vm.latestArticles track by article._id">
 		<a href="/#!/article/view/{{article._id}}">
 			<img ng-src="{{article.firstArticleImage.secure_url}}">
-			<h4>{{article.title}}</h4>
 			<h5>{{article.section}}</h5>
 			<p>{{article.publishedDate | date: 'MM/dd/yyyy'}}</p>
+			<h4>{{article.title}}</h4>
+	
 		</a>
 	</div>
 

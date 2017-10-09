@@ -1,10 +1,10 @@
 var app = angular.module('wevativeApp');
 
-function subArticleListController (ArticlesService, $q) {
+function subArticleListController(ArticlesService, $q) {
 	var vm = this;
 
 	// Get latest articles for section
-	var getLatestArticleArray = [ArticlesService.getLatestArticleForSection('chitchat'), ArticlesService.getLatestArticleForSection('trending'), ArticlesService.getLatestArticleForSection('wdwll'), ArticlesService.getLatestArticleForSection('askchunks')];
+	var getLatestArticleArray = [ArticlesService.getLatestArticleForSection('realtalk'), ArticlesService.getLatestArticleForSection('trending'), ArticlesService.getLatestArticleForSection('wdwll'), ArticlesService.getLatestArticleForSection('askchunks')];
 
 	$q.all(getLatestArticleArray).then(function (response) {
 		vm.latestArticles = [];

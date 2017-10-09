@@ -1,52 +1,31 @@
-<div class="artiview col-sm-9 ">
-	<p><span class="title-direct">Relationship</span> <i class="fa fa-long-arrow-right"></i> Why do we love love?</p>
-	<!-- Repeat articles-->
-	<div ng-repeat="article in vm.articles">
-		<!-- Title-->git
-		<h2>{{article.title}}</h2>
-		<!--date of post-->
-		<p>{{article.publishedDate | date: 'MM/dd/yyyy'}}</p>
-		<!-- Image-->
-		<div class="might-l col-sm-9">
-			<a href="/#!/article/view/{{article._id}}">
-				<img src={{article.firstArticleImage.secure_url}}>
-			</a>
+<div class="row">
+
+	<div class="col-sm-9">
+
+		<div class=" row left-listing">
+
+			<articles section=vm.articleSection></articles>
+
 		</div>
-		<div class="might-l col-sm-3">
-			<a href="/#!/article/view/{{article._id}}">
-				<img class="avid-xs" src={{article.secondArticleImage.secure_url}}>
-				<img class="avid-xs" src={{article.thirdArticleImage.secure_url}}>
-			</a>
+
+		<div class="sub-article-list row hidden-xs">
+
+			<br><br>
+
+			<sub-article-list></sub-article-list>
+
+			<br><br>
+
 		</div>
-		<!-- Quick description-->
-		<p>{{article.description}}</p>
-		<!--Button to view full article-->
-		<button><a href="/#!/article/view/{{article._id}}">View post</a></button>
-		<hr>
-	</div>
-
-	<div class=" row left-listing">
-
-		<articles></articles>
-
-	</div>
-			
-	<div class="row hidden-xs">
-
-		<br><br><br><br>
-
-		<sub-article-list></sub-article-list>
-
-		<br><br><br><br>
 
 	</div>
 
-</div>
+	<div class="col-sm-3 right-listing">
 
-<div class="col-sm-3 right-listing">
+		<p>Advertisement</p>
 
-	<p class="ads">Advertisement</p>
+		<advert></advert>
 
-	<advert></advert>
+	</div>
 
 </div>

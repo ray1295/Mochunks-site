@@ -5,19 +5,19 @@ app.service('GalleriesService', function ($http) {
 		return $http.get('galleries/' + page);
 	};
 
-	var getGalleriesBySection = function (section) {
-		return $http.get('galleries/' + section);
+	var getGalleriesBySection = function (section, page) {
+		return $http.get('galleries/' + section + '/' + page);
 	};
 
 	var getSingleGalleryByID = function (galleryID) {
 		return $http.get('gallery/' + galleryID);
 	};
 
-	var getRecommendedGalleries = function() {
+	var getRecommendedGalleries = function () {
 		return $http.get('galleries/view/recommended');
 	};
 
-	var getLatestGalleryForSection = function(section) {
+	var getLatestGalleryForSection = function (section) {
 		return $http.get('gallery/view/latest/' + section);
 	};
 

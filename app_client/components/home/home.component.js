@@ -2,6 +2,8 @@ var app = angular.module('wevativeApp');
 
 function homeController(ArticlesService) {
 	var vm = this;
+	
+	vm.articleSection = 'home';
 
 	// Get articles that are recommended, these are shown in the homepage (header) carousel
 	ArticlesService.getRecommendedArticles().then(function (response) {

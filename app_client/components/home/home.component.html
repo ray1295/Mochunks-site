@@ -2,7 +2,8 @@
 	<div class="col-md-6 col-lg-8 col-xs-12">
 
 		<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
-			<a href="/#!/article/view/{{article._id}}" uib-slide ng-repeat="article in vm.recommendedArticles" index="$index">
+			<a href="/#!/article/view/{{article._id}}" uib-slide ng-repeat="article in vm.recommendedArticles"
+			   index="$index">
 				<img class="header-section-img" ng-src="{{article.firstArticleImage.secure_url}}">
 				<h3 class="arti-carousel-title hidden-xs">{{article.title}}</h3>
 				<!--<p>{{article.description}}</p><h4>View Post</h4>-->
@@ -43,17 +44,17 @@
 <div class="row article-listing">
 
 	<div class="col-sm-8 col-xs-12">
-		
+
 		<div class="left-listing">
 
-			<articles></articles>
+			<articles section=vm.articleSection></articles>
 
 		</div>
 
 	</div>
 
 	<div class="col-sm-4 hidden-xs right-listing">
-		
+
 		<advert></advert>
 
 	</div>

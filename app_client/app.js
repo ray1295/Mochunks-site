@@ -10,11 +10,6 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 			.when('/aboutPage', {
 				templateUrl: 'pages/aboutPage/about.view.html'
 			})
-			.when('/chitChatPage', {
-				templateUrl: 'pages/chitChatPage/chitChatPage.view.html',
-				controller: 'ChitChatController',
-				controllerAs: 'vm'
-			})
 			.when('/celebReview', {
 				templateUrl: 'pages/celebReview/celebReview.view.html',
 				controller: 'CelebReviewController',
@@ -71,7 +66,9 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				templateUrl: 'pages/lifestylePage/lifestylePage.view.html'
 			})
 			.when('/lookBookPage', {
-				templateUrl: 'pages/lookBookPage/lookBookPage.view.html'
+				templateUrl: 'pages/lookBookPage/lookBookPage.view.html',
+				controller: 'LookBookCtrl',
+				controllerAs: 'vm'
 			})
 			.when('/loveLovePage', {
 				templateUrl: 'pages/loveLovePage/loveLovePage.view.html'

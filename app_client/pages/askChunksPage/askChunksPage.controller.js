@@ -1,8 +1,8 @@
 var app = angular.module('wevativeApp');
 
-app.controller('AskChunksController', function($window, $routeParams){
+app.controller('AskChunksController', function(){
 	var vm = this;
-	
-	var currentLocation = window.location.href;
+
+	vm.articleSection = 'askchunks';
 
 });

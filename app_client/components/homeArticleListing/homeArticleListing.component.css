@@ -22,7 +22,6 @@
 }
 
 .left-listing .article-home-block {
-	background: #f7f7f7;
 	margin: 2vw 0;
 }
 
@@ -46,7 +45,6 @@
 }
 
 .left-listing h3 {
-	color: #828286;
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
@@ -76,7 +74,6 @@
 
 .eventcide-advert {
 	background: #24292e;
-	height: 400px;
 	text-align: left;
 	color: #fff;
 	padding: 20px;

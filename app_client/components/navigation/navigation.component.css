@@ -20,10 +20,11 @@
 	top: -1px;
 	height: 50px;
 	z-index: 100;
-	background: #fff;
+	background: #940094;
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
 }
 .navtop-2 h1 {
+	color: #fff;
 	margin: 0;
 	font-size: 30px;
 }
@@ -36,9 +37,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #f7f7f7;
 	height: 30px;
-	color:#999;
+	color:#940094;
 	padding: 0 7vw;
 }
 
@@ -119,6 +119,7 @@
 	padding: 0 5px;
 	background: none;
 	border: none;
+	color: #940094;
 }
 
 .memo a:hover {
@@ -138,7 +139,7 @@
 	text-transform: capitalize;
 	background: none;
 	border: none;
-	color: #999;
+	color: #fff;
 	height: inherit;
 }
 
@@ -188,9 +189,21 @@ menu-x-s {
 }
 
 .navtop-2 .link {
+	color: #fff;
 	text-transform: capitalize;
 	padding: 17px;
 }
+
+.navtop-2 img {
+	width: 100px;
+	height: 100px;
+}
+
+.navtop-logo {
+	display: inline-flex;
+	align-items: center;
+}
+
 .dropdown {
 	position: relative;
 	display: inline-block;
@@ -201,6 +214,7 @@ menu-x-s {
 	position: absolute;
 	background-color: #fff;
 	min-width: 100px;
+	width: max-content;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
@@ -218,7 +232,8 @@ menu-x-s {
 }
 
 .dropdown:hover .dropbtn, .navtop-2 .link:hover {
-	background-color: #f7f7f7;
+	background-color: #fff;
+	color: #940094;
 }
 
 /**end of navigation**/

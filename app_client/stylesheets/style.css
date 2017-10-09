@@ -3,11 +3,11 @@ html {
 	margin: auto;
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
-	color: #999;
+	color: #333;
 }
 
 main {
-	padding: 3vw 7vw 0;
+	padding: 1vw 7vw 0;
 	display: block;
 }
 
@@ -45,7 +45,7 @@ p {
 .btn-default:hover,
 .btn-default:active,
 .btn-default:focus {
-	color: #999;
+	color: #333;
 	background: none !important;
 	outline: none !important;
 	border: none;
@@ -54,17 +54,17 @@ p {
 
 .button-it {
 	background: transparent;
-	color: #828286;
-	border: 2px solid #828286;
+	color: #940094;
+	border: 2px solid #940094;
 	padding: 7px 10px;
 	border-radius: 5px;
 	font-weight: 600;
 }
 
 .button-it:hover {
-	background: #828286;
+	background: #940094;
 	color: #fff;
-	border: 2px solid #828286;
+	border: 2px solid #940094;
 }
 
 .row {
@@ -76,11 +76,12 @@ p {
 	justify-content: center;
 	text-align: center;
 	padding: 0 10vw;
+	color: #940094;
 }
 
 a {
 	text-decoration: none !important;
-	color: #999;
+	color: #333;
 }
 
 a:hover {
@@ -113,11 +114,12 @@ a:hover {
 	position: absolute;
 	background: transparent;
 	padding: 0 16px;
+	margin: 10px 0;
 	font-size: 2em;
-	color: #fff;
-	bottom: 0;
-	text-shadow: 0px 2px #999;
+	color: #fff6ff;
+	text-shadow: 1px 0px 2px #940094;
 }
+
 /**enf of wrapper**/
 
 /**carousel**/
@@ -138,15 +140,17 @@ a:hover {
 }
 
 .arti-carousel-title {
-	background: #fff;
+	background: #fff6ff;
 	width: 50%;
 	height: 150px;
 	text-align: left;
+	color: #940094;
 	margin: 0;
 	padding: 20px;
 	bottom: -300px;
+	border-top: 10px solid #940094;
 	position: relative;
-	box-shadow: 0 4px 18px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 4px 18px 5px rgba(0, 0, 0, 0.1);
 }
 
 .arti-carousel-title h3 {
@@ -175,8 +179,8 @@ a:hover {
 }
 
 .carousel-indicators li {
-	background-color: #999;
-	border-color: #999;
+	background-color: #940094;
+	border-color: #940094;
 	margin: 0 5px;
 }
 
@@ -184,7 +188,7 @@ a:hover {
 	width: 10px;
 	height: 10px;
 	background-color: transparent;
-	border: 1px solid #999;
+	border: 1px solid #940094;
 	margin: 0 5px;
 }
 
@@ -212,24 +216,25 @@ a:hover {
 /*}*/
 
 .webpisodes-sub .col-sm-8 h5 {
-	font-weight: 400;
 	margin: 0;
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	background: #fff6ff;
+	padding: 5px;
 }
 
 /**ask-us**/
 .ask-us {
-	background: #999;
-	color: #fff;
+	background: #fff6ff;
 	padding: 10px 30px 30px;
+	color: #940094;
 }
 
 .ask-us input, .ask-us textarea {
-	color: #999;
+	color: #940094;
 }
 
 .ac .col-sm-3 {
@@ -247,19 +252,13 @@ a:hover {
 }
 
 .ab-content img {
-	height: 50vw;
-	width: 45vw;
-	transition: all 0.3s;
-}
-
-.ab-content img:hover {
-	transform: scale(1.05);
+	width: 60%;
 }
 
 .ab-content p {
-	background: rgb(51, 51, 51);
+	background: #f7f7f7;
+	color: #333;
 	padding: 5vw;
-	height: fit-content;
 	font-size: 14px;
 	margin: 0;
 }
@@ -269,7 +268,7 @@ a:hover {
 /**go top**/
 #go-top {
 	color: #fff;
-	background: #999;
+	background: #333;
 	padding: 15px;
 	position: fixed;
 	bottom: 40px;
@@ -281,8 +280,6 @@ a:hover {
 #go-top:hover {
 	transform: scale(1.1);
 }
-
-
 
 /**end of carousel**/
 

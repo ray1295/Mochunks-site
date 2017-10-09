@@ -13,7 +13,7 @@
 
 .sub-article-list {
 	background: #fff;
-	text-align: left;
+	text-align: center;
 }
 
 .sub-article-list h4 {
@@ -45,14 +45,19 @@
 }
 
 .us-below h1 {
-	font-family: 'Lobster', cursive;
-	text-align: left;
+	text-align: center;
 	font-size: 35px;
-	margin: 0;
+	margin-top: 0;
+	color: #940094;
+}
+
+.us-below a {
+	color: #940094;
 }
 
 .us-below div {
-	text-align: left;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 .sub-article-list .small-below {
@@ -78,6 +83,7 @@
 
 .small-below p {
 	margin: 0;
+	text-align: left;
 }
 
 /**end of sub-article-list**/

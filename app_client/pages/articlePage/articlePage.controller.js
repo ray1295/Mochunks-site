@@ -15,4 +15,3 @@ app.controller('ArticlePageCtrl', function(ArticlesService, $window, $routeParam
 });
 
 
-

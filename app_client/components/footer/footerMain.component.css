@@ -25,16 +25,12 @@
 
 .footer-main img {
 	width: 200px;
-	
+	position: relative;
+	top: -70px;
 }
 
 .footer-title {
 	padding: 0;
-}
-
-.footer-title h1 {
-	margin: 0;
-	color:#828286;
 }
 
 .footer-info {
@@ -45,21 +41,24 @@
 	display: list-item;
 	list-style: none;
 	margin: 0 0 1vw 0;
+	color: #940094;
 }
 
 .footer-media {
 	padding: 0;
+	
 }
 
 .footer-media .fa::before {
 	margin-right: 0.5vw;
-	color: #828286;
+	color: #940094;
 }
 
 .footer-media a {
 	display: list-item;
 	list-style: none;
 	margin: 0 0 1.5vw 0;
+	color: #940094;
 }
 
 .footer-2 {

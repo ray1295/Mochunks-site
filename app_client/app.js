@@ -25,11 +25,6 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				controller: 'HubController',
 				controllerAs: 'vm'
 			})
-			.when('/gallery', {
-				templateUrl: 'pages/gallery/gallery.view.html',
-				controller: 'GalleryController',
-				controllerAs: 'vm'
-			})
 			.when('/realTalk', {
 				templateUrl: 'pages/realTalk/realTalk.view.html',
 				controller: 'RealTalkController',
@@ -80,12 +75,19 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				templateUrl: 'pages/relationshipPage/relationshipPage.view.html'
 			})
 			.when('/trendingPage', {
-				templateUrl: 'pages/trendingPage/trendingPage.view.html'
+				templateUrl: 'pages/trendingPage/trendingPage.view.html',
+				controllerAs: 'vm',
+				controller: 'TrendingController'
 			})
 			.when('/article/view/:articleID', {
 				templateUrl: 'pages/articlePage/articlePage.view.html',
 				controllerAs: 'vm',
 				controller: 'ArticlePageCtrl'
+			})
+			.when('/gallery/view/:galleryID', {
+				templateUrl: 'pages/gallery/gallery.view.html',
+				controllerAs: 'vm',
+				controller: 'GalleryController'
 			})
 			.otherwise({
 				redirectTo: '/'

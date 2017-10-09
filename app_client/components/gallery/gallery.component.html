@@ -1,8 +1,9 @@
 <!-- Galleries that have been recommended-->
 <ul class="wrapper grid">
-	<li ng-repeat="gallery in vm.recommendedGalleries"><a href="/gallery/{{gallery._id}}"><i
-			class="fa fa-video-camera"></i>
-		<img ng-src="{{gallery.firstImage.secure_url}}" alt="{{galley.slug}}"></a></li>
+	<li ng-repeat="gallery in vm.recommendedGalleries"><a href="/#!/gallery/view/{{gallery._id}}"><i
+			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
+											  aria-hidden="true"></i>
+		<img ng-src="{{gallery.images[0].secure_url}}" alt="{{gallery.slug}}"></a></li>
 </ul>
 
 <br>
@@ -17,9 +18,10 @@
 <br>
 
 <ul class="wrapper grid">
-	<li ng-repeat="gallery in vm.listedGalleries"><a href="/gallery/{{gallery._id}}"><i class="fa fa-picture-o"
-																						aria-hidden="true"></i>
-		<img ng-src="{{gallery.firstImage.secure_url}}" alt="{{galley.slug}}">
+	<li ng-repeat="gallery in vm.listedGalleries"><a href="/#!/gallery/view/{{gallery._id}}"><i
+			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
+											  aria-hidden="true"></i>
+		<img ng-src="{{gallery.images[0].secure_url}}" alt="{{galley.slug}}">
 	</a></li>
 
 	<!-- Only show more gallery if next page object evaluates to true-->

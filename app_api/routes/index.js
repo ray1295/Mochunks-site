@@ -14,7 +14,7 @@ router.get('/article/view/latest/:section', ArticlesCtrl.getLatestArticleForSect
 router.get('/galleries/view/recommended', Gallery.getRecommendedGalleries);
 router.get('/galleries/:section/:page', Gallery.getGalleriesSection);
 router.get('/galleries/:page', Gallery.getAllGalleries);
-router.get('/gallery/:articleID', Gallery.getSingleGalleryByID);
+router.get('/gallery/:galleryID', Gallery.getSingleGalleryByID);
 router.get('/gallery/view/latest/:section', Gallery.getLatestGalleryForSection);
 
 router.get('/youtube/channel/latest', YOUTUBE.youtubeChannelInfo);

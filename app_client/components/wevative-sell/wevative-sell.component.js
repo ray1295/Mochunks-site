@@ -5,10 +5,10 @@ function advertController() {
 }
 
 app.component('advert', {
-    templateUrl: 'components/advert/advert.component.html',
+    templateUrl: 'components/wevative-sell/wevative-sell.component.html',
     controller: advertController,
     controllerAs: 'vm',
-	css: 'components/advert/advert.component.css'
+	css: 'components/wevative-sell/wevative-sell.component.css'
 });
 
 

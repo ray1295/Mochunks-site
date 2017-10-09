@@ -13,15 +13,17 @@
 .about {
 	padding: 70px 0;
 	text-align: center;
-	background: #f7f7f7;
+	background: #fff6ff;
 }
 
 .about p {
 	padding: 0 15vw;
 	margin: 0;
+	color: #940094;
+	font-size: 1.2em;
 }
 
-.about h3 {
-	margin: 0;
-	color: #828286;
+.about h2 {
+	margin-top: 0;
+	color: #940094;
 }

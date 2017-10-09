@@ -1,13 +1,32 @@
 @media screen and (min-width: 320px) {
-
+	.navtop-2-xs {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 10px 0;
+		background: #940094;
+		color: #fff
+	}
+	.navtop-2-xs h1{
+		margin: 0;
+	}
+	.navtop-2 img {
+		display: none
+	}
 }
 
 @media screen and (min-width: 768px) {
-
+	.navtop-2-xs {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-
+	.navtop-2 img {
+		display: block;
+		width: 100px;
+		height: 100px;
+	}
 }
 
 /**naviagtion**/
@@ -21,8 +40,9 @@
 	height: 50px;
 	z-index: 100;
 	background: #940094;
-	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
+
 .navtop-2 h1 {
 	color: #fff;
 	margin: 0;
@@ -31,14 +51,14 @@
 
 .navtop-2 p {
 	font-size: 10px;
-}  
+}
 
 .memo {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 30px;
-	color:#940094;
+	color: #940094;
 	padding: 0 7vw;
 }
 
@@ -159,19 +179,17 @@ menu-x-s {
 }
 
 .toggle-menu {
-	background: rgb(51, 51, 51);
+	background: #940094;
 	position: absolute;
 	height: 100vh;
 	padding: 15vw 5vw;
-}
-
-.toggle-menu .btn-default:hover, .btn-default:active, .btn-default:focus {
-	height: 45px;
+	width: 70%;
 }
 
 .toggle-menu .btn-default {
 	background: none;
 	border: none;
+	color: #fff;
 }
 
 .toggle-menu .dropdown-menu {
@@ -188,16 +206,19 @@ menu-x-s {
 	cursor: pointer;
 }
 
+.btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
+	color: #fff !important;
+	background-color: transparent !important;
+	border-color: transparent !important;
+}
+
 .navtop-2 .link {
 	color: #fff;
 	text-transform: capitalize;
 	padding: 17px;
 }
 
-.navtop-2 img {
-	width: 100px;
-	height: 100px;
-}
+
 
 .navtop-logo {
 	display: inline-flex;
@@ -215,7 +236,7 @@ menu-x-s {
 	background-color: #fff;
 	min-width: 100px;
 	width: max-content;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 }
 
@@ -225,7 +246,9 @@ menu-x-s {
 	display: block;
 }
 
-.dropdown-content a:hover {font-weight: bold;}
+.dropdown-content a:hover {
+	font-weight: bold;
+}
 
 .dropdown:hover .dropdown-content {
 	display: block;

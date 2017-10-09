@@ -412,6 +412,28 @@ form button {
 
 /**end of contact**/
 
+/**start of gallery**/
+.main-gallery h2 {
+	color: #940094;
+}
+
+.main-gallery img {
+	width: 100%;
+}
+.gallery-video {
+	display: flex;
+	justify-content: center;
+	margin-top: 5vw;
+}
+
+.contains-text {
+	background: #fff6ff;
+	padding: 10px;
+	margin: 10px;
+}
+/**end of gallery**/
+
+
 @media screen and (min-width: 320px) {
 	.col-xs-12 {
 		padding: 0;

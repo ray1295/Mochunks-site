@@ -9,3 +9,80 @@
 @media screen and (min-width: 1024px) {
 
 }
+
+.eventlabel {
+	font-family: 'Cairo', sans-serif;
+	color:rgba(255, 255, 255, 0.75);
+	height: 254px;
+	width: 300px;
+	background: #24292e;
+}
+
+.eventlabel img {
+	width: 100%;
+	height: 140px;
+}
+
+.eventlabel h2 {
+	height: 35px;
+	width: 85%;
+	margin: 0;
+	font-size: 16px;
+}
+
+.eventlabel p {
+	color: rgba(255, 255, 255, 0.5);
+	margin: 0;
+}
+
+.eventlabel .block-text {
+	text-align: left;
+	position: relative;
+	padding: 0 5px;
+	line-height: 14px;
+	top: 5px;
+	min-height: 60px;
+}
+
+.eventlabel hr {
+	border: 0;
+	height: 0;
+	border-bottom: 1px solid #0a0c0d;
+	-webkit-box-shadow: 0 1px #353a43;
+	box-shadow: 0 1px #353a43;
+	margin: 10px auto 0;
+}
+
+.eventlabel .block-floor1 {
+	position: relative;
+	bottom: 80px;
+	display: inline-grid;
+	height: 70px;
+	float: right;
+	right: 5px;
+}
+.eventlabel .block-floor2 {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5px;
+	width: 100%;
+	bottom: 68px;
+	position: relative;
+}
+
+.eventlabel .block-floor1 i {
+	font-size: 20px;
+	height: 20px;
+}
+
+.heart {
+	color: #fa4547;
+}
+
+.ticket {
+	color: rgba(5, 133, 126, 0.5);
+}
+
+.facebook {
+	color: #3b5998;
+}

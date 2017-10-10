@@ -360,6 +360,16 @@ a:hover {
 	margin-top: 0;
 }
 
+.right-listing {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 50px;
+	position: sticky;
+	top: 50px;
+}
+
+
 .r-page {
 	padding: 0 20px 100px;
 }

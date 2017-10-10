@@ -14,12 +14,19 @@
 			   class="fa fa-twitter-square twitter"></a></li>
 		<li><a href="mailto:ojomowa@yahoo.co.uk" title="Email" target="_blank" class="fa fa-envelope email"></a></li>
 	</ul>
+
 </div>
 
+<nav class="navtop-2-xs">
+	<div class="navtop-logo">
+		<a href="#/!"><h1>MoChunks.com</h1></a>
+	</div>
+	<i class="fa fa-bars fa-2x" aria-hidden="true" ng-click="$root.showMenu = true" type="button"></i>
+</nav>
 
-<menu-x-s class="visible-xs" ng-if="vm.showMenu"></menu-x-s>
+<menu-x-s ng-if="$root.showMenu === true"></menu-x-s>
 
-<nav class="navtop-2">
+<nav class="navtop-2 hidden-xs">
 
 	<div class="navtop-logo">
 		<a href="#/!"><h1>MoChunks.com</h1></a>
@@ -30,7 +37,7 @@
 		<!--ng-click="$root.togglePlatform()"-->
 		<h1 class="visible-xs fa fa-bars btn" aria-hidden="true"></h1>
 
-		<a href="#/!" class="link">Home</a>
+		<a href="#/!" class="link visible-lg">Home</a>
 
 		<div class="dropdown">
 			<button class="dropbtn">lifestyle</button>
@@ -62,7 +69,7 @@
 		<div class="dropdown">
 			<button class="dropbtn">relationship</button>
 			<div class="dropdown-content">
-				<a href="#!loveLovePage">Why do we love love?</a>
+				<a href="#!loveLovePage">Why do wde love love?</a>
 				<a href="#!askChunksPage">Ask chunks</a>
 			</div>
 		</div>

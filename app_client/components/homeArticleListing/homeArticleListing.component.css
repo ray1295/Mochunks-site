@@ -1,0 +1,70 @@
+@media screen and (min-width: 320px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+
+/**article-listing**/
+
+.article-listing h3 {
+	margin: 0 0 10px;
+}
+
+.left-listing {
+	margin: 10px 0;
+}
+
+.left-listing .article-home-block {
+	margin: 2vw 0;
+}
+
+.left-listing .article-home-block h6 {
+	font-size: 11px;
+}
+
+.article-home-block:hover img {
+	opacity: 0.9;
+}
+
+.article-home-block:hover h2 {
+	text-decoration: underline;
+}
+
+.left-listing p {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.left-listing h3 {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 10px 0;
+}
+
+.right-listing {
+	position: sticky;
+	top: 50px;
+}
+
+.right-listing hr {
+	margin-top: 0;
+}
+
+.right-listing h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 80px;
+}
+
+/**end of article-listing**/

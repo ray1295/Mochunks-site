@@ -1,12 +1,12 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 function menuXSController() {
 	var vm = this;
 }
 
-app.component('mochunksMenuXS', {
+app.component('menuXS', {
 	templateUrl: 'components/menuXS/menuXS.component.html',
 	controller: menuXSController,
-	controllerAs: 'vm'
+	controllerAs: 'vm',
+	css: 'components/menuXS/menuXS.component.css'
 });
-

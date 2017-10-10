@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" ng-app="mochunksApp">
+<html lang="en" ng-app="wevativeApp">
 
 <head>
 	<meta charset="UTF-8">
@@ -11,7 +11,7 @@
 		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="stylesheets/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Cairo" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="UTF-8"></script>
@@ -24,32 +24,52 @@
 	<script src="components/home/home.component.js"></script>
 	<script src="components/navigation/navigation.component.js"></script>
 	<script src="components/menuXS/menuXS.component.js"></script>
-	<script src="components/footer/footer.component.js"></script>
+	<script src="components/footer/footerMain.component.js"></script>
 	<script src="components/webpisodes/webpisodes.component.js"></script>
 	<script src="components/sub-article-list/sub-article-list.component.js"></script>
 	<script src="components/homeArticleListing/homeArticleListing.component.js"></script>
-	<script src="components/eventcide/eventcide.component.js"></script>
+	<script src="components/gallery/gallery.component.js"></script>
+	<script src="components/wevative-sell/wevative-sell.component.js"></script>
 	<script src="services/articles/articles.service.js"></script>
 	<script src="services/gallery/galleries.service.js"></script>
 	<script src="services/common/youtube.service.js"></script>
-	<script src="pages/chitChatPage/chitChatPage.controller.js"></script>
 	<script src="pages/articlePage/articlePage.controller.js"></script>
+	<script src="pages/trendingPage/trendingPage.controller.js"></script>
 	<script src="pages/inStylePage/inStyle.controller.js"></script>
+	<script src="pages/lookBookPage/lookBook.controller.js"></script>
+	<script src="pages/gallery/gallery.controller.js"></script>
 	<script src="pages/askChunksPage/askChunksPage.controller.js"></script>
-	<script src="components/gallery/gallery.component.js"></script>
-
-
+	<script src="pages/celebReview/celebReview.controller.js"></script>
+	<script src="pages/event/event.controller.js"></script>
+	<script src="pages/hub/hub.controller.js"></script>
+	<script src="pages/realTalk/realTalk.controller.js"></script>
+	<script src="pages/scoopInterview/scoopInterview.controller.js"></script>
 </head>
 
 <body>
 
 <navigation></navigation>
 
-<mochunks-menu-x-s></mochunks-menu-x-s>
-
 <main class="row" ng-view></main>
 
-<mochunks-footer></mochunks-footer>
+<footer-main></footer-main>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107798191-1"></script>
+<script>
+	if (document.location.hostname == "mochuncks.com") {
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('js', new Date());
+
+		gtag('config', 'UA-107798191-1');
+	}
+</script>
+
 
 </body>
 

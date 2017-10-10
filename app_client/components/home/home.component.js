@@ -1,7 +1,9 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
 function homeController(ArticlesService) {
 	var vm = this;
+	
+	vm.articleSection = 'home';
 
 	// Get articles that are recommended, these are shown in the homepage (header) carousel
 	ArticlesService.getRecommendedArticles().then(function (response) {
@@ -10,8 +12,9 @@ function homeController(ArticlesService) {
 	});
 }
 
-app.component('mochunksHome', {
+app.component('home', {
 	templateUrl: 'components/home/home.component.html',
 	controller: homeController,
-	controllerAs: 'vm'
+	controllerAs: 'vm',
+	css: 'components/home/home.component.css'
 });

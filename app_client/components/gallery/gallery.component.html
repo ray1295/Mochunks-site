@@ -1,17 +1,30 @@
-<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
-	<div  uib-slide ng-repeat="gallery in vm.recommendedGalleries" index="$index">
-		<a href="/gallery/{{gallery._id}}"><img
-				ng-src="{{gallery.firstImage.secure_url}}" alt=""></a>
-	</div>
-</div>
+<!-- Galleries that have been recommended-->
+<ul class="wrapper grid">
+	<li ng-repeat="gallery in vm.recommendedGalleries"><a href="/#!/gallery/view/{{gallery._id}}"><i
+			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
+											  aria-hidden="true"></i>
+		<img ng-src="{{gallery.images[0].secure_url}}" alt="{{gallery.slug}}"></a></li>
+</ul>
 
-<video width="320" height="240" autoplay>
-	<source src="movie.mp4" type="video/mp4">
-</video>
+<br>
 
-<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
-	<div uib-slide ng-repeat="" index="$index">
-		<img ng-src="{{article.firstArticleImage.secure_url}}">
-		<button class="arti-carousel-title"><a href="/#!"><h3 ></h3></a></button>
-	</div>
-</div>
+<h1 class="txt-center">Most Recent</h1>
+
+<p class="txt-center hidden-xs">Get the latest fashion tips and outfit ideas. Click through runway and front row photos from
+	fashion week shows in New York, London, Paris, and Milan. Plus, browse key accessories like bags, shoes, and
+	sunglasses, must-have denim looks, and more top fashion trends.
+</p>
+
+<br>
+
+<ul class="wrapper grid">
+	<li ng-repeat="gallery in vm.listedGalleries"><a href="/#!/gallery/view/{{gallery._id}}"><i
+			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
+											  aria-hidden="true"></i>
+		<img ng-src="{{gallery.images[0].secure_url}}" alt="{{galley.slug}}">
+	</a></li>
+
+	<!-- Only show more gallery if next page object evaluates to true-->
+	<button class="button-it" ng-if="vm.page" ng-click="vm.loadMoreGalleries()">Check out more</button>
+
+</ul>

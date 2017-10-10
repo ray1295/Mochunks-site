@@ -12,7 +12,7 @@ Article.add({
 	title: {type: String, required: true},
 	section: {
 		type: Types.Select,
-		options: 'chitchat, trending, beingchunks, instyle, weekmusic, wdwll, askchunks',
+		options: 'realtalk, thehub, realscoop, celebreview, events, trending, beingchunks, instyle, weekmusic, wdwll, askchunks, gallery',
 		emptyOption: false
 	},
 	recommended: {

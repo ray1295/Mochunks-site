@@ -1,19 +1,17 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
-function articleListingController(ArticlesService, $window) {
+function ArticleListingController(ArticlesService, $window) {
 	var vm = this;
 	vm.listedArticles = [];
 
-	/**
-	 * @desc
-	 * @params
-	 * @return
-	 * 
-	 * **/
 	vm.loadArticles = function (page) {
+
+		var articleSection = (vm.section === 'home') ? ArticlesService.getAllArticles() : ArticlesService.getArticlesBySection(vm.section, page);
+
 		// Increment the current page number to get the next page for the records
 		$window.localStorage['nextPage'] = parseInt(page) + 1;
-		ArticlesService.getAllArticles(page)
+
+		articleSection
 			.then(function (response) {
 				response.data.results.forEach(function (article) {
 					vm.listedArticles.push(article);
@@ -24,7 +22,6 @@ function articleListingController(ArticlesService, $window) {
 				vm.page = response.data.next;
 			})
 			.catch(function (err) {
-
 			});
 	};
 
@@ -37,13 +34,25 @@ function articleListingController(ArticlesService, $window) {
 		vm.loadArticles($window.localStorage['nextPage']);
 	};
 
-	// Initialise the article listing when the page is loaded, start from page 1
-	vm.loadArticles(1);
+	/**
+	 * @desc
+	 * @params
+	 * @return
+	 *
+	 * **/
+	vm.$onInit = function () {
+		// Initialise the article listing when the page is loaded, start from page 1
+		vm.loadArticles(1);
+	};
+
 }
 
-app.component('mochunksArticles', {
+app.component('articles', {
 	templateUrl: 'components/homeArticleListing/homeArticleListing.view.html',
-	controller: articleListingController,
-	controllerAs: 'vm'
+	controller: ArticleListingController,
+	bindings: {
+		section: '<'
+	}, controllerAs: 'vm',
+	css: 'components/homeArticleListing/homeArticleListing.component.css'
 });
 

@@ -2,11 +2,6 @@
 
 	<div class="r-page col-sm-8">
 
-		<p><span class="title-direct">Life Style</span> <i class="fa fa-long-arrow-right"></i> <a href=""
-																								  class="title-direct">Chit
-			Chat With Chunk</a> <i class="fa fa-long-arrow-right"></i> Article Page</p>
-		<br><br>
-
 		<h1>{{vm.article.title}}</h1>
 
 		<img src={{vm.article.firstArticleImage.secure_url}}>
@@ -17,37 +12,27 @@
 
 		<div ng-bind-html="vm.article.content"></div>
 
-	</div>
+		<div class="sub-article-list hidden-xs">
 
-	<div class="col-sm-4">
-
-		<br><br><br>
-
-		<mochunks-webpisodes></mochunks-webpisodes>
-
-		<div class="hidden-xs right-listing">
-
-			<p class="ads">Advertisement</p>
-
-			<mochunks-eventcide></mochunks-eventcide>
-
-			<br><br><br>
+			<sub-article-list></sub-article-list>
 
 		</div>
 
-		<br><br>
-
 	</div>
 
 
-	<div class="sub-article-list row hidden-xs">
+	<div class="col-sm-4">
 
-		<br><br><br><br>
+		<webpisodes></webpisodes>
 
-		<sub-article-list></sub-article-list>
+		<div class="right-listing">
 
-		<br><br><br><br>
+			<p>Advertisement</p>
 
+			<advert></advert>
+
+		</div>
 	</div>
+
 
 </div>

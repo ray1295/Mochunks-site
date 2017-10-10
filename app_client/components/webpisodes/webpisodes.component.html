@@ -1,29 +1,27 @@
 <div class="webpisodes-list">
-	<h3>Latest Webisodes</h3>
-	<div> <!--class="main-episode" -->
-		<a ng-href="{{vm.latestChannelVideo.videoUrl}}" target="_blank">
+	 <!--class="main-episode" -->
+		<a ng-href="{{vm.latestChannelVideo.videoUrl}}"  target="_blank">
 			<img class="webpisodes-img" ng-src="{{vm.latestChannelVideo.image.url}}">
 		</a>
-	</div>
 	<h4>{{vm.latestChannelVideo.title}}</h4>
 	<!--<p>{{vm.latestChannelVideo.description}}</p>-->
-	<hr>
 	<div class="row webpisodes-sub" ng-repeat="video in vm.otherChannelVideos">
 		
-		<a class="col-sm-4" ng-href={{video.videoUrl}} target="_blank">
-			<img ng-src="{{video.image.url}}">
+		<a class="col-sm-4 " ng-href={{video.videoUrl}} target="_blank">
+			<i class="fa fa-play"></i>
+			<img ng-src="{{video.image.url}}" >
 		</a>
 		
 		<div class="col-sm-8">
 			<!--<p>{{video.description}}</p>-->
-			<a  target="_blank" ng-href="{{video.videoUrl}}">
+			<a  target="_blank" ng-href="{{video.videoUrl}}"  >
 				<h5>{{video.title}}</h5>
 			</a>
 		</div>
 		
 	</div>
 	
-	<button>Check out more</button>
+	<a href="https://www.youtube.com/user/TwigaayAndChunkaay" target="_blank" class="button-it">Check out more</a>
 	
 	<br>
 

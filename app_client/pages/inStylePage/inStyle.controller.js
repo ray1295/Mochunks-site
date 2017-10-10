@@ -1,24 +1,13 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
-app.controller('InStyleController', function (GalleriesService) {
+app.controller('InStyleController', function ($rootScope) {
 	var vm = this;
-	
-	// Get all Galleries within a section
-	GalleriesService.getGalleriesBySection('instyle').then(function (response) {
-		vm.galleries = response.data.results;
-		// console.log(vm.galleries)
-	}).catch(function (err) {
-		alert("Could not load articles");
-	});
 
-	// Get galleries that are recommended, these are shown at the top of instyle page
-	GalleriesService.getRecommendedGalleries().then(function (response) {
-		vm.recommendedGalleries = response.data;
-	}).catch(function (err) {
-	});
+	// Hide Navigation bar on mobile once page is loaded
+	// TODO: Look for efficient solution to close the navigation bar on each page
+	$rootScope.showMenu = false;
 
-
+	vm.gallerySection = 'instyle';
 });
-
 
 

@@ -4,14 +4,15 @@
 	<div class="small-below" ng-repeat="article in vm.latestArticles track by article._id">
 		<a href="/#!/article/view/{{article._id}}">
 			<img ng-src="{{article.firstArticleImage.secure_url}}">
-			<h4>{{article.title}}</h4>
 			<h5>{{article.section}}</h5>
 			<p>{{article.publishedDate | date: 'MM/dd/yyyy'}}</p>
+			<h4>{{article.title}}</h4>
+	
 		</a>
 	</div>
 
 	<div class="us-below">
-		<a href="#/!"><h1>MoChunks TV</h1></a>
+		<a href="#/!"><h1>Follow Us</h1></a>
 		<div>
 			<a href="https://www.facebook.com/mo.chunkaay" target="_blank"
 			   class="fa fa-facebook-square fa-2x facebook"></a>

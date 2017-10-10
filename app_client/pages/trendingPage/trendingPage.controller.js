@@ -1,15 +1,13 @@
-var app = angular.module('mochunksApp');
+var app = angular.module('wevativeApp');
 
-app.controller('TrendingController', function (ArticlesService) {
+app.controller('TrendingController', function ($rootScope) {
 	var vm = this;
 
-	ArticlesService.getArticlesBySection('trending').then(function (response) {
-		vm.articles = response.data;
-	}).catch(function (err) {
-		alert("Could not load articles");
-	});
-	vm.fullArticle = function () {
+	// Hide Navigation bar on mobile once page is loaded
+	// TODO: Look for efficient solution to close the navigation bar on each page
+	$rootScope.showMenu = false;
 
-	};
+	vm.articleSection = 'trending';
+
 });
 

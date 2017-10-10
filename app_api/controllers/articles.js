@@ -10,12 +10,11 @@ module.exports.getAllArticles = (req, res) => {
 	keystone.list('Article')
 		.paginate({
 			page: req.params.page || 1,
-			perPage: 6,
+			perPage: 6
 		})
 		.sort('-publishedDate')
 		.exec((err, articles) => {
 			if (err) {
-				// TODO: Log errors
 				return res.sendStatus(500);
 			}
 			return res.json(articles).status(200);
@@ -33,20 +32,15 @@ module.exports.getAllArticlesForSection = (req, res) => {
 	keystone.list('Article')
 		.paginate({
 			page: req.params.page || 1,
-			perPage: 6,
+			perPage: 6
 		})
-		.model.find({section: section})
+		.where({section: section})
 		.sort('-publishedDate')
-		.then(articles => {
-			if (articles.length > 0) {
-				return res.json(articles).status(200)
+		.exec((err, articles) => {
+			if (err) {
+				return res.sendStatus(500);
 			}
-
-			return res.sendStatus(404);
-		})
-		.catch(err => {
-			// TODO: Log errors
-			return res.sendStatus(500);
+			return res.json(articles).status(200);
 		});
 };
 
@@ -73,12 +67,15 @@ module.exports.getSingleArticleByID = (req, res) => {
  * **/
 // Get recommended articles
 module.exports.getRecommendedArticles = (req, res) => {
-	keystone.list('Article').model.find().where('recommended', true).sort('-publishedDate').then((articles) => {
-		return res.json(articles).status(200);
-	}, (err) => {
-		// TODO: Log errors
-		return res.sendStatus(500);
-	});
+	keystone.list('Article')
+		.model.find()
+		.where('recommended', true)
+		.sort('-publishedDate')
+		.then((articles) => res.json(articles).status(200))
+		.catch(err => {
+			// TODO: Log errors
+			return res.sendStatus(500);
+		});
 };
 
 /**
@@ -88,11 +85,14 @@ module.exports.getRecommendedArticles = (req, res) => {
  * **/
 // Get the latest article within a section
 module.exports.getLatestArticleForSection = (req, res) => {
-	keystone.list('Article').model.findOne().where({section: req.params.section}).sort('-publishedDate').then((articles) => {
-		return res.json(articles).status(200);
-	}, (err) => {
-		// TODO: Log errors
-		return res.sendStatus(500);
-	});
+	keystone.list('Article')
+		.model.findOne()
+		.where({section: req.params.section})
+		.sort('-publishedDate')
+		.then((articles) => {
+			return res.json(articles).status(200);
+		}, (err) => {
+			// TODO: Log errors
+			return res.sendStatus(500);
+		});
 };
-

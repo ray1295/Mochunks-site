@@ -13,19 +13,44 @@
 	.navtop-2 img {
 		display: none
 	}
+	
 }
 
 @media screen and (min-width: 768px) {
 	.navtop-2-xs {
 		display: none;
 	}
+	.navtop-2 {
+		padding: 0 3vw;
+	}
+	.navtop-2 .link {
+		padding: 0;
+	}
+	.dropbtn {
+		padding: 5px;
+	}
+	.nav-home {
+		display: none
+	}
 }
 
 @media screen and (min-width: 1024px) {
+	.navtop-2 {
+		padding: 0 7vw;
+	}
+	.navtop-2 .link {
+		padding: 17px;
+	}
 	.navtop-2 img {
 		display: block;
 		width: 100px;
 		height: 100px;
+	}
+	.dropbtn {
+		padding: 16px 8px;
+	}
+	.nav-home {
+		display: inline-flex;
 	}
 }
 
@@ -33,7 +58,6 @@
 .navtop-2 {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 7vw;
 	align-items: center;
 	position: sticky;
 	top: -1px;
@@ -201,7 +225,6 @@ menu-x-s {
 .dropbtn {
 	background-color: #999;
 	color: #fff;
-	padding: 16px 8px;
 	border: none;
 	cursor: pointer;
 }
@@ -215,7 +238,6 @@ menu-x-s {
 .navtop-2 .link {
 	color: #fff;
 	text-transform: capitalize;
-	padding: 17px;
 }
 
 

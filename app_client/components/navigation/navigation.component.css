@@ -7,9 +7,11 @@
 		background: #940094;
 		color: #fff
 	}
-	.navtop-2-xs h1{
+
+	.navtop-2-xs h1 {
 		margin: 0;
 	}
+
 	.navtop-2 img {
 		display: none
 	}
@@ -188,7 +190,6 @@
 }
 
 menu-x-s {
-	display: none;
 	background: rgba(51, 51, 51, 0.5);
 	height: 100vh;
 	width: 100%;
@@ -239,8 +240,6 @@ menu-x-s {
 	color: #fff;
 	text-transform: capitalize;
 }
-
-
 
 .navtop-logo {
 	display: inline-flex;

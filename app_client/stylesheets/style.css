@@ -141,7 +141,7 @@ a:hover {
 }
 
 .arti-carousel-title {
-	background: #fff6ff;
+	background: rgba(255,246,255,0.5);
 	width: 50%;
 	height: 150px;
 	text-align: left;
@@ -149,7 +149,7 @@ a:hover {
 	margin: 0;
 	padding: 20px;
 	bottom: -300px;
-	border-top: 10px solid #940094;
+	border-top: 10px solid rgba(148,0,148,0.5);
 	position: relative;
 	box-shadow: 0 4px 18px 5px rgba(0, 0, 0, 0.1);
 }
@@ -227,6 +227,12 @@ a:hover {
 	padding: 5px;
 }
 
+.section-title {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 2rem;
+	color: #940094;
+}
 /**ask-us**/
 .ask-us {
 	background: #fff6ff;
@@ -364,7 +370,6 @@ a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 50px;
 	position: sticky;
 	top: 50px;
 }

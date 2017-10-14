@@ -38,6 +38,7 @@
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+	background: #fff6ff;
 }
 
 .left-listing h3 {
@@ -47,6 +48,12 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	margin: 10px 0;
+	font-weight: bold;
+	color:rgb(104, 5, 104);
+}
+
+.left-listing img {
+	border: 1px solid rgb(104, 5, 104);
 }
 
 .right-listing {

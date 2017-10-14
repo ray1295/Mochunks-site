@@ -1,13 +1,13 @@
 <div class="header-section container row">
+	<h2 class="section-title hidden-md hidden-lg">Recommended</h2>
 	<div class="col-md-6 col-lg-8 col-xs-12" id="home-carousel">
-
 		<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
 			<a href="/#!/article/view/{{article._id}}" uib-slide ng-repeat="article in vm.recommendedArticles"
 			   index="$index">
 				<img class="header-section-img" ng-src="{{article.firstArticleImage.secure_url}}">
-				<h3 class="arti-carousel-title hidden-xs">{{article.title}}</h3>
+				<h3 class="arti-carousel-title">{{article.title}}</h3>
 				<!--<p>{{article.description}}</p><h4>View Post</h4>-->
-				<p class="arti-carousel-title visible-xs">{{article.title}}</p>
+				<!--<p class="arti-carousel-title visible-xs">{{article.title}}</p>-->
 			</a>
 		</div>
 

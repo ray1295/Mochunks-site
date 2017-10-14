@@ -126,6 +126,7 @@ a:hover {
 /**carousel**/
 .header-section {
 	padding: 1.5vw 0;
+	margin-bottom: 4em;
 }
 
 .header-section-img {
@@ -133,7 +134,7 @@ a:hover {
 	left: 0;
 	position: absolute;
 	z-index: -1;
-	bordeR: 1px solid #f1f1f1;
+	border: 1px solid #f1f1f1;
 }
 
 .header-section h2 {
@@ -197,6 +198,11 @@ a:hover {
 	width: 100%;
 }
 
+.page-title {
+	color:rgb(104, 5, 104);
+	padding-left: 0.4em;
+}
+
 .webpisodes-sub {
 	margin: 0 0 20px;
 }
@@ -230,17 +236,17 @@ a:hover {
 	font-size: 1.6rem;
 	font-weight: 500;
 	line-height: 2rem;
-	color: rgb(104, 5, 104);
+	color:white;
+	background-color: rgb(104, 5, 104);
 }
 
-/**ask-us**/
-.ask-us {
+.contact-form {
 	background: #fff6ff;
 	padding: 10px 30px 30px;
 	color: rgb(104, 5, 104);
 }
 
-.ask-us input, .ask-us textarea {
+.contact-form input, .contact-form textarea {
 	color: rgb(104, 5, 104);
 }
 
@@ -248,7 +254,7 @@ a:hover {
 	padding: 0;
 }
 
-/**end of ask-us**/
+/**end of contact-form**/
 
 /**ab-content**/
 
@@ -474,6 +480,7 @@ form button {
 	/**floating-top**/
 	.header-section {
 		height: 60vw;
+		margin-bottom: 8em;
 	}
 
 	.header-section-img {

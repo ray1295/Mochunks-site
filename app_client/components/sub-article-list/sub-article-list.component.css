@@ -63,8 +63,13 @@
 .sub-article-list .small-below {
 	width: 15vw;
 	margin: 0 20px 0 0;
-	color: #999;
+	color: black;
 	padding: 0;
+}
+
+.sub-article-list h4 {
+	background: #fff6ff;
+	font-weight: bold;
 }
 
 .small-below img {

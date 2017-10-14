@@ -12,7 +12,7 @@ Article.add({
 	title: {type: String, required: true},
 	section: {
 		type: Types.Select,
-		options: 'realtalk, thehub, realscoop, celebreview, events, trending, beingchunks, instyle, weekmusic, wdwll, askchunks, gallery',
+		options: 'realtalk, thehub, realscoop, celebreview, events, trending, beingmochunks, instyle, weekmusic, wdwll, askchunks, gallery',
 		emptyOption: false
 	},
 	recommended: {

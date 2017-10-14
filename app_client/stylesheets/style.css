@@ -54,17 +54,17 @@ p {
 
 .button-it {
 	background: transparent;
-	color: #940094;
-	border: 2px solid #940094;
+	color: rgb(104, 5, 104);
+	border: 2px solid rgb(104, 5, 104);
 	padding: 7px 10px;
 	border-radius: 5px;
 	font-weight: 600;
 }
 
 .button-it:hover {
-	background: #940094;
+	background: rgb(104, 5, 104);
 	color: #fff;
-	border: 2px solid #940094;
+	border: 2px solid rgb(104, 5, 104);
 }
 
 .row {
@@ -76,7 +76,7 @@ p {
 	justify-content: center;
 	text-align: center;
 	padding: 0 10vw;
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 
 a {
@@ -118,7 +118,7 @@ a:hover {
 	margin: 10px 0;
 	font-size: 2em;
 	color: #fff6ff;
-	text-shadow: 1px 0px 2px #940094;
+	text-shadow: 1px 0px 2px rgb(104, 5, 104);
 }
 
 /**enf of wrapper**/
@@ -126,6 +126,7 @@ a:hover {
 /**carousel**/
 .header-section {
 	padding: 1.5vw 0;
+	margin-bottom: 4em;
 }
 
 .header-section-img {
@@ -133,7 +134,7 @@ a:hover {
 	left: 0;
 	position: absolute;
 	z-index: -1;
-	bordeR: 1px solid #f1f1f1;
+	border: 1px solid #f1f1f1;
 }
 
 .header-section h2 {
@@ -141,15 +142,15 @@ a:hover {
 }
 
 .arti-carousel-title {
-	background: rgba(255,246,255,0.5);
+	background: rgba(255, 246, 255, 0.5);
 	width: 50%;
 	height: 150px;
 	text-align: left;
-	color: #940094;
+	color: rgb(104, 5, 104);
 	margin: 0;
 	padding: 20px;
 	bottom: -300px;
-	border-top: 10px solid rgba(148,0,148,0.5);
+	border-top: 10px solid rgba(148, 0, 148, 0.5);
 	position: relative;
 	box-shadow: 0 4px 18px 5px rgba(0, 0, 0, 0.1);
 }
@@ -176,12 +177,11 @@ a:hover {
 .carousel-indicators {
 	width: min-content;
 	margin-left: 0;
-	left: -30px;
 }
 
 .carousel-indicators li {
-	background-color: #940094;
-	border-color: #940094;
+	background-color: rgb(104, 5, 104);
+	border-color: rgb(104, 5, 104);
 	margin: 0 5px;
 }
 
@@ -189,13 +189,18 @@ a:hover {
 	width: 10px;
 	height: 10px;
 	background-color: transparent;
-	border: 1px solid #940094;
+	border: 1px solid rgb(104, 5, 104);
 	margin: 0 5px;
 }
 
 .header-section-right {
 	padding-right: 0 !important;
 	width: 100%;
+}
+
+.page-title {
+	color:rgb(104, 5, 104);
+	padding-left: 0.4em;
 }
 
 .webpisodes-sub {
@@ -231,24 +236,25 @@ a:hover {
 	font-size: 1.6rem;
 	font-weight: 500;
 	line-height: 2rem;
-	color: #940094;
-}
-/**ask-us**/
-.ask-us {
-	background: #fff6ff;
-	padding: 10px 30px 30px;
-	color: #940094;
+	color:white;
+	background-color: rgb(104, 5, 104);
 }
 
-.ask-us input, .ask-us textarea {
-	color: #940094;
+.contact-form {
+	background: #fff6ff;
+	padding: 10px 30px 30px;
+	color: rgb(104, 5, 104);
+}
+
+.contact-form input, .contact-form textarea {
+	color: rgb(104, 5, 104);
 }
 
 .ac .col-sm-3 {
 	padding: 0;
 }
 
-/**end of ask-us**/
+/**end of contact-form**/
 
 /**ab-content**/
 
@@ -374,9 +380,8 @@ a:hover {
 	top: 50px;
 }
 
-
 .r-page {
-	padding: 0 20px 100px;
+	padding: 0;
 }
 
 .r-page h1 {
@@ -389,7 +394,6 @@ a:hover {
 
 .r-page img {
 	width: 100%;
-	height: 450px;
 }
 
 /**end of apvh-page**/
@@ -430,12 +434,13 @@ form button {
 
 /**start of gallery**/
 .main-gallery h2 {
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 
 .main-gallery img {
 	width: 100%;
 }
+
 .gallery-video {
 	display: flex;
 	justify-content: center;
@@ -447,14 +452,17 @@ form button {
 	padding: 10px;
 	margin: 10px;
 }
-/**end of gallery**/
 
+/**end of gallery**/
 
 @media screen and (min-width: 320px) {
 	.col-xs-12 {
 		padding: 0;
 	}
-
+	
+	.col-sm-4 {
+		padding: 0;
+	}
 	/**Navigation**/
 	.navtop-1 {
 		height: 30vw;
@@ -472,6 +480,7 @@ form button {
 	/**floating-top**/
 	.header-section {
 		height: 60vw;
+		margin-bottom: 8em;
 	}
 
 	.header-section-img {
@@ -480,6 +489,10 @@ form button {
 
 	.carousel {
 		height: 60vw;
+	}
+
+	.carousel-indicators {
+		left: -20px;
 	}
 
 	/**Webpisodes list**/
@@ -494,9 +507,19 @@ form button {
 	/**Article Listing**/
 	.left-listing img {
 		width: 100%;
-		height: inherit;
+		height: 200px;
+		object-fit: cover;
 		padding: 0;
 		border: 1px solid #f7f7f7;
+	}
+	
+	/**Article page**/
+	.r-page img {
+		height: 200px;
+	}
+
+	.r-page h1 {
+		font-size: 2em;
 	}
 }
 
@@ -522,6 +545,7 @@ form button {
 	/**floating-top**/
 	.header-section {
 		height: 490px;
+		width: inherit;
 	}
 
 	.header-section-img {
@@ -530,6 +554,10 @@ form button {
 
 	.carousel {
 		height: 450px;
+	}
+
+	.carousel-indicators {
+		left: -30px;
 	}
 
 	/**Webpisodes list**/
@@ -545,6 +573,14 @@ form button {
 	.left-listing img {
 		height: 250px;
 		width: 50%;
+	}
+	
+	/**Article page**/
+	.r-page h1 {  
+		font-size: 32px;
+	}
+	.r-page img {
+		height: 450px;
 	}
 }
 

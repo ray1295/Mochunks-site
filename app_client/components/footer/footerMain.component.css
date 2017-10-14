@@ -23,7 +23,7 @@
 	justify-content: space-around;
 	align-items: center;
 	padding: 1vw 7vw 0;
-	background: #940094;
+	background: rgb(104, 5, 104);
 }
 
 .footer-main p {
@@ -78,7 +78,7 @@
 
 .footer-2 p {
 	margin: 0;
-	color: #940094;
+	color: rgb(104, 5, 104);
 	font-size: 11px;
 }
 

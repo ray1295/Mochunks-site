@@ -20,11 +20,15 @@
 .about p {
 	padding: 0 15vw;
 	margin: 0;
-	color: #940094;
+	color: rgb(104, 5, 104);
 	font-size: 1.2em;
 }
 
 .about h2 {
 	margin-top: 0;
-	color: #940094;
+	color: rgb(104, 5, 104);
+}
+
+#home-carousel {
+	/*border: 2px solid rgb(104, 5, 104)*/
 }

@@ -2,14 +2,11 @@
 	.webpisodes-list {
 		height: 450px;
 		overflow: auto;
-		padding: 0 15px 20px;
-		border: 1px solid #333;
 	}
 }
 
 @media screen and (min-width: 768px) {
 	.webpisodes-list {
-		border: none;
 		padding: 0 1.5vw;
 		height: 420px;
 	}
@@ -34,7 +31,7 @@
 	position: absolute;
 	z-index: 2;
 	font-size: 2em;
-	background: #940094;
+	background: rgb(104, 5, 104);
 	color: #fff;
 	padding: 10px 15px;
 }

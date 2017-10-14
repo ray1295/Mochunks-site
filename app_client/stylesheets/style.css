@@ -141,7 +141,7 @@ a:hover {
 }
 
 .arti-carousel-title {
-	background: rgba(255,246,255,0.5);
+	background: rgba(255, 246, 255, 0.5);
 	width: 50%;
 	height: 150px;
 	text-align: left;
@@ -149,7 +149,7 @@ a:hover {
 	margin: 0;
 	padding: 20px;
 	bottom: -300px;
-	border-top: 10px solid rgba(148,0,148,0.5);
+	border-top: 10px solid rgba(148, 0, 148, 0.5);
 	position: relative;
 	box-shadow: 0 4px 18px 5px rgba(0, 0, 0, 0.1);
 }
@@ -176,7 +176,6 @@ a:hover {
 .carousel-indicators {
 	width: min-content;
 	margin-left: 0;
-	left: -30px;
 }
 
 .carousel-indicators li {
@@ -233,6 +232,7 @@ a:hover {
 	line-height: 2rem;
 	color: rgb(104, 5, 104);
 }
+
 /**ask-us**/
 .ask-us {
 	background: #fff6ff;
@@ -374,9 +374,8 @@ a:hover {
 	top: 50px;
 }
 
-
 .r-page {
-	padding: 0 20px 100px;
+	padding: 0;
 }
 
 .r-page h1 {
@@ -389,7 +388,6 @@ a:hover {
 
 .r-page img {
 	width: 100%;
-	height: 450px;
 }
 
 /**end of apvh-page**/
@@ -436,6 +434,7 @@ form button {
 .main-gallery img {
 	width: 100%;
 }
+
 .gallery-video {
 	display: flex;
 	justify-content: center;
@@ -447,14 +446,17 @@ form button {
 	padding: 10px;
 	margin: 10px;
 }
-/**end of gallery**/
 
+/**end of gallery**/
 
 @media screen and (min-width: 320px) {
 	.col-xs-12 {
 		padding: 0;
 	}
-
+	
+	.col-sm-4 {
+		padding: 0;
+	}
 	/**Navigation**/
 	.navtop-1 {
 		height: 30vw;
@@ -482,6 +484,10 @@ form button {
 		height: 60vw;
 	}
 
+	.carousel-indicators {
+		left: -20px;
+	}
+
 	/**Webpisodes list**/
 	.webpisodes-list h3 {
 		margin: 0px -15px 10px;
@@ -494,9 +500,19 @@ form button {
 	/**Article Listing**/
 	.left-listing img {
 		width: 100%;
-		height: inherit;
+		height: 200px;
+		object-fit: cover;
 		padding: 0;
 		border: 1px solid #f7f7f7;
+	}
+	
+	/**Article page**/
+	.r-page img {
+		height: 200px;
+	}
+
+	.r-page h1 {
+		font-size: 2em;
 	}
 }
 
@@ -522,6 +538,7 @@ form button {
 	/**floating-top**/
 	.header-section {
 		height: 490px;
+		width: inherit;
 	}
 
 	.header-section-img {
@@ -530,6 +547,10 @@ form button {
 
 	.carousel {
 		height: 450px;
+	}
+
+	.carousel-indicators {
+		left: -30px;
 	}
 
 	/**Webpisodes list**/
@@ -545,6 +566,14 @@ form button {
 	.left-listing img {
 		height: 250px;
 		width: 50%;
+	}
+	
+	/**Article page**/
+	.r-page h1 {  
+		font-size: 32px;
+	}
+	.r-page img {
+		height: 450px;
 	}
 }
 

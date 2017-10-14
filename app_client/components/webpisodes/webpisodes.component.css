@@ -34,7 +34,7 @@
 	position: absolute;
 	z-index: 2;
 	font-size: 2em;
-	background: #940094;
+	background: rgb(104, 5, 104);
 	color: #fff;
 	padding: 10px 15px;
 }

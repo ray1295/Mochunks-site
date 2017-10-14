@@ -54,17 +54,17 @@ p {
 
 .button-it {
 	background: transparent;
-	color: #940094;
-	border: 2px solid #940094;
+	color: rgb(104, 5, 104);
+	border: 2px solid rgb(104, 5, 104);
 	padding: 7px 10px;
 	border-radius: 5px;
 	font-weight: 600;
 }
 
 .button-it:hover {
-	background: #940094;
+	background: rgb(104, 5, 104);
 	color: #fff;
-	border: 2px solid #940094;
+	border: 2px solid rgb(104, 5, 104);
 }
 
 .row {
@@ -76,7 +76,7 @@ p {
 	justify-content: center;
 	text-align: center;
 	padding: 0 10vw;
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 
 a {
@@ -118,7 +118,7 @@ a:hover {
 	margin: 10px 0;
 	font-size: 2em;
 	color: #fff6ff;
-	text-shadow: 1px 0px 2px #940094;
+	text-shadow: 1px 0px 2px rgb(104, 5, 104);
 }
 
 /**enf of wrapper**/
@@ -145,7 +145,7 @@ a:hover {
 	width: 50%;
 	height: 150px;
 	text-align: left;
-	color: #940094;
+	color: rgb(104, 5, 104);
 	margin: 0;
 	padding: 20px;
 	bottom: -300px;
@@ -180,8 +180,8 @@ a:hover {
 }
 
 .carousel-indicators li {
-	background-color: #940094;
-	border-color: #940094;
+	background-color: rgb(104, 5, 104);
+	border-color: rgb(104, 5, 104);
 	margin: 0 5px;
 }
 
@@ -189,7 +189,7 @@ a:hover {
 	width: 10px;
 	height: 10px;
 	background-color: transparent;
-	border: 1px solid #940094;
+	border: 1px solid rgb(104, 5, 104);
 	margin: 0 5px;
 }
 
@@ -231,17 +231,17 @@ a:hover {
 	font-size: 1.6rem;
 	font-weight: 500;
 	line-height: 2rem;
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 /**ask-us**/
 .ask-us {
 	background: #fff6ff;
 	padding: 10px 30px 30px;
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 
 .ask-us input, .ask-us textarea {
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 
 .ac .col-sm-3 {
@@ -430,7 +430,7 @@ form button {
 
 /**start of gallery**/
 .main-gallery h2 {
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 
 .main-gallery img {

@@ -4,7 +4,7 @@
 		justify-content: space-around;
 		align-items: center;
 		padding: 10px 0;
-		background: #940094;
+		background: rgb(104, 5, 104);
 		color: #fff
 	}
 
@@ -65,7 +65,7 @@
 	top: -1px;
 	height: 50px;
 	z-index: 100;
-	background: #940094;
+	background: rgb(104, 5, 104);
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -84,7 +84,7 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 30px;
-	color: #940094;
+	color: rgb(104, 5, 104);
 	padding: 0 7vw;
 }
 
@@ -165,7 +165,7 @@
 	padding: 0 5px;
 	background: none;
 	border: none;
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 
 .memo a:hover {
@@ -204,7 +204,7 @@ menu-x-s {
 }
 
 .toggle-menu {
-	background: #940094;
+	background: rgb(104, 5, 104);
 	position: absolute;
 	height: 100vh;
 	padding: 15vw 5vw;
@@ -274,12 +274,12 @@ menu-x-s {
 .dropdown:hover .dropdown-content {
 	display: block;
 	background: #fff6ff;
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 
 .dropdown:hover .dropbtn, .navtop-2 .link:hover {
 	background-color: #fff6ff;
-	color: #940094;
+	color: rgb(104, 5, 104);
 }
 
 /**end of navigation**/

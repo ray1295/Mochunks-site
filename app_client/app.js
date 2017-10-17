@@ -1,5 +1,7 @@
 var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'angularCSS'])
-	.config(function ($routeProvider) {
+	.config(function ($routeProvider, $locationProvider) {
+		$locationProvider.hashPrefix('');
+
 		$routeProvider
 			.when('/', {
 				template: '<home></home>'
@@ -44,7 +46,9 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				templateUrl: 'pages/beingChunksPage/beingChunksPage.view.html'
 			})
 			.when('/contactPage', {
-				templateUrl: 'pages/contactPage/contactPage.view.html'
+				templateUrl: 'pages/contactPage/contactPage.view.html',
+				controllerAs: 'vm',
+				controller: 'ContactPageController'
 			})
 			.when('/entertainmentPage', {
 				templateUrl: 'pages/entertainmentPage/entertainmentPage.view.html'

@@ -15,22 +15,26 @@
 	.navtop-2 img {
 		display: none
 	}
-	
+
 }
 
 @media screen and (min-width: 768px) {
 	.navtop-2-xs {
 		display: none;
 	}
+
 	.navtop-2 {
 		padding: 0 3vw;
 	}
+
 	.navtop-2 .link {
 		padding: 0;
 	}
+
 	.dropbtn {
 		padding: 5px;
 	}
+
 	.nav-home {
 		display: none
 	}
@@ -40,17 +44,21 @@
 	.navtop-2 {
 		padding: 0 7vw;
 	}
+
 	.navtop-2 .link {
 		padding: 17px;
 	}
+
 	.navtop-2 img {
 		display: block;
 		width: 100px;
 		height: 100px;
 	}
+
 	.dropbtn {
 		padding: 16px 8px;
 	}
+
 	.nav-home {
 		display: inline-flex;
 	}
@@ -58,9 +66,11 @@
 
 /**naviagtion**/
 .navtop-2 {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	/*display: flex;*/
+	/*padding-left: 25%;*/
+	/*justify-content: space-between;*/
+	/*align-items: center;*/
+	text-align: center;
 	position: sticky;
 	top: -1px;
 	height: 50px;
@@ -77,6 +87,17 @@
 
 .navtop-2 p {
 	font-size: 10px;
+}
+
+#brand-container {
+	text-align: center;
+	background-color: rgba(128, 0, 128, 0.13);
+	border-top: 2px solid rgb(104, 5, 104);
+}
+
+#brand-link {
+	color: rgb(104, 5, 104);
+	text-transform: uppercase;
 }
 
 .memo {

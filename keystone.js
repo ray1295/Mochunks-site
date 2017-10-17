@@ -3,8 +3,8 @@
 require('dotenv').config();
 
 // Require keystone
-var keystone = require('keystone');
-var handlebars = require('express-handlebars');
+const keystone = require('keystone');
+const handlebars = require('express-handlebars');
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -25,23 +25,24 @@ keystone.init({
 		partialsDir: 'templates/views/partials',
 		defaultLayout: 'default',
 		helpers: new require('./templates/views/helpers')(),
-		extname: '.hbs',
+		extname: '.hbs'
 	}).engine,
 
 	'auto update': true,
 	'session': true,
 	'auth': true,
-	'user model': 'User',
+	'user model': 'User'
 });
 
 if (process.env.NODE_ENV === "production") {
+	console.log('should not be here');
 	// Set mongodb url
 	keystone.set('mongo', process.env.production_database);
 	// Cloudinary configuration
 	keystone.set('cloudinary config', process.env.production_cloudinary_url);
 } else {
 	keystone.set('cloudinary config', process.env.development_cloudinary_url);
-	keystone.set('mongo', process.env.production_database);
+	keystone.set('mongo', process.env.development_database);
 }
 
 // Load your project's Models
@@ -54,7 +55,7 @@ keystone.set('locals', {
 	_: require('lodash'),
 	env: keystone.get('env'),
 	utils: keystone.utils,
-	editable: keystone.content.editable,
+	editable: keystone.content.editable
 });
 
 // inform keystone of the routes that the app will be utilising

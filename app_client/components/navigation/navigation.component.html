@@ -1,85 +1,86 @@
-<div class="memo">
+<div class="container-fluid" style="padding-right:0px; padding-left:0px">
+	<!-- Tag line and social media links -->
+	<div class="row">
+		<div class="memo">
+			<p class="hidden-xs">Chunks of lifestyle, Fashion, Entertainment and Relationships</p>
+			<ul>
+				<p>Be Social <i class="fa fa-long-arrow-right jello-vertical"></i></p>
+				<li><a href="https://www.facebook.com/mo.chunkaay" target="_blank" title="Facebook"
+					   class="fa fa-facebook-square facebook"></a></li>
+				<li><a href="https://www.youtube.com/user/TwigaayAndChunkaay" title="Youtube" target="_blank"
+					   class="fa fa-youtube-square youtube"></a></li>
+				<li><a href="https://www.instagram.com/mochunks/" title="Instagram" target="_blnk"
+					   class="fa fa-instagram instagram"></a></li>
+				<li><a href="https://twitter.com/mochunks?lang=en" title="Twitter" target="_blank"
+					   class="fa fa-twitter-square twitter"></a></li>
+				<li><a href="mailto:info.mochunks@gmail.com" title="Email" target="_blank" class="fa fa-envelope email"></a>
+				</li>
+			</ul>
 
-	<p class="hidden-xs">Chunks of lifestyle, Fashion, Entertainment and Relationships</p>
+		</div>
+	</div>
 
-	<ul>
-		<p>Be Social <i class="fa fa-long-arrow-right jello-vertical"></i></p>
-		<li><a href="https://www.facebook.com/mo.chunkaay" target="_blank" title="Facebook"
-			   class="fa fa-facebook-square facebook"></a></li>
-		<li><a href="https://www.youtube.com/user/TwigaayAndChunkaay" title="Youtube" target="_blank"
-			   class="fa fa-youtube-square youtube"></a></li>
-		<li><a href="https://www.instagram.com/mochunks/" title="Instagram" target="_blnk"
-			   class="fa fa-instagram instagram"></a></li>
-		<li><a href="https://twitter.com/mochunks?lang=en" title="Twitter" target="_blank"
-			   class="fa fa-twitter-square twitter"></a></li>
-		<li><a href="mailto:ojomowa@yahoo.co.uk" title="Email" target="_blank" class="fa fa-envelope email"></a></li>
-	</ul>
+	<!-- Brand Name-->
+	<div class="row" id="brand-container">
+		<a id="brand-link" href="#/"><h1>MoChunks.com</h1></a>
+	</div>
 
+	<!-- Navigation-->
+	<div class="row">
+		<nav class="navtop-2-xs">
+			<i class="fa fa-bars fa-2x" aria-hidden="true" ng-click="$root.showMenu = true" type="button"></i>
+		</nav>
+		
+		<menu-x-s ng-if="$root.showMenu === true"></menu-x-s>
+
+		<nav class="navtop-2 hidden-xs">
+			<div class="hidden-xs">
+				<!--ng-click="$root.togglePlatform()"-->
+				<h1 class="visible-xs fa fa-bars btn" aria-hidden="true"></h1>
+
+				<a href="#/" class="link nav-home">Home</a>
+
+				<div class="dropdown">
+					<button class="dropbtn">lifestyle</button>
+					<div class="dropdown-content">
+						<a href="#beingChunksPage">Being MoChunks</a>
+						<a href="#realTalk">Real Talk</a>
+						<a href="#askChunksPage">Ask Chunks</a>
+						<a href="#hub">The Hub</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">fashion</button>
+					<div class="dropdown-content">
+						<a href="#inStylePage">In Style</a>
+						<a href="#lookBookPage">Look Book</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">entertainment</button>
+					<div class="dropdown-content">
+						<a href="#trendingPage">What's trending?</a>
+						<a href="#scoopInterview">Real Scoop Interviews</a>
+						<a href="#event">Events</a>
+						<a href="#celebReview">Celebrity Reviews</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropbtn">relationships</button>
+					<div class="dropdown-content">
+						<a href="#loveLovePage">Why do we love love?</a>
+						<a href="#askChunksPage">Ask chunks</a>
+					</div>
+				</div>
+				<!--Button directs user to the mochunks youtube channel-->
+				<a href="https://www.youtube.com/user/TwigaayAndChunkaay" class="link" target="_blank">MoChunksTV</a>
+				<!--button directs user to mochunks contacts page-->
+				<a href='#contactPage' class="link">Contact Us</a>
+			</div>
+		</nav>
+	</div>
 </div>
 
-<nav class="navtop-2-xs">
-	<div class="navtop-logo">
-		<a href="#/!"><h1>MoChunks.com</h1></a>
-	</div>
-	<i class="fa fa-bars fa-2x" aria-hidden="true" ng-click="$root.showMenu = true" type="button"></i>
-</nav>
-
-<menu-x-s ng-if="$root.showMenu === true"></menu-x-s>
-
-<nav class="navtop-2 hidden-xs">
-
-	<div class="navtop-logo">
-		<a href="#/!"><h1>MoChunks.com</h1></a>
-		<img src="/images/Mo Chunks TV - Transparent.png"/>
-	</div>
-
-	<div class="hidden-xs">
-		<!--ng-click="$root.togglePlatform()"-->
-		<h1 class="visible-xs fa fa-bars btn" aria-hidden="true"></h1>
-
-		<a href="#/!" class="link nav-home">Home</a>
-
-		<div class="dropdown">
-			<button class="dropbtn">lifestyle</button>
-			<div class="dropdown-content">
-				<a href="#!beingChunksPage">Being MoChunks</a>
-				<a href="#!realTalk">Real Talk</a>
-				<a href="#!askChunksPage">Ask Chunks</a>
-				<a href="#!hub">The Hub</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">fashion</button>
-			<div class="dropdown-content">
-				<a href="#!inStylePage">In Style</a>
-				<a href="#!lookBookPage">Look Book</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">entertainment</button>
-			<div class="dropdown-content">
-				<a href="#!trendingPage">What's trending?</a>
-				<a href="#!scoopInterview">Real Scoop Interviews</a>
-				<a href="#!event">Events</a>
-				<a href="#!celebReview">Celebrity Reviews</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">relationships</button>
-			<div class="dropdown-content">
-				<a href="#!loveLovePage">Why do we love love?</a>
-				<a href="#!askChunksPage">Ask chunks</a>
-			</div>
-		</div>
-
-		<!--Button directs user to the mochunks youtube channel-->
-		<a href="https://www.youtube.com/user/TwigaayAndChunkaay" class="link" target="_blank">MoChunksTV</a>
-
-		<!--button directs user to mochunks contacts page-->
-		<a href='#!contactPage' class="link">Contact Us</a>
-
-	</div>
-</nav>

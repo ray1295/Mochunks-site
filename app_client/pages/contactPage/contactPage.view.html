@@ -30,16 +30,16 @@
 				<form class="contact-form">
 					<h2 style="color:rgb(104, 5, 104)">Contact Us</h2>
 					<hr>
-					<input type="text" placeholder="*Fashion, Clothes, etc">
-					<textarea type="text" placeholder="*How can we help?"></textarea>
+					<input type="text" placeholder="*Fashion, Clothes, etc" ng-model="vm.message.subject">
+					<textarea type="text" placeholder="*How can we help?" required ng-model="vm.message.message"></textarea>
 					<div>
-						<input type="text" placeholder="First Name">
-						<input type="text" placeholder="Last Name">
+						<input type="text" placeholder="First Name" ng-model="vm.message.firstname">
+						<input type="text" placeholder="Last Name" ng-model="vm.message.lastname">
 					</div>
-					<input type="email" placeholder="*name@example.com">
-					<input type="number" placeholder="Phone Number">
+					<input type="email" placeholder="*name@example.com" required ng-model="vm.message.email">
+					<input type="number" placeholder="Phone Number" ng-model="vm.message.phonenumber">
 					<br>
-					<button class="button-it">Send</button>
+					<button class="button-it" type="submit" ng-click="vm.sendContactUsEmail()">Send</button>
 				</form>
 			</div>
 		</div>

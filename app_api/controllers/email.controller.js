@@ -1,18 +1,37 @@
-const API_KEY = 'YOUR_API_KEY';
-const DOMAIN = 'YOUR_DOMAIN_NAME';
-const MAILGUN = require('mailgun-js')({apiKey: API_KEY, domain: DOMAIN});
-
+const Email = require('keystone-email');
 
 module.exports.sendEmail = (req, res) => {
-	const data = {
-		from: 'ojomowa@yahoo.co.uk',
-		to: req.params.email + ', YOU@YOUR_DOMAIN_NAME',
-		subject: req.params.subject,
-		text: req.params.message
-	};
-
-	MAILGUN.messages().send(data, function (err, body) {
-		console.log(body);
-	});
-
+	if (req.body.email || req.body.message) {
+		new Email('templates/views/emails/contact-us.pug', {
+			transport: 'mailgun'
+		}).send({
+			firstname: (req.body.firstname) ? req.body.firstname : 'Not Included',
+			lastname: (req.body.lastname) ? req.body.lastname : 'Not included',
+			phonenumber: (req.body.phonenumber) ? req.body.phonenumber : 'Not Included',
+			message: (req.body.message) ? req.body.message : 'Not Included',
+			subject: (req.body.subject) ? req.body.subject : 'Not Included',
+			email: (req.body.email) ? req.body.email : 'Not Included'
+		}, {
+			apiKey: process.env.mailgunapikey,
+			domain: process.env.mailgunsandbox,
+			to: 'richmond.alake@gmail.com',
+			from: {
+				name: 'Mochunks',
+				email: 'hello@mochunks.com',
+			},
+			subject: req.body.section,
+		}, function (err, result) {
+			if (err) {
+				// TODO Log errors
+				return res.sendStatus(500);
+			} else {
+				return res.sendStatus(200);
+			}
+		});
+	} else {
+		return res.json({message: 'Missing information'}).status(404);
+	}
 };
+
+
+

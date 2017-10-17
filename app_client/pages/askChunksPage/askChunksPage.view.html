@@ -13,11 +13,12 @@
 			<h3>Ask us a quesion</h3>
 			<p>Complete the infromation below and we'll get back to you as soon as possible!</p>
 			<p>Question subject *</p>
-			<input type="text">
+			<input type="text" required ng-model="vm.message.subject">
 			<p>Enter your message *</p>
-			<textarea type="text"></textarea>
+			<textarea type="text" required ng-model="vm.message.message"></textarea>
 			<br>
-			<button class="button-it">Send</button>
+			<input type="email" placeholder="*name@example.com" required ng-model="vm.message.email">
+			<button class="button-it" type="submit" ng-click="vm.sendContactUsEmail()">Send</button>
 		</form>
 		<div class="right-listing">
 			<advert></advert>

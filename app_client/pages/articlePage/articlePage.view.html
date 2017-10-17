@@ -4,7 +4,7 @@
 
 		<h1>{{vm.article.title}}</h1>
 
-		<img src={{vm.article.firstArticleImage.secure_url}}>
+		<img ng-if="vm.article.firstArticleImage" src={{vm.article.firstArticleImage.secure_url}}>
 		<!--<img src={{vm.article.secondArticleImage.secure_url}}>-->
 		<!--<img src={{vm.article.thirdArticleImage.secure_url}}>-->
 

@@ -17,6 +17,10 @@
 	margin-bottom: 50px;
 }
 
+#about-brand-image {
+	display:inline;
+}
+
 .about p {
 	padding: 0 15vw;
 	margin: 0;

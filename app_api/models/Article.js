@@ -22,10 +22,17 @@ Article.add({
 	},
 	description: {type: Types.Textarea, wysiwyg: true, height: 200},
 	content: {type: Types.Html, wysiwyg: true, height: 500},
-	firstArticleImage: {type: Types.CloudinaryImage, note: "The first image is the cover image of the article"},
-	secondArticleImage: {type: Types.CloudinaryImage},
-	thirdArticleImage: {type: Types.CloudinaryImage},
-	youtubeVideoUrl: {type: String, note: "Ensure all youtube url follow this example: https://www.youtube.com/watch?v=fUtlqtdn1Xo"},
+	firstArticleImage: {
+		type: Types.CloudinaryImage,
+		note: "The first image is the cover image of the article",
+		folder: '/wevative/mochunks'
+	},
+	secondArticleImage: {type: Types.CloudinaryImage, folder: '/wevative/mochunks'},
+	thirdArticleImage: {type: Types.CloudinaryImage, folder: '/wevative/mochunks'},
+	youtubeVideoUrl: {
+		type: String,
+		note: "Ensure all youtube url follow this example: https://www.youtube.com/watch?v=xxxxxxx"
+	},
 	publishedDate: {type: Date, default: Date.now}
 });
 

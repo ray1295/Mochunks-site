@@ -10,27 +10,24 @@
 	</div>
 
 	<div class="col-md-4 hidden-xs right-listing">
-
 		<advert></advert>
-
 	</div>
-
 </div>
 
-<div class="contains-text">
-	<p ng-if="vm.gallery.content">{{vm.gallery.content}}</p>
-	<h3 ng-if="vm.gallery.caption">{{vm.gallery.caption}}</h3>
+<div class="row">
+	<div class="col-md-8 contains-text">
+		<h3 ng-if="vm.gallery.caption">{{vm.gallery.caption}}</h3>
+		<p ng-bind-html="vm.gallery.content.html"></p>
+	</div>
 </div>
 
-<div class="row main-gallery">
+<div class="row main-gallery" style="margin-bottom:20px">
 	<div class="col-md-6">
-		<div class="gallery-video" ng-if="vm.gallery.youtubeVideoUrl">
-			<iframe id="player" type="text/html" width="640" height="390"
+		<div class="gallery-video embed-responsive embed-responsive-16by9" ng-if="vm.gallery.youtubeVideoUrl">
+			<iframe class="embed-responsive-item" id="player" type="text/html"
 					src="{{vm.video}}"
 					frameborder="0"></iframe>
 		</div>
-
 	</div>
-
 </div>
 

@@ -2,9 +2,10 @@
 	<h2 class="section-title hidden-md hidden-lg">Recommended</h2>
 	<div class="col-md-6 col-lg-8 col-xs-12" id="home-carousel">
 		<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
-			<a href="/#!/article/view/{{article._id}}" uib-slide ng-repeat="article in vm.recommendedArticles"
+			<a href="/#/article/view/{{article._id}}" uib-slide ng-repeat="article in vm.recommendedArticles"
 			   index="$index">
-				<img class="header-section-img" ng-if="article.firstArticleImage" ng-src="{{article.firstArticleImage.secure_url}}">
+				<img class="header-section-img" ng-if="article.firstArticleImage"
+					 ng-src="{{article.firstArticleImage.secure_url}}">
 				<h3 class="arti-carousel-title">{{article.title}}</h3>
 				<!--<p>{{article.description}}</p><h4>View Post</h4>-->
 				<!--<p class="arti-carousel-title visible-xs">{{article.title}}</p>-->
@@ -27,6 +28,19 @@
 	<sub-article-list></sub-article-list>
 </div>
 
+<div class="row article-listing">
+	<div class="col-sm-8 col-xs-12">
+		<div class="left-listing">
+			<articles section=vm.articleSection></articles>
+		</div>
+	</div>
+
+	<div class="col-sm-4 hidden-xs right-listing">
+		<advert></advert>
+	</div>
+
+</div>
+
 <div class="about hidden-xs">
 	<h2>About Us</h2>
 	<p>MoChunks Tv is the home of the MoChunks Show. An innovative talk show featuring chunks of lifestyle,
@@ -34,27 +48,7 @@
 		entertainment and relationships...</p>
 	<br>
 	<!--<img id="about-brand-image" class="img-responsive" src="/images/Mo Chunks TV - Transparent.png"/>-->
-	<a href="#!aboutPage" class="button-it">Read More</a>
-</div>
-
-<div class="row article-listing">
-
-	<div class="col-sm-8 col-xs-12">
-
-		<div class="left-listing">
-
-			<articles section=vm.articleSection></articles>
-
-		</div>
-
-	</div>
-
-	<div class="col-sm-4 hidden-xs right-listing">
-
-		<advert></advert>
-
-	</div>
-
+	<a href="#aboutPage" class="button-it">Read More</a>
 </div>
 
 <br><br>

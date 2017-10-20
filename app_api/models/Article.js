@@ -25,7 +25,7 @@ Article.add({
 	firstArticleImage: {type: Types.CloudinaryImage, note: "The first image is the cover image of the article"},
 	secondArticleImage: {type: Types.CloudinaryImage},
 	thirdArticleImage: {type: Types.CloudinaryImage},
-	youtubeVideoUrl: {type: String},
+	youtubeVideoUrl: {type: String, note: "Ensure all youtube url follow this example: https://www.youtube.com/watch?v=fUtlqtdn1Xo"},
 	publishedDate: {type: Date, default: Date.now}
 });
 

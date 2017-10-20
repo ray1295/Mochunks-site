@@ -1,6 +1,6 @@
 <div class="section-title">Latest Articles</div>
 <hr>
-<a href="/#!/article/view/{{article._id}}" ng-repeat="article in vm.listedArticles" ng-if="vm.listedArticles.length > 0">
+<a href="/#/article/view/{{article._id}}" ng-repeat="article in vm.listedArticles" ng-if="vm.listedArticles.length > 0">
 	<div class="row article-home-block">
 		<img class="col-sm-6" src="{{article.firstArticleImage.secure_url}}" alt="{{article.title}}">
 		<div class="col-sm-6">

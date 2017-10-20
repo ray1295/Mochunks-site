@@ -144,14 +144,11 @@ a:hover {
 .arti-carousel-title {
 	background: rgba(255, 246, 255, 0.5);
 	width: 50%;
-	height: 150px;
 	text-align: left;
 	color: rgb(104, 5, 104);
 	margin: 0;
 	padding: 20px;
-	bottom: -300px;
 	border-top: 10px solid rgba(148, 0, 148, 0.5);
-	position: relative;
 	box-shadow: 0 4px 18px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -199,12 +196,12 @@ a:hover {
 }
 
 .page-title {
-	color:rgb(104, 5, 104);
+	color: rgb(104, 5, 104);
 	padding-left: 0.4em;
 }
 
 .webpisodes-sub {
-	margin: 0 0 20px;
+	margin: 0 0 40px;
 }
 
 .webpisodes-sub .col-sm-4 {
@@ -237,7 +234,7 @@ a:hover {
 	font-weight: 500;
 	font-style: italic;
 	line-height: 2rem;
-	color:white;
+	color: white;
 	background-color: rgb(104, 5, 104);
 }
 
@@ -376,14 +373,15 @@ a:hover {
 .right-listing {
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 3em;
 	justify-content: center;
 	position: sticky;
-	top: 50px;
+	/*top: 50px;*/
 }
 
-.r-page {
-	padding: 0;
-}
+/*.r-page {*/
+/*padding: 0;*/
+/*}*/
 
 .r-page h1 {
 	margin-top: 0;
@@ -460,10 +458,11 @@ form button {
 	.col-xs-12 {
 		padding: 0;
 	}
-	
+
 	.col-sm-4 {
 		padding: 0;
 	}
+
 	/**Navigation**/
 	.navtop-1 {
 		height: 30vw;
@@ -513,7 +512,7 @@ form button {
 		padding: 0;
 		border: 1px solid #f7f7f7;
 	}
-	
+
 	/**Article page**/
 	.r-page img {
 		height: 200px;
@@ -575,11 +574,12 @@ form button {
 		height: 250px;
 		width: 50%;
 	}
-	
+
 	/**Article page**/
-	.r-page h1 {  
+	.r-page h1 {
 		font-size: 32px;
 	}
+
 	.r-page img {
 		height: 450px;
 	}
@@ -607,4 +607,11 @@ form button {
 
 .tc-page .us-below {
 	display: none;
+}
+
+.article-text {
+	font-size: 16px;
+	line-height: 25px;
+	color: black;
+	margin-top: 40px;
 }

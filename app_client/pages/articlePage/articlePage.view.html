@@ -1,32 +1,46 @@
 <div class="apvh-page row">
 
-	<div class="r-page col-sm-8">
+	<div class="col-sm-8">
 
 		<h1>{{vm.article.title}}</h1>
 
-		<img ng-if="vm.article.firstArticleImage" src={{vm.article.firstArticleImage.secure_url}}>
-		<!--<img src={{vm.article.secondArticleImage.secure_url}}>-->
-		<!--<img src={{vm.article.thirdArticleImage.secure_url}}>-->
+		<h5 class="article-text">{{vm.article.description}}</h5>
 
-		<h5>{{vm.article.description}}</h5>
+		<img ng-if="vm.article.firstArticleImage" class="img-responsive"
+			 src={{vm.article.firstArticleImage.secure_url}}>
 
-		<div ng-bind-html="vm.article.content"></div>
+		<div class="article-text" ng-bind-html="vm.article.content"></div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<img class="img-responsive" src={{vm.article.secondArticleImage.secure_url}}>
+			</div>
+			<div class="col-sm-6">
+				<img class="img-responsive" src={{vm.article.thirdArticleImage.secure_url}}>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top:20px; margin-bottom:20px">
+			<div class="embed-responsive embed-responsive-16by9" ng-if="vm.article.youtubeVideoUrl">
+				<iframe class="embed-responsive-item" id="player" type="text/html"
+						src="{{vm.video}}"
+						frameborder="0"></iframe>
+			</div>
+		</div>
 
 		<div class="sub-article-list hidden-xs">
-
 			<sub-article-list></sub-article-list>
-
 		</div>
 
 	</div>
 
 
-	<div class="col-sm-4">
+	<div class="col-sm-4" style="padding-top: 3.5em;">
 
 		<webpisodes></webpisodes>
 
 		<div class="right-listing">
-			
+
 			<advert></advert>
 
 		</div>

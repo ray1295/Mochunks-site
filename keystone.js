@@ -40,6 +40,8 @@ if (process.env.NODE_ENV === "production") {
 	keystone.set('mongo', process.env.production_database);
 	// Cloudinary configuration
 	keystone.set('cloudinary config', process.env.production_cloudinary_url);
+
+	keystone.set('cloudinary folders', true);
 } else {
 	keystone.set('cloudinary config', process.env.development_cloudinary_url);
 	keystone.set('mongo', process.env.development_database);

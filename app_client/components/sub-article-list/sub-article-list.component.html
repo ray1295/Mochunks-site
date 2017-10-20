@@ -3,7 +3,7 @@
 
 	<!-- Display latest articles for selected sections-->
 	<div class="small-below" ng-repeat="article in vm.latestArticles track by article._id" ng-if="vm.latestArticles.length > 0">
-		<a href="/#!/article/view/{{article._id}}">
+		<a href="/#/article/view/{{article._id}}">
 			<img ng-if="article.firstArticleImage" ng-src="{{article.firstArticleImage.secure_url}}">
 			<h5>{{article.section}}</h5>
 			<p>{{article.publishedDate | date: 'MM/dd/yyyy'}}</p>

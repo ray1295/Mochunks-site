@@ -1,6 +1,6 @@
 <!-- Galleries that have been recommended-->
 <ul class="wrapper grid">
-	<li ng-repeat="gallery in vm.recommendedGalleries"><a href="/#!/gallery/view/{{gallery._id}}"><i
+	<li ng-repeat="gallery in vm.recommendedGalleries"><a href="/#/gallery/view/{{gallery._id}}"><i
 			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
 											  aria-hidden="true"></i>
 		<img ng-src="{{gallery.images[0].secure_url}}" alt="{{gallery.slug}}"></a></li>
@@ -10,7 +10,8 @@
 
 <h1 class="txt-center">Most Recent</h1>
 
-<p class="txt-center hidden-xs">Get the latest fashion tips and outfit ideas. Click through runway and front row photos from
+<p class="txt-center hidden-xs">Get the latest fashion tips and outfit ideas. Click through runway and front row photos
+	from
 	fashion week shows in New York, London, Paris, and Milan. Plus, browse key accessories like bags, shoes, and
 	sunglasses, must-have denim looks, and more top fashion trends.
 </p>
@@ -18,7 +19,7 @@
 <br>
 
 <ul class="wrapper grid">
-	<li ng-repeat="gallery in vm.listedGalleries"><a href="/#!/gallery/view/{{gallery._id}}"><i
+	<li ng-repeat="gallery in vm.listedGalleries"><a href="/#/gallery/view/{{gallery._id}}"><i
 			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
 											  aria-hidden="true"></i>
 		<img ng-src="{{gallery.images[0].secure_url}}" alt="{{galley.slug}}">

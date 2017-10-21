@@ -1,6 +1,7 @@
 const Email = require('keystone-email');
 
 module.exports.sendEmail = (req, res) => {
+	console.log(req.body);
 	if (req.body.email || req.body.message) {
 		new Email('templates/views/emails/contact-us.pug', {
 			transport: 'mailgun'

@@ -21,7 +21,9 @@ Article.add({
 		note: "Recommended articles are shown in the post carousel in the home page"
 	},
 	description: {type: Types.Textarea, wysiwyg: true, height: 200},
-	content: {type: Types.Html, wysiwyg: true, height: 500},
+	firstsection: {type: Types.Html, wysiwyg: true, height: 500},
+	secondsection: {type: Types.Html, wysiwyg: true, height: 500},
+	thirdsection: {type: Types.Html, wysiwyg: true, height: 500},
 	firstArticleImage: {
 		type: Types.CloudinaryImage,
 		note: "The first image is the cover image of the article",

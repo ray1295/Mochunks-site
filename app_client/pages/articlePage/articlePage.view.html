@@ -6,19 +6,32 @@
 
 		<h5 class="article-text">{{vm.article.description}}</h5>
 
+		<!-- First Image-->
 		<img ng-if="vm.article.firstArticleImage" class="img-responsive"
 			 src={{vm.article.firstArticleImage.secure_url}}>
 
-		<div class="article-text" ng-bind-html="vm.article.content"></div>
+		<!-- First Section-->
+		<div class="article-text" ng-if="vm.article.secondsection" ng-bind-html="vm.article.firstsection"></div>
 
-		<div class="row">
+		<!-- Second Image-->
+		<div class="row" ng-if="vm.article.secondArticleImage.secure_url">
 			<div class="col-sm-6">
 				<img class="img-responsive" src={{vm.article.secondArticleImage.secure_url}}>
 			</div>
+		</div>
+
+		<!-- Second Section-->
+		<div class="article-text" ng-if="vm.article.secondsection" ng-bind-html="vm.article.secondsection"></div>
+
+		<!-- Third Image-->
+		<div class="row" ng-if="vm.article.thirdArticleImage.secure_url">
 			<div class="col-sm-6">
-				<img class="img-responsive" src={{vm.article.thirdArticleImage.secure_url}}>
+				<img class="img-responsive" src={{vm.article.secondArticleImage.secure_url}}>
 			</div>
 		</div>
+
+		<!-- Third Section-->
+		<div class="article-text" ng-if="vm.article.thirdsection" ng-bind-html="vm.article.thirdsection"></div>
 
 		<div class="row" style="margin-top:20px; margin-bottom:20px">
 			<div class="embed-responsive embed-responsive-16by9" ng-if="vm.article.youtubeVideoUrl">

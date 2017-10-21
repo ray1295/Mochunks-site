@@ -23,6 +23,7 @@ module.exports.sendEmail = (req, res) => {
 		}, function (err, result) {
 			if (err) {
 				// TODO Log errors
+				console.log(err);
 				return res.sendStatus(500);
 			} else {
 				return res.sendStatus(200);

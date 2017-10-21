@@ -1,6 +1,6 @@
 var app = angular.module('wevativeApp');
 
-app.controller('AskChunksController', function ($rootScope, EmailService, $sanitze) {
+app.controller('AskChunksController', function ($rootScope, EmailService, $sanitize) {
 	var vm = this;
 	// Hide Navigation bar on mobile once page is loaded
 	// TODO: Look for efficient solution to close the navigation bar on each page
@@ -15,7 +15,7 @@ app.controller('AskChunksController', function ($rootScope, EmailService, $sanit
 		// Sanitise all the inputs from the form
 		for (var key in vm.message) {
 			if (vm.message.hasOwnProperty(key)) {
-				vm.message[key] = $sanitze(vm.message[key]);
+				vm.message[key] = $sanitize(vm.message[key]);
 			}
 		}
 		

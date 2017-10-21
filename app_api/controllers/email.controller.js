@@ -14,7 +14,7 @@ module.exports.sendEmail = (req, res) => {
 		}, {
 			apiKey: process.env.mailgunapikey,
 			domain: process.env.mailgunsandbox,
-			to: 'richmond.alake@gmail.com',
+			to: (req.body.section === 'Contact-us') ? 'mochunkstv@gmail.com' : 'dilemmas.mochunks@gmail.com',
 			from: {
 				name: 'Mochunks',
 				email: 'hello@mochunks.com',

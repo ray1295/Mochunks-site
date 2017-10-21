@@ -14,7 +14,7 @@
 		<div class="article-text" ng-if="vm.article.secondsection" ng-bind-html="vm.article.firstsection"></div>
 
 		<!-- Second Image-->
-		<div class="row" ng-if="vm.article.secondArticleImage.secure_url">
+		<div class="row" ng-if="vm.article.secondArticleImage.secure_url" style="text-align: center">
 			<div class="col-sm-6">
 				<img class="img-responsive" src={{vm.article.secondArticleImage.secure_url}}>
 			</div>
@@ -24,9 +24,9 @@
 		<div class="article-text" ng-if="vm.article.secondsection" ng-bind-html="vm.article.secondsection"></div>
 
 		<!-- Third Image-->
-		<div class="row" ng-if="vm.article.thirdArticleImage.secure_url">
-			<div class="col-sm-6">
-				<img class="img-responsive" src={{vm.article.secondArticleImage.secure_url}}>
+		<div class="row" ng-if="vm.article.thirdArticleImage.secure_url" style="text-align: center">
+			<div class="col-sm-6 offset-sm-6">
+				<img class="img-responsive" src={{vm.article.thirdArticleImage.secure_url}}>
 			</div>
 		</div>
 

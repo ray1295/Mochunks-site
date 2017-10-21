@@ -21,14 +21,15 @@ Article.add({
 		note: "Recommended articles are shown in the post carousel in the home page"
 	},
 	description: {type: Types.Textarea, wysiwyg: true, height: 200},
+	articleCoverImage: {
+		type: Types.CloudinaryImage,
+		note: "The is the cover image of the article",
+		folder: '/wevative/mochunks'
+	},
 	firstsection: {type: Types.Html, wysiwyg: true, height: 500},
 	secondsection: {type: Types.Html, wysiwyg: true, height: 500},
 	thirdsection: {type: Types.Html, wysiwyg: true, height: 500},
-	firstArticleImage: {
-		type: Types.CloudinaryImage,
-		note: "The first image is the cover image of the article",
-		folder: '/wevative/mochunks'
-	},
+	firstArticleImage: {type: Types.CloudinaryImage, folder: '/wevative/mochunks'},
 	secondArticleImage: {type: Types.CloudinaryImage, folder: '/wevative/mochunks'},
 	thirdArticleImage: {type: Types.CloudinaryImage, folder: '/wevative/mochunks'},
 	youtubeVideoUrl: {

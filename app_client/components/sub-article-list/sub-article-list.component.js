@@ -4,7 +4,7 @@ function subArticleListController(ArticlesService, $q) {
 	var vm = this;
 
 	// Get latest articles for section
-	var getLatestArticleArray = [ArticlesService.getLatestArticleForSection('realtalk'), ArticlesService.getLatestArticleForSection('trending'), ArticlesService.getLatestArticleForSection('wdwll'), ArticlesService.getLatestArticleForSection('askchunks')];
+	var getLatestArticleArray = [ArticlesService.getLatestArticleForSection('realtalk'), ArticlesService.getLatestArticleForSection('trending'), ArticlesService.getLatestArticleForSection('wdwll'), ArticlesService.getLatestArticleForSection('askchunks'), ArticlesService.getLatestArticleForSection('celebreview'), ArticlesService.getLatestArticleForSection('thehub')];
 
 	$q.all(getLatestArticleArray).then(function (response) {
 		vm.latestArticles = [];

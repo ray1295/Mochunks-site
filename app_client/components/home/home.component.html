@@ -5,7 +5,7 @@
 			<a href="/#/article/view/{{article._id}}" uib-slide ng-repeat="article in vm.recommendedArticles"
 			   index="$index">
 				<img class="header-section-img" ng-if="article.articleCoverImage"
-					 ng-src="{{article.firstArticleImage.secure_url}}">
+					 ng-src="{{article.articleCoverImage.secure_url}}">
 				<h3 class="arti-carousel-title">{{article.title}}</h3>
 				<!--<p>{{article.description}}</p><h4>View Post</h4>-->
 				<!--<p class="arti-carousel-title visible-xs">{{article.title}}</p>-->

@@ -13,7 +13,6 @@ app.controller('ArticlePageCtrl', function (ArticlesService, $window, $routePara
 		.then(function (response) {
 			vm.article = response.data;
 			vm.video = $sce.trustAsResourceUrl('https://www.youtube.com/embed/' + vm.article.youtubeVideoUrl.split('=')[1]);
-			console.log(vm.video);
 		})
 		.catch(function (err) {
 			alert('This article could not be loaded, please try again');

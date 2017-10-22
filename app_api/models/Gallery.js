@@ -15,7 +15,7 @@ Gallery.add({
 		options: 'instyle, lookbook',
 		emptyOption: false
 	},
-	recommended: {type: Boolean, default: false, note: "Recommended gallery are shown in the top of a gallery page"},
+	recommended: {type: Boolean, default: false, note: "Recommended gallery are shown in the top of a gallery page and on the main page carousel"},
 	caption: {type: Types.Textarea, wysiwyg: true, height: 200},
 	content: {type: Types.Markdown, wysiwyg: false, height: 500},
 	images: {type: Types.CloudinaryImages, note: "This first image is used as the cover for this gallery. Uploading a large number of images might delay the saving process.", folder: '/wevative/mochunks'},

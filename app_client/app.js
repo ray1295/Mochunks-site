@@ -1,6 +1,10 @@
 var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'angularCSS'])
 	.config(function ($routeProvider, $locationProvider) {
 		$locationProvider.hashPrefix('');
+		$locationProvider.html5Mode({
+			requireBase: false,
+			enabled: true
+		});
 
 		$routeProvider
 			.when('/', {

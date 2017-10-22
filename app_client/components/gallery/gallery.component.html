@@ -1,6 +1,6 @@
 <!-- Galleries that have been recommended-->
 <ul class="wrapper grid">
-	<li class="col-sm-4 col-md-3" ng-repeat="gallery in vm.recommendedGalleries"><a href="/#/gallery/view/{{gallery._id}}"><i
+	<li class="col-sm-4 col-md-3" ng-repeat="gallery in vm.recommendedGalleries"><a href="/gallery/view/{{gallery._id}}"><i
 			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
 											  aria-hidden="true"></i>
 		<img class="img-responsive" ng-src="{{gallery.images[0].secure_url}}" alt="{{gallery.slug}}"></a></li>
@@ -19,7 +19,7 @@
 <br>
 
 <ul class="wrapper grid">
-	<li class="col-sm-4 col-md-3" ng-repeat="gallery in vm.listedGalleries"><a href="/#/gallery/view/{{gallery._id}}"><i
+	<li class="col-sm-4 col-md-3" ng-repeat="gallery in vm.listedGalleries"><a href="/gallery/view/{{gallery._id}}"><i
 			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
 											  aria-hidden="true"></i>
 		<img class="img-responsive"ng-src="{{gallery.images[0].secure_url}}" alt="{{galley.slug}}">

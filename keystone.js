@@ -5,6 +5,7 @@ require('dotenv').config();
 // Require keystone
 const keystone = require('keystone');
 const handlebars = require('express-handlebars');
+const path = require('path');
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -62,6 +63,7 @@ keystone.set('locals', {
 
 // inform keystone of the routes that the app will be utilising
 keystone.set('routes', require('./app_api/routes'));
+
 
 // Start Keystone to connect to your database and initialise the web server
 keystone.start();

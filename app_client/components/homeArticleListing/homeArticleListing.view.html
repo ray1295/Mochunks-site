@@ -2,7 +2,7 @@
 <hr>
 <a href="/article/view/{{article._id}}" ng-repeat="article in vm.listedArticles" ng-if="vm.listedArticles.length > 0">
 	<div class="row article-home-block">
-		<img class="col-sm-6" src="{{article.firstArticleImage.secure_url}}" alt="{{article.title}}">
+		<img class="col-sm-6" src="{{article.articleCoverImage.secure_url}}" alt="{{article.title}}">
 		<div class="col-sm-6">
 			<h3>{{article.title}}</h3>
 			<h6>{{article.publishedDate | date: 'MM/dd/yyyy'}}</h6>

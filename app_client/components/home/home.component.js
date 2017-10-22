@@ -1,7 +1,10 @@
 var app = angular.module('wevativeApp');
 
-function homeController(ArticlesService, GalleriesService) {
+function homeController(ArticlesService, GalleriesService, $rootScope) {
 	var vm = this;
+
+	// TODO: Look for efficient solution to close the navigation bar on each page
+	$rootScope.showMenu = false;
 
 	vm.articleSection = 'home';
 	// Store all galleries and articles in the carousel container

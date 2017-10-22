@@ -1,34 +1,41 @@
 <!-- Galleries that have been recommended-->
-<ul class="wrapper grid">
-	<li class="col-sm-4 col-md-3" ng-repeat="gallery in vm.recommendedGalleries"><a
-			href="/gallery/view/{{gallery._id}}"><i
-			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
-											  aria-hidden="true"></i>
-		<img class="img-responsive" ng-src="{{gallery.images[0].secure_url}}" alt="{{gallery.slug}}"></a>
-		<h3 ng-if="gallery.title">{{gallery.title}}</h3>
-	</li>
-</ul>
 
-<br>
+<!-- TODO: Commented out due to client's request-->
+<!--<h1 class="txt-center">Featured Content</h1>-->
+
+<!--<p class="txt-center hidden-xs">Get the latest fashion tips and outfit ideas. Click through runway and front row photos-->
+<!--from-->
+<!--fashion week shows in New York, London, Paris, and Milan. Plus, browse key accessories like bags, shoes, and-->
+<!--sunglasses, must-have denim looks, and more top fashion trends.-->
+<!--</p>-->
+
+<!--<br>-->
+
+<!--<ul class="wrapper grid">-->
+<!--<li class="col-sm-4 col-md-3" ng-repeat="gallery in vm.recommendedGalleries"><a-->
+<!--href="/gallery/view/{{gallery._id}}"><i-->
+<!--class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"-->
+<!--aria-hidden="true"></i>-->
+<!--<img class="img-responsive" ng-src="{{gallery.images[0].secure_url}}" alt="{{gallery.slug}}"></a>-->
+<!--<h3 ng-if="gallery.title">{{gallery.title}}</h3>-->
+<!--</li>-->
+<!--</ul>-->
+
+<!--<br>-->
 
 <h1 class="txt-center">Most Recent</h1>
 
-<p class="txt-center hidden-xs">Get the latest fashion tips and outfit ideas. Click through runways and front row photos
-	from
-	fashion week shows in New York, London, Paris, and Milan. Plus, browse key accessories like bags, shoes, and
-	sunglasses, must-have denim looks, and more top fashion trends.
-</p>
-
 <br>
 
-<ul class="wrapper grid">
-	<li class="col-sm-4 col-md-3" ng-repeat="gallery in vm.listedGalleries"><a href="/gallery/view/{{gallery._id}}"><i
-			class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
-											  aria-hidden="true"></i>
-		<img class="img-responsive" ng-src="{{gallery.images[0].secure_url}}" alt="{{galley.slug}}">
-	</a>
+
+<div class="row">
+	<div ng-repeat="gallery in vm.listedGalleries" class="col-sm-6 col-md-3 wrapper grid">
+		<a href="/gallery/view/{{gallery._id}}"><i
+				class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
+												  aria-hidden="true"></i>
+			<img class="img-responsive" ng-src="{{gallery.images[0].secure_url}}" alt="{{galley.slug}}">
+		</a>
 		<h3 ng-if="gallery.title">{{gallery.title}}</h3>
-	</li>
-	<!-- Only show more gallery if next page object evaluates to true-->
+	</div>
 	<button class="button-it" ng-if="vm.page" ng-click="vm.loadMoreGalleries()">Check out more</button>
-</ul>
+</div>

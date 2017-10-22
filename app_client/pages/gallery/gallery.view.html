@@ -4,7 +4,7 @@
 	<div class="col-md-8">
 		<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
 			<div uib-slide ng-repeat="image in vm.images" index="$index">
-				<img ng-src="{{image.secure_url}}" alt="vm.gallery.caption" width="50%" height="50%">
+				<img ng-src="{{image.secure_url}}" alt="vm.gallery.caption" class="img-responsive">
 			</div>
 		</div>
 	</div>
@@ -18,8 +18,16 @@
 	<div class="col-md-8 contains-text">
 		<h3 ng-if="vm.gallery.caption">{{vm.gallery.caption}}</h3>
 		<p ng-bind-html="vm.gallery.content.html"></p>
+
+		<div class="row">
+			<div class="col-sm-4" ng-repeat="image in vm.images">
+				<img class="img-responsive" ng-src="{{image.secure_url}}" alt="vm.gallery.caption">
+			</div>
+		</div>
+
 	</div>
 </div>
+
 
 <div class="row main-gallery" style="margin-bottom:20px">
 	<div class="col-md-6">

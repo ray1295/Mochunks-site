@@ -23,7 +23,7 @@ module.exports.getGalleriesSection = (req, res) => {
 	keystone.list('Gallery')
 		.paginate({
 			page: req.params.page || 1,
-			perPage: 2,
+			perPage: 6,
 		})
 		.where({section: section})
 		.sort('-publishedDate')

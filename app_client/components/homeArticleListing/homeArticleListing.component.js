@@ -6,7 +6,7 @@ function ArticleListingController(ArticlesService, $window) {
 
 	vm.loadArticles = function (page) {
 
-		var articleSection = (vm.section === 'home') ? ArticlesService.getAllArticles() : ArticlesService.getArticlesBySection(vm.section, page);
+		var articleSection = (vm.section === 'home') ? ArticlesService.getAllArticles(page) : ArticlesService.getArticlesBySection(vm.section, page);
 
 		// Increment the current page number to get the next page for the records
 		$window.localStorage['nextPage'] = parseInt(page) + 1;

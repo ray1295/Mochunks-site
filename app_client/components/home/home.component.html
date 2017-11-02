@@ -7,17 +7,18 @@
 				<div uib-slide ng-repeat="carouselItem in vm.carouselContainer"
 					 index="$index">
 					<!-- Show Article -->
-					<a href="/article/view/{{carouselItem.slug}}" ng-if="carouselItem.articleCoverImage">
-						<img class="header-section-img" ng-src="{{carouselItem.articleCoverImage.secure_url}}">
+					<a href="/article/view/{{carouselItem.slug}}" title="{{carouselItem.slug}}" ng-if="carouselItem.articleCoverImage">
+						<img class="header-section-img" ng-src="{{carouselItem.articleCoverImage.secure_url}}"
+							 alt="{{carouselItem.slug}}">
 						<!-- Galleries have images within the object, this is used as an indicator to distinguish from galleries and articles-->
 						<h3 class="arti-carousel-title">{{carouselItem.title}}</h3>
 					</a>
 
 					<!-- Show Galleries-->
-					<a href="/gallery/view/{{carouselItem.slug}}" ng-if="carouselItem.images.length > 0">
+					<a href="/gallery/view/{{carouselItem.slug}}" ng-if="carouselItem.images.length > 0" title="{{carouselItem.slug}}">
 						<!-- Galleries have images within the object, this is used as an indicator to distinguish from galleries and articles-->
 						<img class="header-section-img" ng-if="carouselItem.images.length > 0"
-							 ng-src="{{carouselItem.images[0].secure_url}}">
+							 ng-src="{{carouselItem.images[0].secure_url}}" alt="{{carouselItem.slug}}">
 						<h3 class="arti-carousel-title">{{carouselItem.title}}</h3>
 					</a>
 				</div>
@@ -59,7 +60,7 @@
 		fashion,
 		entertainment and relationships.</p>
 	<br>
-	<a href="/aboutPage" class="button-it">Read More</a>
+	<a href="/aboutPage" title="about" class="button-it">Read More</a>
 </div>
 
 <br><br>

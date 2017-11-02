@@ -7,7 +7,7 @@ app.controller('GalleryController', function ($window, GalleriesService, $routeP
 	// TODO: Look for efficient solution to close the navigation bar on each page
 	$rootScope.showMenu = false;
 
-	GalleriesService.getSingleGalleryByID($routeParams.galleryID)
+	GalleriesService.getSingleGalleryBySlug($routeParams.slug)
 		.then(function (response) {
 			vm.gallery = response.data;
 			vm.images = response.data.images;

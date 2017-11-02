@@ -1,40 +1,36 @@
-<div class="header-section container row">
+<div class="header-section container">
 	<h2 class="section-title hidden-md hidden-lg">Recommended</h2>
-	<div class="col-md-6 col-lg-8 col-xs-12" id="home-carousel">
-		<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
-			<!--<a href="/article/view/{{article._id}}" uib-slide ng-repeat="article in vm.recommendedArticles"-->
-			<!--index="$index">-->
-			<!--<img class="header-section-img" ng-if="article.articleCoverImage"-->
-			<!--ng-src="{{article.articleCoverImage.secure_url}}">-->
-			<!--<h3 class="arti-carousel-title">{{article.title}}</h3>-->
-			<!--</a>-->
+	<div class="row">
+		<div class="col-md-6 col-lg-8 col-xs-12" id="home-carousel">
+			<div uib-carousel active="active" interval="3000" no-wrap="noWrapSlides" class="carousel slide">
 
-			<div uib-slide ng-repeat="carouselItem in vm.carouselContainer"
-				 index="$index">
-				<!-- Show Article -->
-				<a href="/article/view/{{carouselItem._id}}" ng-if="carouselItem.articleCoverImage">
-					<img class="header-section-img" ng-src="{{carouselItem.articleCoverImage.secure_url}}">
-					<!-- Galleries have images within the object, this is used as an indicator to distinguish from galleries and articles-->
-					<h3 class="arti-carousel-title">{{carouselItem.title}}</h3>
-				</a>
+				<div uib-slide ng-repeat="carouselItem in vm.carouselContainer"
+					 index="$index">
+					<!-- Show Article -->
+					<a href="/article/view/{{carouselItem.slug}}" ng-if="carouselItem.articleCoverImage">
+						<img class="header-section-img" ng-src="{{carouselItem.articleCoverImage.secure_url}}">
+						<!-- Galleries have images within the object, this is used as an indicator to distinguish from galleries and articles-->
+						<h3 class="arti-carousel-title">{{carouselItem.title}}</h3>
+					</a>
 
-				<!-- Show Galleries-->
-				<a href="/gallery/view/{{carouselItem._id}}" ng-if="carouselItem.images.length > 0">
-					<!-- Galleries have images within the object, this is used as an indicator to distinguish from galleries and articles-->
-					<img class="header-section-img" ng-if="carouselItem.images.length > 0"
-						 ng-src="{{carouselItem.images[0].secure_url}}">
-					<h3 class="arti-carousel-title">{{carouselItem.title}}</h3>
-				</a>
+					<!-- Show Galleries-->
+					<a href="/gallery/view/{{carouselItem.slug}}" ng-if="carouselItem.images.length > 0">
+						<!-- Galleries have images within the object, this is used as an indicator to distinguish from galleries and articles-->
+						<img class="header-section-img" ng-if="carouselItem.images.length > 0"
+							 ng-src="{{carouselItem.images[0].secure_url}}">
+						<h3 class="arti-carousel-title">{{carouselItem.title}}</h3>
+					</a>
+				</div>
 			</div>
+
 		</div>
 
-	</div>
+		<div class="col-md-6 col-lg-4 hidden-xs header-section-right">
+			<webpisodes></webpisodes>
+		</div>
 
-	<div class="col-md-6 col-lg-4 hidden-xs header-section-right">
-		<webpisodes></webpisodes>
+		<br><br>
 	</div>
-
-	<br><br>
 
 </div>
 
@@ -51,7 +47,7 @@
 		</div>
 	</div>
 
-	<div class="col-sm-4 hidden-xs right-listing">
+	<div class="col-sm-4 col-xs-12 right-listing">
 		<advert></advert>
 	</div>
 

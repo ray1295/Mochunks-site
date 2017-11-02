@@ -91,12 +91,12 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				controllerAs: 'vm',
 				controller: 'TrendingController'
 			})
-			.when('/article/view/:articleID', {
+			.when('/article/view/:slug', {
 				templateUrl: 'pages/articlePage/articlePage.view.html',
 				controllerAs: 'vm',
 				controller: 'ArticlePageCtrl'
 			})
-			.when('/gallery/view/:galleryID', {
+			.when('/gallery/view/:slug', {
 				templateUrl: 'pages/gallery/gallery.view.html',
 				controllerAs: 'vm',
 				controller: 'GalleryController'

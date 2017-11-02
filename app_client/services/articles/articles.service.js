@@ -9,8 +9,8 @@ app.service('ArticlesService', function ($http) {
 		return $http.get('articles/' + section + '/' + page);
 	};
 
-	var getSingleArticleByID = function (articleID) {
-		return $http.get('article/' + articleID);
+	var getSingleArticleBySlug = function (slug) {
+		return $http.get('article/' + slug);
 	};
 
 	var getRecommendedArticles = function () {
@@ -24,7 +24,7 @@ app.service('ArticlesService', function ($http) {
 	return {
 		getAllArticles: getAllArticles,
 		getArticlesBySection: getArticlesBySection,
-		getSingleArticleByID: getSingleArticleByID,
+		getSingleArticleBySlug: getSingleArticleBySlug,
 		getRecommendedArticles: getRecommendedArticles,
 		getLatestArticleForSection: getLatestArticleForSection
 	}

@@ -9,12 +9,13 @@ app.controller('ArticlePageCtrl', function (ArticlesService, $window, $routePara
 
 	window.scrollTo(0, 0);
 
-	ArticlesService.getSingleArticleByID($routeParams.articleID)
+	ArticlesService.getSingleArticleBySlug($routeParams.slug)
 		.then(function (response) {
 			vm.article = response.data;
 			vm.video = $sce.trustAsResourceUrl('https://www.youtube.com/embed/' + vm.article.youtubeVideoUrl.split('=')[1]);
 		})
 		.catch(function (err) {
+			console.log(err);
 			alert('This article could not be loaded, please try again');
 		});
 });

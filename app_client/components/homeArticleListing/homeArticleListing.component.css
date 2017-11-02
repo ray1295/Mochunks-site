@@ -33,6 +33,13 @@
 	text-decoration: underline;
 }
 
+@media screen and (max-width: 690px)  {
+	.left-listing{
+		margin-bottom:2em;
+	}	
+}
+
+
 .left-listing p {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;

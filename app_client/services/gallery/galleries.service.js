@@ -9,7 +9,7 @@ app.service('GalleriesService', function ($http) {
 		return $http.get('galleries/' + section + '/' + page);
 	};
 
-	var getSingleGalleryByID = function (galleryID) {
+	var getSingleGalleryBySlug = function (galleryID) {
 		return $http.get('gallery/' + galleryID);
 	};
 
@@ -24,7 +24,7 @@ app.service('GalleriesService', function ($http) {
 	return {
 		getAllGalleries: getAllGalleries,
 		getGalleriesBySection: getGalleriesBySection,
-		getSingleGalleryByID: getSingleGalleryByID,
+		getSingleGalleryBySlug: getSingleGalleryBySlug,
 		getRecommendedGalleries: getRecommendedGalleries,
 		getLatestArticleForSection: getLatestGalleryForSection
 	}

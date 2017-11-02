@@ -1,31 +1,22 @@
 <div class="apvh-page row">
-
 	<div class="col-sm-8">
-
 		<h1>{{vm.article.title}}</h1>
-
 		<h5 class="article-text">{{vm.article.description}}</h5>
-
 		<!-- First Image-->
 		<img ng-if="vm.article.firstArticleImage" class="img-responsive"
 			 src={{vm.article.firstArticleImage.secure_url}}>
-
 		<!-- First Section-->
 		<div class="article-text" ng-if="vm.article.firstsection" ng-bind-html="vm.article.firstsection"></div>
-
 		<!-- Second Image-->
-		<div class="row" ng-if="vm.article.secondArticleImage.secure_url" style="text-align: center">
+		<div class="row" ng-if="vm.article.secondArticleImage.secure_url">
 			<img class="img-responsive" src={{vm.article.secondArticleImage.secure_url}}>
 		</div>
-
 		<!-- Second Section-->
 		<div class="article-text" ng-if="vm.article.secondsection" ng-bind-html="vm.article.secondsection"></div>
-
 		<!-- Third Image-->
-		<div class="row" ng-if="vm.article.thirdArticleImage.secure_url" style="text-align: center">
+		<div class="row" ng-if="vm.article.thirdArticleImage.secure_url">
 			<img class="img-responsive" src={{vm.article.thirdArticleImage.secure_url}}>
 		</div>
-
 		<!-- Third Section-->
 		<div class="article-text" ng-if="vm.article.thirdsection" ng-bind-html="vm.article.thirdsection"></div>
 
@@ -43,17 +34,11 @@
 
 	</div>
 
-
 	<div class="col-sm-4" style="padding-top: 3.5em;">
-
-		<webpisodes></webpisodes>
-
 		<div class="right-listing">
-
 			<advert></advert>
-
 		</div>
+		<webpisodes></webpisodes>
 	</div>
-
 
 </div>

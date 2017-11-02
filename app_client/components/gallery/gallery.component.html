@@ -29,8 +29,8 @@
 
 
 <div class="row">
-	<div ng-repeat="gallery in vm.listedGalleries" class="col-sm-6 col-md-3 wrapper grid">
-		<a href="/gallery/view/{{gallery._id}}"><i
+	<div ng-repeat="gallery in vm.listedGalleries track by gallery._id" class="col-sm-6 col-md-3 wrapper grid">
+		<a href="/gallery/view/{{gallery.slug}}"><i
 				class="fa fa-video-camera"></i><i ng-if="gallery.youtubeVideoUrl" class="fa fa-picture-o"
 												  aria-hidden="true"></i>
 			<img class="img-responsive" ng-src="{{gallery.images[0].secure_url}}" alt="{{galley.slug}}">

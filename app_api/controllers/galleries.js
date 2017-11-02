@@ -37,11 +37,11 @@ module.exports.getGalleriesSection = (req, res) => {
 };
 
 
-// Get single article by ID
-module.exports.getSingleGalleryByID = (req, res) => {
-	let galleryID = req.params.galleryID;
+// Get single article by Slug
+module.exports.getSingleGalleryBySlug = (req, res) => {
+	const SLUG = req.params.slug;
 	keystone.list('Gallery')
-		.model.findById(galleryID)
+		.model.findOne({slug: SLUG})
 		.then((gallery) => {
 			return res.json(gallery).status(200);
 		}, (err) => {

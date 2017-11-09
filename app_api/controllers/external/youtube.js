@@ -49,10 +49,11 @@ module.exports.youtubeChannelInfo = (req, res) => {
 
 				// Get the items array within the response and cherry pick required data
 				response.items.forEach(videoInformation => {
+					console.log(videoInformation);
 					youtubeChannelVideoData.push({
 						title: videoInformation.snippet.title,
 						description: videoInformation.snippet.description,
-						image: videoInformation.snippet.thumbnails.medium,
+						image: videoInformation.snippet.thumbnails.high,
 						videoID: videoInformation.snippet.resourceId.videoId,
 					})
 				});

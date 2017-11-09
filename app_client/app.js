@@ -46,6 +46,11 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				controller: 'AskChunksController',
 				controllerAs: 'vm'
 			})
+			.when('/thisWeekInMusic', {
+				templateUrl: 'pages/thisWeekInMusic/thisWeekInMusic.view.html',
+				controller: 'ThisWeekInMusicController',
+				controllerAs: 'vm'
+			})
 			.when('/beingChunksPage', {
 				templateUrl: 'pages/beingChunksPage/beingChunksPage.view.html',
 				controller: 'BeingChunksController',

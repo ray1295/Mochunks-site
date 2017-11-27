@@ -7,6 +7,7 @@ module.exports.getAllGalleries = (req, res) => {
 			page: req.params.page || 1,
 			perPage: 6,
 		})
+		.where({state: 'published'})
 		.sort('-publishedDate')
 		.exec((err, results) => {
 			if (err) {
@@ -25,7 +26,7 @@ module.exports.getGalleriesSection = (req, res) => {
 			page: req.params.page || 1,
 			perPage: 6,
 		})
-		.where({section: section})
+		.where({section: section, state: 'published'})
 		.sort('-publishedDate')
 		.exec((err, results) => {
 			if (err) {
@@ -42,6 +43,7 @@ module.exports.getSingleGalleryBySlug = (req, res) => {
 	const SLUG = req.params.slug;
 	keystone.list('Gallery')
 		.model.findOne({slug: SLUG})
+		.where({state: 'published'})
 		.then((gallery) => {
 			return res.json(gallery).status(200);
 		}, (err) => {
@@ -54,13 +56,13 @@ module.exports.getSingleGalleryBySlug = (req, res) => {
 module.exports.getRecommendedGalleries = (req, res) => {
 	keystone.list('Gallery')
 		.model.find()
-		.where('recommended', true)
+		.where({recommended: true, state: 'published'})
 		.sort('-publishedDate')
 		.then((galleries) => {
 			return res.json(galleries).status(200);
 		}, (err) => {
 			// TODO: Log errors
-			return res.sendStatus(500)
+			return res.sendStatus(500);
 		});
 };
 
@@ -68,7 +70,7 @@ module.exports.getRecommendedGalleries = (req, res) => {
 module.exports.getLatestGalleryForSection = (req, res) => {
 	keystone.list('Gallery')
 		.model.findOne()
-		.where({section: req.params.section})
+		.where({section: req.params.section, state: 'published'})
 		.sort('-publishedDate')
 		.then((galleries) => {
 			return res.json(galleries).status(200);

@@ -6,6 +6,7 @@ function ArticleListingController(ArticlesService, $window) {
 
 	vm.loadArticles = function (page) {
 
+		// Get current section indicator via the binding value passed into the component
 		var articleSection = (vm.section === 'home') ? ArticlesService.getAllArticles(page) : ArticlesService.getArticlesBySection(vm.section, page);
 
 		// Increment the current page number to get the next page for the records

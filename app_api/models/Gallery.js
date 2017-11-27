@@ -31,6 +31,7 @@ Gallery.add({
 		type: String,
 		note: "Ensure all youtube url follow this example: https://www.youtube.com/watch?v=fUtlqtdn1Xo"
 	},
+	state: {type: Types.Select, options: 'draft, published, archived', default: 'published'},
 	publishedDate: {type: Date, default: Date.now}
 });
 

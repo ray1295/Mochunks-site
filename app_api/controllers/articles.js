@@ -13,6 +13,7 @@ module.exports.getAllArticles = (req, res) => {
 			perPage: 6
 		})
 		.sort('-publishedDate')
+		.where({state: 'published'})
 		.exec((err, articles) => {
 			if (err) {
 				return res.sendStatus(500);
@@ -34,7 +35,7 @@ module.exports.getAllArticlesForSection = (req, res) => {
 			page: req.params.page || 1,
 			perPage: 6
 		})
-		.where({section: section})
+		.where({section: section, state: 'published'})
 		.sort('-publishedDate')
 		.exec((err, articles) => {
 			if (err) {
@@ -52,7 +53,9 @@ module.exports.getAllArticlesForSection = (req, res) => {
 // Get single article by Slug
 module.exports.getSingleArticleBySlug = (req, res) => {
 	const SLUG = req.params.slug;
-	keystone.list('Article').model.findOne({slug: SLUG})
+	keystone.list('Article')
+		.model
+		.findOne({slug: SLUG, state: 'published'})
 		.then((article) => {
 			return res.json(article).status(200);
 		}, (err) => {
@@ -70,7 +73,10 @@ module.exports.getSingleArticleBySlug = (req, res) => {
 module.exports.getRecommendedArticles = (req, res) => {
 	keystone.list('Article')
 		.model.find()
-		.where('recommended', true)
+		.where({
+			recommended: true,
+			state: 'published'
+		})
 		.sort('-publishedDate')
 		.then((articles) => res.json(articles).status(200))
 		.catch(err => {
@@ -88,7 +94,10 @@ module.exports.getRecommendedArticles = (req, res) => {
 module.exports.getLatestArticleForSection = (req, res) => {
 	keystone.list('Article')
 		.model.findOne()
-		.where({section: req.params.section})
+		.where({
+			section: req.params.section,
+			state: 'published'
+		})
 		.sort('-publishedDate')
 		.then((articles) => {
 			return res.json(articles).status(200);

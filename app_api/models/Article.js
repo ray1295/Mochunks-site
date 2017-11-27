@@ -36,9 +36,10 @@ Article.add({
 		type: String,
 		note: "Ensure all youtube url follow this example: https://www.youtube.com/watch?v=xxxxxxx"
 	},
+	state: {type: Types.Select, options: 'draft, published, archived', default: 'published'},
 	publishedDate: {type: Date, default: Date.now}
 });
 
-Article.defaultColumns = 'title, section, description, publishedDate';
+Article.defaultColumns = 'title, section, description, state, publishedDate';
 Article.register();
 

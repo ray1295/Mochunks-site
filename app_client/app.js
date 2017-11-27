@@ -85,9 +85,6 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				controller: 'LoveLoveController',
 				controllerAs: 'vm'
 			})
-			.when('/musicPage', {
-				templateUrl: 'pages/musicPage/musicPage.view.html'
-			})
 			.when('/relationshipPage', {
 				templateUrl: 'pages/relationshipPage/relationshipPage.view.html'
 			})

@@ -36,6 +36,11 @@ var app = angular.module('wevativeApp', ['ngRoute', 'ngAnimate', 'ngSanitize', '
 				controller: 'RealTalkController',
 				controllerAs: 'vm'
 			})
+			.when('/real-talk-relationship', {
+				templateUrl: 'pages/realTalkRelationship/realTalkRelationship.view.html',
+				controller: 'RealTalkRelationshipController',
+				controllerAs: 'vm'
+			})
 			.when('/scoopInterview', {
 				templateUrl: 'pages/scoopInterview/scoopInterview.view.html',
 				controller: 'ScoopInterviewController',

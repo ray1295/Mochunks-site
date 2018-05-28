@@ -615,3 +615,7 @@ form button {
 	color: black;
 	margin-top: 40px;
 }
+
+.article-text a {
+	color: rgb(104, 5, 104);
+}

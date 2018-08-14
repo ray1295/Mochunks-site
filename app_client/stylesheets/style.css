@@ -370,6 +370,10 @@ a:hover {
 	margin-top: 0;
 }
 
+.apvh-page .img-responsive {
+	margin: auto;
+}
+
 .right-listing {
 	display: flex;
 	flex-wrap: wrap;
